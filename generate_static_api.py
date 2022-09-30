@@ -23,7 +23,7 @@ def clean_dir(path: str):
 
 def write_json(path: str, data):
     with open(path, "w") as f:
-        json.dump(data, f, indent=4)
+        json.dump(data, f)
 
 
 def put_list(obj: dict, key: str):
