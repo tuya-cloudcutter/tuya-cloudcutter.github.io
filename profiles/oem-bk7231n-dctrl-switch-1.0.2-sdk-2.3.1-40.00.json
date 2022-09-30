@@ -1,0 +1,14 @@
+{
+	"name": "1.0.2 - BK7231N - oem_bk7231n_dctrl_switch",
+	"type": "CLASSIC",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "oem_bk7231n_dctrl_switch",
+		"version": "1.0.2",
+		"sdk": "2.3.1-40.00",
+		"key": "key5ckdnys3pqgec"
+	},
+	"data": {
+		"address_finish": "0x1B39B"
+	}
+}

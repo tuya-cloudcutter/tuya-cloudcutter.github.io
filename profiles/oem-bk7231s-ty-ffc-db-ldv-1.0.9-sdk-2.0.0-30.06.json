@@ -1,0 +1,15 @@
+{
+	"name": "1.0.9 - BK7231T - oem_bk7231s_ty_ffc_db_ldv",
+	"type": "CLASSIC",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "oem_bk7231s_ty_ffc_db_ldv",
+		"version": "1.0.9",
+		"sdk": "2.0.0-30.06",
+		"key": "keyhxhxkrkkxcvt7"
+	},
+	"data": {
+		"address_finish": "0xA2CCB",
+		"address_datagram": "0x95D3F"
+	}
+}

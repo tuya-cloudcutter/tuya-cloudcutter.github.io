@@ -1,0 +1,15 @@
+{
+	"name": "1.0.3 - BK7231T - oem_bk7231s_light_ty_oldDp",
+	"type": "CLASSIC",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "oem_bk7231s_light_ty_oldDp",
+		"version": "1.0.3",
+		"sdk": "2.0.0-30.05",
+		"key": "keydpkw438xwpdtm"
+	},
+	"data": {
+		"address_finish": "0x9BFFF",
+		"address_datagram": "0x8F47B"
+	}
+}

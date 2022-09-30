@@ -1,0 +1,16 @@
+{
+	"name": "1.1.5 - BK7231N - oem_bk7231n_strip_ty",
+	"type": "CLASSIC",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "oem_bk7231n_strip_ty",
+		"version": "1.1.5",
+		"sdk": "2.3.1-40.00",
+		"key": "keynremrcjf97twe"
+	},
+	"data": {
+		"address_finish": "0x1B39B",
+		"address_ssid": "0xD74A1",
+		"address_datagram": "0xD74A1"
+	}
+}

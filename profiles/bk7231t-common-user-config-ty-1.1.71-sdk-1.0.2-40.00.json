@@ -1,0 +1,15 @@
+{
+	"name": "1.1.71 - BK7231T - bk7231t_common_user_config_ty",
+	"type": "CLASSIC",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "bk7231t_common_user_config_ty",
+		"version": "1.1.71",
+		"sdk": "1.0.2-40.00",
+		"key": "key34ak4q5rmrkef"
+	},
+	"data": {
+		"address_finish": "0xA6B1D",
+		"address_datagram": "0x999C5"
+	}
+}

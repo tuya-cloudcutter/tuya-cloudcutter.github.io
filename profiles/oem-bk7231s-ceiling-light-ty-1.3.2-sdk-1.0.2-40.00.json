@@ -1,0 +1,15 @@
+{
+	"name": "1.3.2 - BK7231T - oem_bk7231s_ceiling_light_ty",
+	"type": "CLASSIC",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "oem_bk7231s_ceiling_light_ty",
+		"version": "1.3.2",
+		"sdk": "1.0.2-40.00",
+		"key": "keyg7gsncqtf57gs"
+	},
+	"data": {
+		"address_finish": "0xB3510",
+		"address_datagram": "0xA6701"
+	}
+}

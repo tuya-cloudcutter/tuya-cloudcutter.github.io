@@ -1,0 +1,16 @@
+{
+	"name": "1.1.7 - BK7231N - oem_bk7231n_plug",
+	"type": "CLASSIC",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "oem_bk7231n_plug",
+		"version": "1.1.7",
+		"sdk": "2.3.1-40.00",
+		"key": "keyjup78v54myhan"
+	},
+	"data": {
+		"address_finish": "0x1B467",
+		"address_ssid": "0xBAB89",
+		"address_datagram": "0xBAB89"
+	}
+}

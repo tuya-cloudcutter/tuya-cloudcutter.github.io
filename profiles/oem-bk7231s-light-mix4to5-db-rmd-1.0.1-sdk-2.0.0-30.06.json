@@ -1,0 +1,15 @@
+{
+	"name": "1.0.1 - BK7231T - oem_bk7231s_light_mix4to5_db_rmd",
+	"type": "CLASSIC",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "oem_bk7231s_light_mix4to5_db_rmd",
+		"version": "1.0.1",
+		"sdk": "2.0.0-30.06",
+		"key": "keypcvqhw97kqy4h"
+	},
+	"data": {
+		"address_finish": "0xA29A3",
+		"address_datagram": "0x95A17"
+	}
+}

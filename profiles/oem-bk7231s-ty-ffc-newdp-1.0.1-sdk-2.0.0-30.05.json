@@ -1,0 +1,15 @@
+{
+	"name": "1.0.1 - BK7231T - oem_bk7231s_ty_ffc_newdp",
+	"type": "CLASSIC",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "oem_bk7231s_ty_ffc_newdp",
+		"version": "1.0.1",
+		"sdk": "2.0.0-30.05",
+		"key": "keyx7semxnwsecug"
+	},
+	"data": {
+		"address_finish": "0x9E3BB",
+		"address_datagram": "0x917BF"
+	}
+}

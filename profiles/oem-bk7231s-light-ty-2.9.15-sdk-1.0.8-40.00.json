@@ -1,0 +1,15 @@
+{
+	"name": "2.9.15 - BK7231T - oem_bk7231s_light_ty",
+	"type": "CLASSIC",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "oem_bk7231s_light_ty",
+		"version": "2.9.15",
+		"sdk": "1.0.8-40.00",
+		"key": "keytg5kq8gvkv9dh"
+	},
+	"data": {
+		"address_finish": "0xBA665",
+		"address_datagram": "0xAD51D"
+	}
+}

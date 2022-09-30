@@ -1,0 +1,14 @@
+{
+	"name": "1.0.2 - BK7231T - cuco_sw5_bk_common",
+	"type": "CLASSIC",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "cuco_sw5_bk_common",
+		"version": "1.0.2",
+		"sdk": "1.0.2-40.00"
+	},
+	"data": {
+		"address_finish": "0x9D235",
+		"address_datagram": "0x908CD"
+	}
+}

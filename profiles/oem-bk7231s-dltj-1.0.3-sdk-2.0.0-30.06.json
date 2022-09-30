@@ -1,0 +1,15 @@
+{
+	"name": "1.0.3 - BK7231T - oem_bk7231s_dltj",
+	"type": "CLASSIC",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "oem_bk7231s_dltj",
+		"version": "1.0.3",
+		"sdk": "2.0.0-30.06",
+		"key": "keym9qkuywghyrvs"
+	},
+	"data": {
+		"address_finish": "0x9A51F",
+		"address_datagram": "0x8F90B"
+	}
+}

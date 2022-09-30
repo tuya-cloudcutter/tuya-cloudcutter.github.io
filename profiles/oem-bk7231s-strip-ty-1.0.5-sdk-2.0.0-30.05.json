@@ -1,0 +1,15 @@
+{
+	"name": "1.0.5 - BK7231T - oem_bk7231s_strip_ty",
+	"type": "CLASSIC",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "oem_bk7231s_strip_ty",
+		"version": "1.0.5",
+		"sdk": "2.0.0-30.05",
+		"key": "keys8pj5xkq8cmrm"
+	},
+	"data": {
+		"address_finish": "0x9D88B",
+		"address_datagram": "0x90D1F"
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"name": "1.0.3 - BK7231T - oem_bk7231s_control_switch",
+	"type": "CLASSIC",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "oem_bk7231s_control_switch",
+		"version": "1.0.3",
+		"sdk": "2.0.0-30.06",
+		"key": "keyk9uwr9vqw87ak"
+	},
+	"data": {
+		"address_finish": "0x96F67",
+		"address_datagram": "0x8C397"
+	}
+}
