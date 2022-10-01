@@ -1,4 +1,4 @@
-name: Deploy API to GitHub Pages
+name: Deploy to GitHub Pages
 on:
   push:
     branches:
@@ -26,6 +26,7 @@ jobs:
         with:
           source: images
           output: site/images/thumbs
+          subfolder: false
           sizes: 300x300
           fit: outside
 
