@@ -2,6 +2,7 @@
 	"name": "1.1.7 - BK7231N",
 	"sub_name": "oem_bk7231n_plug",
 	"type": "CLASSIC",
+	"icon": "power-plug",
 	"firmware": {
 		"chip": "BK7231N",
 		"name": "oem_bk7231n_plug",

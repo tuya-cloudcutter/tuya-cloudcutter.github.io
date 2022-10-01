@@ -2,6 +2,7 @@
 	"name": "2.0.2 - BK7231N",
 	"sub_name": "bk7231n_common_user_config_ty",
 	"type": "CLASSIC",
+	"icon": "memory",
 	"firmware": {
 		"chip": "BK7231N",
 		"name": "bk7231n_common_user_config_ty",

@@ -2,6 +2,7 @@
 	"name": "1.1.6 - BK7231T",
 	"sub_name": "oem_bk7231s_strip_ty",
 	"type": "CLASSIC",
+	"icon": "string-lights",
 	"firmware": {
 		"chip": "BK7231T",
 		"name": "oem_bk7231s_strip_ty",
