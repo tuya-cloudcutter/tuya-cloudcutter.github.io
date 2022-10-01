@@ -1,5 +1,6 @@
 {
-	"name": "1.0.5 - BK7231N - oem_bk7231n_dctrl_switch",
+	"name": "1.0.5 - BK7231N",
+	"sub_name": "oem_bk7231n_dctrl_switch",
 	"type": "CLASSIC",
 	"firmware": {
 		"chip": "BK7231N",

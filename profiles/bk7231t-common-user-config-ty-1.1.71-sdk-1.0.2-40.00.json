@@ -1,5 +1,6 @@
 {
-	"name": "1.1.71 - BK7231T - bk7231t_common_user_config_ty",
+	"name": "1.1.71 - BK7231T",
+	"sub_name": "bk7231t_common_user_config_ty",
 	"type": "CLASSIC",
 	"firmware": {
 		"chip": "BK7231T",

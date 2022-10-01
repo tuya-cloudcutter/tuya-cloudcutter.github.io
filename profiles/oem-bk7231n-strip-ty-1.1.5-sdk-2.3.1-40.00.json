@@ -1,5 +1,6 @@
 {
-	"name": "1.1.5 - BK7231N - oem_bk7231n_strip_ty",
+	"name": "1.1.5 - BK7231N",
+	"sub_name": "oem_bk7231n_strip_ty",
 	"type": "CLASSIC",
 	"firmware": {
 		"chip": "BK7231N",

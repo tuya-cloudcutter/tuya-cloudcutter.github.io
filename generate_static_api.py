@@ -68,6 +68,8 @@ def get_base_profile(profile: dict) -> dict:
         name=profile["name"],
         type=profile["type"],
     )
+    if profile.get("sub_name", None):
+        out["sub_name"] = profile["sub_name"]
     if profile.get("icon", None):
         out["icon"] = profile["icon"]
     return out

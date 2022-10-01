@@ -1,5 +1,6 @@
 {
-	"name": "2.9.16 - BK7231T - oem_bk7231s_light_ty",
+	"name": "2.9.16 - BK7231T",
+	"sub_name": "oem_bk7231s_light_ty",
 	"type": "CLASSIC",
 	"firmware": {
 		"chip": "BK7231T",

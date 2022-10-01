@@ -1,5 +1,6 @@
 {
-	"name": "1.0.2 - BK7231T - cuco_sw5_bk_common",
+	"name": "1.0.2 - BK7231T",
+	"sub_name": "cuco_sw5_bk_common",
 	"type": "CLASSIC",
 	"firmware": {
 		"chip": "BK7231T",

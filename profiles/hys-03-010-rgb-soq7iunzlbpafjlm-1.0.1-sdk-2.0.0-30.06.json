@@ -1,5 +1,6 @@
 {
-	"name": "1.0.1 - BK7231T - HYS_03_010_RGB_soq7iunzlbpafjlm",
+	"name": "1.0.1 - BK7231T",
+	"sub_name": "HYS_03_010_RGB_soq7iunzlbpafjlm",
 	"type": "CLASSIC",
 	"firmware": {
 		"chip": "BK7231T",

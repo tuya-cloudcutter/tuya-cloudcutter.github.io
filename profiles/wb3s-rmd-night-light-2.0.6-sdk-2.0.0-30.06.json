@@ -1,5 +1,6 @@
 {
-	"name": "2.0.6 - BK7231T - WB3S_RMD_Night_Light",
+	"name": "2.0.6 - BK7231T",
+	"sub_name": "WB3S_RMD_Night_Light",
 	"type": "CLASSIC",
 	"firmware": {
 		"chip": "BK7231T",
