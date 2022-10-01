@@ -4,7 +4,9 @@
 	"github_issues": [
 		26
 	],
-	"image_urls": [],
+	"image_urls": [
+		"treatlife-ds02f.jpg"
+	],
 	"profiles": [
 		"bk7231t-common-user-config-ty-1.1.71-sdk-1.0.2-40.00"
 	],

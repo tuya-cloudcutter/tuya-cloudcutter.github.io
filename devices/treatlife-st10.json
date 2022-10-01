@@ -4,7 +4,9 @@
 	"github_issues": [
 		27
 	],
-	"image_urls": [],
+	"image_urls": [
+		"treatlife-st10.jpg"
+	],
 	"profiles": [
 		"oem-bk7231s-strip-ty-1.0.5-sdk-2.0.0-30.05"
 	],

@@ -4,7 +4,9 @@
 	"github_issues": [
 		42
 	],
-	"image_urls": [],
+	"image_urls": [
+		"stitch-42266.jpg"
+	],
 	"profiles": [
 		"oem-bk7231s-ty-ffc-db-ldv-1.1.2-sdk-1.0.8-40.00"
 	],

@@ -4,7 +4,9 @@
 	"github_issues": [
 		33
 	],
-	"image_urls": [],
+	"image_urls": [
+		"calex-holland-led-strip-900023.1.jpg"
+	],
 	"profiles": [
 		"oem-bk7231s-light-ffc-ir-key-td-1.1.6-sdk-1.0.8-40.00"
 	],

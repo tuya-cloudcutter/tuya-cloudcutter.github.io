@@ -4,7 +4,9 @@
 	"github_issues": [
 		91
 	],
-	"image_urls": [],
+	"image_urls": [
+		"tuya-generic-e27-rgbcw-smart-life-wb2l-m1.jpg"
+	],
 	"profiles": [
 		"oem-bk7231n-light-ty-1.2.16-sdk-2.3.1-40.00"
 	],

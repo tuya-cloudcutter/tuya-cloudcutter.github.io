@@ -4,7 +4,9 @@
 	"github_issues": [
 		32
 	],
-	"image_urls": [],
+	"image_urls": [
+		"calex-uk-900018.1-v1.0.jpg"
+	],
 	"profiles": [
 		"oem-bk7231s-rnd-switch-1.1.0-sdk-1.0.2-40.00"
 	],

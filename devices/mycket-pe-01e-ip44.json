@@ -4,7 +4,9 @@
 	"github_issues": [
 		93
 	],
-	"image_urls": [],
+	"image_urls": [
+		"mycket-pe-01e-ip44.jpg"
+	],
 	"profiles": [
 		"oem-bk7231s-dltj-1.3.2-sdk-1.0.2-40.00"
 	],

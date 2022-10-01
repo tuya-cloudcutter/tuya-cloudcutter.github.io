@@ -4,7 +4,9 @@
 	"github_issues": [
 		72
 	],
-	"image_urls": [],
+	"image_urls": [
+		"ledvance-classic-a60-e27-ww-cw.jpg"
+	],
 	"profiles": [
 		"oem-bk7231s-ty-ffc-db-ldv-1.1.4-sdk-1.0.8-40.00"
 	],

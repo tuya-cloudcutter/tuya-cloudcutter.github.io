@@ -4,7 +4,9 @@
 	"github_issues": [
 		85
 	],
-	"image_urls": [],
+	"image_urls": [
+		"gosund-smart-switch-sw5-a-v2.1.jpg"
+	],
 	"profiles": [
 		"cuco-sw5-bk-common-1.0.2-sdk-1.0.2-40.00"
 	],

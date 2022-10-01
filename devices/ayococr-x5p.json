@@ -4,7 +4,9 @@
 	"github_issues": [
 		87
 	],
-	"image_urls": [],
+	"image_urls": [
+		"ayococr-x5p.jpg"
+	],
 	"profiles": [
 		"oem-bk7231s-rnd-switch-1.1.8-sdk-1.0.2-40.00"
 	],

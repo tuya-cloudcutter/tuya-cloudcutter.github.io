@@ -4,7 +4,9 @@
 	"github_issues": [
 		35
 	],
-	"image_urls": [],
+	"image_urls": [
+		"treatlife-nl10.jpg"
+	],
 	"profiles": [
 		"wb3s-rmd-night-light-2.0.6-sdk-2.0.0-30.06"
 	],

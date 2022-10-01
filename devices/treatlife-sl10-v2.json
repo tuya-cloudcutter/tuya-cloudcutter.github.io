@@ -4,7 +4,9 @@
 	"github_issues": [
 		88
 	],
-	"image_urls": [],
+	"image_urls": [
+		"treatlife-sl10-v2.jpg"
+	],
 	"profiles": [
 		"oem-bk7231s-light-mix4to5-db-rmd-1.0.1-sdk-2.0.0-30.06"
 	],

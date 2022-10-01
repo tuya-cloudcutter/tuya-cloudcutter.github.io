@@ -4,7 +4,9 @@
 	"github_issues": [
 		86
 	],
-	"image_urls": [],
+	"image_urls": [
+		"qiachip-light-fan-controller-flc-220vflc-110v.jpg"
+	],
 	"profiles": [
 		"bk7231n-common-user-config-ty-2.0.2-sdk-2.3.1-40.00"
 	],

@@ -2,7 +2,9 @@
 	"manufacturer": "PHOPOLLO",
 	"name": "SBE2612",
 	"github_issues": [],
-	"image_urls": [],
+	"image_urls": [
+		"phopollo-sbe2612.jpg"
+	],
 	"profiles": [
 		"oem-bk7231n-light-ty-1.2.16-sdk-2.3.1-40.00"
 	],

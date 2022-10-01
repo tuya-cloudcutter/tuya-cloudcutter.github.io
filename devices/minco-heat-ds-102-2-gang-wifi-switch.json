@@ -4,7 +4,9 @@
 	"github_issues": [
 		77
 	],
-	"image_urls": [],
+	"image_urls": [
+		"minco-heat-ds-102-2-gang-wifi-switch.jpg"
+	],
 	"profiles": [
 		"oem-bk7231s-rnd-zero-dctrl-switch-1.1.5-sdk-1.0.6-40.00"
 	],

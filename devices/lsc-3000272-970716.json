@@ -2,7 +2,9 @@
 	"manufacturer": "LSC",
 	"name": "3000272 970716",
 	"github_issues": [],
-	"image_urls": [],
+	"image_urls": [
+		"lsc-3000272-970716.jpg"
+	],
 	"profiles": [
 		"oem-bk7231s-light-ty-2.9.16-sdk-1.0.8-40.00"
 	],

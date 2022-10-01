@@ -4,7 +4,9 @@
 	"github_issues": [
 		59
 	],
-	"image_urls": [],
+	"image_urls": [
+		"tuya-generic-wifi-switch-3-gang-cb3s.jpg"
+	],
 	"profiles": [
 		"oem-bk7231n-dctrl-switch-1.0.5-sdk-2.3.1-40.00"
 	],

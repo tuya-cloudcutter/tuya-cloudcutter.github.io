@@ -4,7 +4,9 @@
 	"github_issues": [
 		90
 	],
-	"image_urls": [],
+	"image_urls": [
+		"calex-e27-a60-rgbcct-429004.1-v2.0.jpg"
+	],
 	"profiles": [
 		"oem-bk7231s-ty-ffc-newdp-1.0.1-sdk-2.0.0-30.05"
 	],

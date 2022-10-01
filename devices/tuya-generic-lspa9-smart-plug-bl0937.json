@@ -4,7 +4,9 @@
 	"github_issues": [
 		98
 	],
-	"image_urls": [],
+	"image_urls": [
+		"tuya-generic-lspa9-smart-plug-bl0937.jpg"
+	],
 	"profiles": [
 		"oem-bk7231s-dltj-1.0.3-sdk-2.0.0-30.06"
 	],

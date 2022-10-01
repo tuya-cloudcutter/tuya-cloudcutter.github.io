@@ -4,7 +4,9 @@
 	"github_issues": [
 		28
 	],
-	"image_urls": [],
+	"image_urls": [
+		"mlambert-49ft-outdoor-rgb.jpg"
+	],
 	"profiles": [
 		"bk7231t-common-user-config-ty-1.1.71-sdk-1.0.2-40.00"
 	],

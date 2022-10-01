@@ -4,7 +4,9 @@
 	"github_issues": [
 		11
 	],
-	"image_urls": [],
+	"image_urls": [
+		"feit-om60-rgbw-ca-ag.jpg"
+	],
 	"profiles": [
 		"oem-bk7231s-light-ty-olddp-1.0.3-sdk-2.0.0-30.05"
 	],

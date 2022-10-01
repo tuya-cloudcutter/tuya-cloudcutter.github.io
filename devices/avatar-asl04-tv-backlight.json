@@ -4,7 +4,9 @@
 	"github_issues": [
 		31
 	],
-	"image_urls": [],
+	"image_urls": [
+		"avatar-asl04-tv-backlight.jpg"
+	],
 	"profiles": [
 		"hys-03-010-rgb-soq7iunzlbpafjlm-1.0.1-sdk-2.0.0-30.06"
 	],
