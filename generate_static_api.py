@@ -38,6 +38,7 @@ def sort_list(obj: dict, key: str):
 DIR_OUTPUT = "site"
 DIR_DEVICES = join(DIR_OUTPUT, "devices")
 DIR_PROFILES = join(DIR_OUTPUT, "profiles")
+IMAGES_URL = "https://tuya-cloudcutter.github.io/cloudcutter-data/images"
 
 makedirs(DIR_DEVICES, exist_ok=True)
 makedirs(DIR_PROFILES, exist_ok=True)
@@ -85,6 +86,14 @@ for slug, device in devices.items():
     # assign default image URL
     if device["image_urls"]:
         device["image_url"] = device["image_urls"][0]
+    # prepend local image URLs with repo URL
+    for i, url in enumerate(device["image_urls"]):
+        if url.startswith("https://") or url.startswith("http://"):
+            continue
+        device["image_urls"][i] = f"{IMAGES_URL}/{url}"
+        if i == 0:
+            device["image_url"] = f"{IMAGES_URL}/thumbs/{url}"
+
     # add missing empty lists
     put_list(device, "github_issues")
     put_list(device, "image_urls")
