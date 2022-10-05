@@ -1,0 +1,53 @@
+
+build/bk7231t-stager-v1.o:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+001c5ac0 <_start>:
+  1c5ac0:	b5f1      	push	{r0, r4, r5, r6, r7, lr}
+  1c5ac2:	1d27      	adds	r7, r4, #4
+  1c5ac4:	683e      	ldr	r6, [r7, #0]
+  1c5ac6:	2eff      	cmp	r6, #255	; 0xff
+  1c5ac8:	d000      	beq.n	1c5acc <prepare>
+  1c5aca:	1d2f      	adds	r7, r5, #4
+
+001c5acc <prepare>:
+  1c5acc:	3f0c      	subs	r7, #12
+  1c5ace:	cf70      	ldmia	r7!, {r4, r5, r6}
+  1c5ad0:	647c      	str	r4, [r7, #68]	; 0x44
+  1c5ad2:	682d      	ldr	r5, [r5, #0]
+  1c5ad4:	3fb4      	subs	r7, #180	; 0xb4
+
+001c5ad6 <parse>:
+  1c5ad6:	cf03      	ldmia	r7!, {r0, r1}
+  1c5ad8:	2802      	cmp	r0, #2
+  1c5ada:	d304      	bcc.n	1c5ae6 <run>
+  1c5adc:	d00b      	beq.n	1c5af6 <finish>
+
+001c5ade <search>:
+  1c5ade:	42a8      	cmp	r0, r5
+  1c5ae0:	d1f9      	bne.n	1c5ad6 <parse>
+
+001c5ae2 <store>:
+  1c5ae2:	6031      	str	r1, [r6, #0]
+  1c5ae4:	e007      	b.n	1c5af6 <finish>
+
+001c5ae6 <run>:
+  1c5ae6:	6833      	ldr	r3, [r6, #0]
+  1c5ae8:	2801      	cmp	r0, #1
+  1c5aea:	d001      	beq.n	1c5af0 <run_ptr>
+
+001c5aec <run_int>:
+  1c5aec:	0008      	movs	r0, r1
+  1c5aee:	e001      	b.n	1c5af4 <run_branch>
+
+001c5af0 <run_ptr>:
+  1c5af0:	cf04      	ldmia	r7!, {r2}
+  1c5af2:	0038      	movs	r0, r7
+
+001c5af4 <run_branch>:
+  1c5af4:	4798      	blx	r3
+
+001c5af6 <finish>:
+  1c5af6:	bdf1      	pop	{r0, r4, r5, r6, r7, pc}
