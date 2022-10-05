@@ -5,12 +5,13 @@ on:
     branches:
       - master
     paths:
+      - .github/workflows/gh-pages-images.yml
       - images/*
 
 concurrency: gh-pages-deployment
 jobs:
   deploy:
-    name: Deploy to GitHub Pages
+    name: Deploy images to GitHub Pages
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

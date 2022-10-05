@@ -5,13 +5,14 @@ on:
     branches:
       - master
     paths:
+      - .github/workflows/gh-pages-api.yml
       - devices/*.json
       - profiles/*.json
 
 concurrency: gh-pages-deployment
 jobs:
   deploy:
-    name: Deploy to GitHub Pages
+    name: Deploy API to GitHub Pages
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
