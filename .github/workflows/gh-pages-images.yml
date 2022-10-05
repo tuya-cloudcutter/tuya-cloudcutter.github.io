@@ -1,0 +1,37 @@
+name: Deploy images to GitHub Pages
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - images/*
+
+concurrency: gh-pages-deployment
+jobs:
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generate image thumbnails
+        uses: subic/ghaction-thumbnails@master
+        with:
+          source: images
+          output: site/images/thumbs
+          subfolder: false
+          sizes: 300x300
+          fit: outside
+
+      - name: Copy images to site directory
+        run: |
+          cp images/* site/images/
+
+      - name: Deploy images to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: site/images/
+          target-folder: images/
+          force: false

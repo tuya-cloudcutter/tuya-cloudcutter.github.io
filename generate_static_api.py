@@ -35,10 +35,10 @@ def sort_list(obj: dict, key: str):
     obj[key] = sorted(obj[key])
 
 
-DIR_OUTPUT = "site"
+DIR_OUTPUT = join("site", "api")
 DIR_DEVICES = join(DIR_OUTPUT, "devices")
 DIR_PROFILES = join(DIR_OUTPUT, "profiles")
-IMAGES_URL = "https://tuya-cloudcutter.github.io/cloudcutter-data/images"
+IMAGES_URL = "https://tuya-cloudcutter.github.io/images"
 
 makedirs(DIR_DEVICES, exist_ok=True)
 makedirs(DIR_PROFILES, exist_ok=True)

@@ -1,9 +1,14 @@
-name: Deploy to GitHub Pages
+name: Deploy API to GitHub Pages
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
+    paths:
+      - devices/*.json
+      - profiles/*.json
 
+concurrency: gh-pages-deployment
 jobs:
   deploy:
     name: Deploy to GitHub Pages
@@ -21,21 +26,9 @@ jobs:
         run: |
           python generate_static_api.py
 
-      - name: Generate image thumbnails
-        uses: subic/ghaction-thumbnails@master
-        with:
-          source: images
-          output: site/images/thumbs
-          subfolder: false
-          sizes: 300x300
-          fit: outside
-
-      - name: Copy images to site directory
-        run: |
-          cp images/* site/images/
-
-      - name: Deploy to GitHub Pages
+      - name: Deploy API to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: site
+          folder: site/api/
+          target-folder: api/
           force: false
