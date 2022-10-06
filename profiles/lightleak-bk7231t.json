@@ -5,7 +5,7 @@
 	"data": {
 		"address_map": {
 			"magic": "0xC000",
-			"stager": "0x1C5AC0",
+			"stager": "0x1C5AC1",
 			"buffer": "0x43E000",
 			"store": "0x43E800",
 			"intf": "0x43E810"
@@ -18,7 +18,7 @@
 			{
 				"name": "proper",
 				"map": {
-					"0xE2411206": "0x120000"
+					"0xE2411206": "0x120001"
 				}
 			},
 			{
