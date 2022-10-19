@@ -1,0 +1,17 @@
+{
+	"name": "1.1.6 - BK7231T",
+	"sub_name": "oem_bk7231s_switch1_zero_kjd",
+	"type": "CLASSIC",
+	"icon": "toggle-switch-outline",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "oem_bk7231s_switch1_zero_kjd",
+		"version": "1.1.6",
+		"sdk": "1.0.2-40.00",
+		"key": "keyjeqdj4rtvq98n"
+	},
+	"data": {
+		"address_finish": "0x96BC5",
+		"address_datagram": "0x8A1A5"
+	}
+}
