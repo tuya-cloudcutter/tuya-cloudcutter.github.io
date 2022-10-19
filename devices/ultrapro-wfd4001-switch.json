@@ -6,7 +6,7 @@
 		"ultrapro-wfd4001-switch.jpg"
 	],
 	"profiles": [
-		"oem_bk7231s_switch1_zero_kjd-1.1.6-sdk-1.0.2-40.00"
+		"oem-bk7231s-switch1-zero-kjd-1.1.6-sdk-1.0.2-40.00"
 	],
 	"schemas": {
 		"0000030p1h": [
