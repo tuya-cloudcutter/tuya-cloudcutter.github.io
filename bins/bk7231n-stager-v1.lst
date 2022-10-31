@@ -21,24 +21,29 @@ Disassembly of section .text:
   1b5ad6:	6838      	ldr	r0, [r7, #0]
   1b5ad8:	44b7      	add	pc, r6
 
-001b5ada <ddev_open>:
+001b5ada <call_proper>:
   1b5ada:	cc06      	ldmia	r4!, {r1, r2}
   1b5adc:	0020      	movs	r0, r4
-  1b5ade:	47c0      	blx	r8
-  1b5ae0:	6030      	str	r0, [r6, #0]
-  1b5ae2:	e005      	b.n	1b5af0 <finish>
+  1b5ade:	e009      	b.n	1b5af4 <call_ddev>
 
-001b5ae4 <ddev_write>:
-  1b5ae4:	cc0c      	ldmia	r4!, {r2, r3}
-  1b5ae6:	0021      	movs	r1, r4
-  1b5ae8:	e001      	b.n	1b5aee <call_ddev>
+001b5ae0 <ddev_open>:
+  1b5ae0:	cc06      	ldmia	r4!, {r1, r2}
+  1b5ae2:	0020      	movs	r0, r4
+  1b5ae4:	47c0      	blx	r8
+  1b5ae6:	6030      	str	r0, [r6, #0]
+  1b5ae8:	e005      	b.n	1b5af6 <finish>
 
-001b5aea <ddev_control>:
-  1b5aea:	cc02      	ldmia	r4!, {r1}
-  1b5aec:	0022      	movs	r2, r4
+001b5aea <ddev_write>:
+  1b5aea:	cc0c      	ldmia	r4!, {r2, r3}
+  1b5aec:	0021      	movs	r1, r4
+  1b5aee:	e001      	b.n	1b5af4 <call_ddev>
 
-001b5aee <call_ddev>:
-  1b5aee:	47c0      	blx	r8
+001b5af0 <ddev_control>:
+  1b5af0:	cc02      	ldmia	r4!, {r1}
+  1b5af2:	0022      	movs	r2, r4
 
-001b5af0 <finish>:
-  1b5af0:	bdf0      	pop	{r4, r5, r6, r7, pc}
+001b5af4 <call_ddev>:
+  1b5af4:	47c0      	blx	r8
+
+001b5af6 <finish>:
+  1b5af6:	bdf0      	pop	{r4, r5, r6, r7, pc}
