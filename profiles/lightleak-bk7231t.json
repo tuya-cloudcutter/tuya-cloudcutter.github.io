@@ -3,6 +3,11 @@
 	"type": "LIGHTLEAK",
 	"icon": "cloud-download-outline",
 	"data": {
+		"type": "BK7231T",
+		"bins": {
+			"stager": "bk7231t-stager-v1.bin",
+			"proper": "bk7231t-proper-v1.bin"
+		},
 		"address_map": {
 			"magic": "0xC000",
 			"stager": "0x1C5AC1",
@@ -10,22 +15,11 @@
 			"store": "0x43E800",
 			"intf": "0x43E810"
 		},
-		"bins": {
-			"stager": "bk7231t-stager-v1.bin",
-			"proper": "bk7231t-proper-v1.bin"
-		},
 		"gadgets": [
 			{
 				"name": "proper",
 				"map": {
 					"0xE2411206": "0x120001"
-				}
-			},
-			{
-				"name": "intf_search_dummy",
-				"intf_offset": 0,
-				"map": {
-					"0xE2411206": 0
 				}
 			},
 			{
