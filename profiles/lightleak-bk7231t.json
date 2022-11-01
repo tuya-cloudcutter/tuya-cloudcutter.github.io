@@ -5,7 +5,7 @@
 	"data": {
 		"type": "BK7231T",
 		"bins": {
-			"stager": "bk7231t-stager-v1.bin",
+			"stager": "bk7231t-stager-v1-standard.bin",
 			"proper": "bk7231t-proper-v1.bin"
 		},
 		"address_map": {

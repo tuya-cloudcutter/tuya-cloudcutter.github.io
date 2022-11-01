@@ -5,8 +5,8 @@
 	"data": {
 		"type": "BK7231N",
 		"bins": {
-			"stager": "bk7231n-stager-v1.bin",
-			"proper": ""
+			"stager": "bk7231n-stager-v1-xor.bin",
+			"proper": "bk7231n-proper-v1.bin"
 		},
 		"address_map": {
 			"stager": "0x1B5AC1",
@@ -29,26 +29,36 @@
 			{
 				"name": "ddev_open",
 				"intf_offset": 4,
-				"address": "0x47D0",
+				"address": "0x4781",
 				"branch_offset": "0x04"
 			},
 			{
 				"name": "ddev_close",
 				"intf_offset": 8,
-				"address": "0x48D8",
+				"address": "0x4889",
 				"branch_offset": "0x18"
 			},
 			{
-				"name": "ddev_write",
+				"name": "ddev_read",
 				"intf_offset": 12,
-				"address": "0x49A0",
+				"address": "0x4919"
+			},
+			{
+				"name": "ddev_write",
+				"intf_offset": 16,
+				"address": "0x4951",
 				"branch_offset": "0x0E"
 			},
 			{
 				"name": "ddev_control",
-				"intf_offset": 16,
-				"address": "0x49D8",
+				"intf_offset": 20,
+				"address": "0x4989",
 				"branch_offset": "0x14"
+			},
+			{
+				"name": "crc32",
+				"intf_offset": 24,
+				"address": "0x73CC"
 			}
 		]
 	}
