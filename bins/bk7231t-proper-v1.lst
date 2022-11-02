@@ -22,14 +22,14 @@ int main(uint8_t *data, FW_INTERFACE *intf, uint32_t command) {
   120004:	0016      	movs	r6, r2
 	if (intf->search_performed != 0xDEADBEEF) {
   120006:	001a      	movs	r2, r3
-  120008:	4b28      	ldr	r3, [pc, #160]	; (1200ac <main+0xac>)
+  120008:	4b2c      	ldr	r3, [pc, #176]	; (1200bc <main+0xbc>)
 int main(uint8_t *data, FW_INTERFACE *intf, uint32_t command) {
   12000a:	b085      	sub	sp, #20
   12000c:	0005      	movs	r5, r0
   12000e:	000c      	movs	r4, r1
 	if (intf->search_performed != 0xDEADBEEF) {
   120010:	429a      	cmp	r2, r3
-  120012:	d10c      	bne.n	12002e <main+0x2e>
+  120012:	d114      	bne.n	12003e <main+0x3e>
 			return 1;
 	}
 
@@ -43,7 +43,7 @@ int main(uint8_t *data, FW_INTERFACE *intf, uint32_t command) {
 	uint32_t address	= data32[1];
   120018:	9303      	str	r3, [sp, #12]
 	LOG("cmd=%02x\n", command);
-  12001a:	4825      	ldr	r0, [pc, #148]	; (1200b0 <main+0xb0>)
+  12001a:	4829      	ldr	r0, [pc, #164]	; (1200c0 <main+0xc0>)
   12001c:	6923      	ldr	r3, [r4, #16]
 	uint32_t request_id = data32[0];
   12001e:	682f      	ldr	r7, [r5, #0]
@@ -51,943 +51,988 @@ int main(uint8_t *data, FW_INTERFACE *intf, uint32_t command) {
   120020:	4798      	blx	r3
 
 	switch (command) {
-  120022:	2e01      	cmp	r6, #1
-  120024:	d033      	beq.n	12008e <main+0x8e>
-  120026:	2e0e      	cmp	r6, #14
-  120028:	d038      	beq.n	12009c <main+0x9c>
-		case 0x0E:
-			cmd_stop_timer(intf, request_id, address, data32);
+  120022:	2e0e      	cmp	r6, #14
+  120024:	d03b      	beq.n	12009e <main+0x9e>
+  120026:	2e10      	cmp	r6, #16
+  120028:	d040      	beq.n	1200ac <main+0xac>
+  12002a:	2e01      	cmp	r6, #1
+  12002c:	d105      	bne.n	12003a <main+0x3a>
+		case 0x01:
+			cmd_flash_read(intf, request_id, address, data32);
+  12002e:	002b      	movs	r3, r5
+  120030:	9a03      	ldr	r2, [sp, #12]
+  120032:	0039      	movs	r1, r7
+  120034:	0020      	movs	r0, r4
+  120036:	f000 f8b9 	bl	1201ac <cmd_flash_read>
+		case 0x10:
+			cmd_fill_intf(intf, request_id, address, data32);
 			break;
 	}
 
 	return 0;
-  12002a:	2000      	movs	r0, #0
-  12002c:	e02d      	b.n	12008a <main+0x8a>
+  12003a:	2000      	movs	r0, #0
+  12003c:	e02d      	b.n	12009a <main+0x9a>
 		LOG("Search\n");
-  12002e:	690b      	ldr	r3, [r1, #16]
-  120030:	4820      	ldr	r0, [pc, #128]	; (1200b4 <main+0xb4>)
-  120032:	4798      	blx	r3
+  12003e:	690b      	ldr	r3, [r1, #16]
+  120040:	4820      	ldr	r0, [pc, #128]	; (1200c4 <main+0xc4>)
+  120042:	4798      	blx	r3
 		func_start = find_function(intf, start, end, "ap_cfg_send_err_code", 0xB5F0);
-  120034:	2180      	movs	r1, #128	; 0x80
-  120036:	4b20      	ldr	r3, [pc, #128]	; (1200b8 <main+0xb8>)
-  120038:	4a20      	ldr	r2, [pc, #128]	; (1200bc <main+0xbc>)
-  12003a:	9300      	str	r3, [sp, #0]
-  12003c:	0249      	lsls	r1, r1, #9
-  12003e:	4b20      	ldr	r3, [pc, #128]	; (1200c0 <main+0xc0>)
-  120040:	0020      	movs	r0, r4
-  120042:	f000 f96a 	bl	12031a <find_function>
+  120044:	2180      	movs	r1, #128	; 0x80
+  120046:	4b20      	ldr	r3, [pc, #128]	; (1200c8 <main+0xc8>)
+  120048:	4a20      	ldr	r2, [pc, #128]	; (1200cc <main+0xcc>)
+  12004a:	9300      	str	r3, [sp, #0]
+  12004c:	0249      	lsls	r1, r1, #9
+  12004e:	4b20      	ldr	r3, [pc, #128]	; (1200d0 <main+0xd0>)
+  120050:	0020      	movs	r0, r4
+  120052:	f000 f978 	bl	120346 <find_function>
 		func_end = find_short(func_start, end, 0xBDF0) + 2;
-  120046:	4a1f      	ldr	r2, [pc, #124]	; (1200c4 <main+0xc4>)
-  120048:	491c      	ldr	r1, [pc, #112]	; (1200bc <main+0xbc>)
+  120056:	4a1f      	ldr	r2, [pc, #124]	; (1200d4 <main+0xd4>)
+  120058:	491c      	ldr	r1, [pc, #112]	; (1200cc <main+0xcc>)
 		func_start = find_function(intf, start, end, "ap_cfg_send_err_code", 0xB5F0);
-  12004a:	0007      	movs	r7, r0
+  12005a:	0007      	movs	r7, r0
 		func_end = find_short(func_start, end, 0xBDF0) + 2;
-  12004c:	f000 f948 	bl	1202e0 <find_short>
+  12005c:	f000 f956 	bl	12030c <find_short>
 		func_start = find_function(intf, start, end, "sys_stop_timer", 0xB530);
-  120050:	2180      	movs	r1, #128	; 0x80
-  120052:	4b1d      	ldr	r3, [pc, #116]	; (1200c8 <main+0xc8>)
+  120060:	2180      	movs	r1, #128	; 0x80
+  120062:	4b1d      	ldr	r3, [pc, #116]	; (1200d8 <main+0xd8>)
 		func_end = find_short(func_start, end, 0xBDF0) + 2;
-  120054:	3002      	adds	r0, #2
+  120064:	3002      	adds	r0, #2
 		intf->ap_cfg_send_err_code	   = (ap_cfg_send_err_code_t)func_start;
-  120056:	65a7      	str	r7, [r4, #88]	; 0x58
+  120066:	65a7      	str	r7, [r4, #88]	; 0x58
 		intf->ap_cfg_send_err_code_end = func_end;
-  120058:	65e0      	str	r0, [r4, #92]	; 0x5c
+  120068:	65e0      	str	r0, [r4, #92]	; 0x5c
 		func_start = find_function(intf, start, end, "sys_stop_timer", 0xB530);
-  12005a:	9300      	str	r3, [sp, #0]
-  12005c:	4a17      	ldr	r2, [pc, #92]	; (1200bc <main+0xbc>)
-  12005e:	4b1b      	ldr	r3, [pc, #108]	; (1200cc <main+0xcc>)
-  120060:	0249      	lsls	r1, r1, #9
-  120062:	0020      	movs	r0, r4
-  120064:	f000 f959 	bl	12031a <find_function>
+  12006a:	9300      	str	r3, [sp, #0]
+  12006c:	4a17      	ldr	r2, [pc, #92]	; (1200cc <main+0xcc>)
+  12006e:	4b1b      	ldr	r3, [pc, #108]	; (1200dc <main+0xdc>)
+  120070:	0249      	lsls	r1, r1, #9
+  120072:	0020      	movs	r0, r4
+  120074:	f000 f967 	bl	120346 <find_function>
 		func_end = find_short(func_start, end, 0xBD30) + 2;
-  120068:	4a19      	ldr	r2, [pc, #100]	; (1200d0 <main+0xd0>)
-  12006a:	4914      	ldr	r1, [pc, #80]	; (1200bc <main+0xbc>)
+  120078:	4a19      	ldr	r2, [pc, #100]	; (1200e0 <main+0xe0>)
+  12007a:	4914      	ldr	r1, [pc, #80]	; (1200cc <main+0xcc>)
 		func_start = find_function(intf, start, end, "sys_stop_timer", 0xB530);
-  12006c:	0007      	movs	r7, r0
+  12007c:	0007      	movs	r7, r0
 		func_end = find_short(func_start, end, 0xBD30) + 2;
-  12006e:	f000 f937 	bl	1202e0 <find_short>
-  120072:	3002      	adds	r0, #2
+  12007e:	f000 f945 	bl	12030c <find_short>
+  120082:	3002      	adds	r0, #2
 		intf->sys_stop_timer_end = func_end;
-  120074:	67a0      	str	r0, [r4, #120]	; 0x78
+  120084:	67a0      	str	r0, [r4, #120]	; 0x78
 		intf->sys_stop_timer	 = (sys_stop_timer_t)func_start;
-  120076:	6767      	str	r7, [r4, #116]	; 0x74
+  120086:	6767      	str	r7, [r4, #116]	; 0x74
 		find_app_intf(intf);
-  120078:	0020      	movs	r0, r4
-  12007a:	f000 f99f 	bl	1203bc <find_app_intf>
+  120088:	0020      	movs	r0, r4
+  12008a:	f000 f9ad 	bl	1203e8 <find_app_intf>
 		if (intf->search_performed != 0xDEADBEEF)
-  12007e:	6823      	ldr	r3, [r4, #0]
+  12008e:	6823      	ldr	r3, [r4, #0]
 			return 1;
-  120080:	2001      	movs	r0, #1
+  120090:	2001      	movs	r0, #1
 		if (intf->search_performed != 0xDEADBEEF)
-  120082:	001a      	movs	r2, r3
-  120084:	4b09      	ldr	r3, [pc, #36]	; (1200ac <main+0xac>)
-  120086:	429a      	cmp	r2, r3
-  120088:	d0c4      	beq.n	120014 <main+0x14>
+  120092:	001a      	movs	r2, r3
+  120094:	4b09      	ldr	r3, [pc, #36]	; (1200bc <main+0xbc>)
+  120096:	429a      	cmp	r2, r3
+  120098:	d0bc      	beq.n	120014 <main+0x14>
 }
-  12008a:	b005      	add	sp, #20
-  12008c:	bdf0      	pop	{r4, r5, r6, r7, pc}
-			cmd_flash_read(intf, request_id, address, data32);
-  12008e:	002b      	movs	r3, r5
-  120090:	9a03      	ldr	r2, [sp, #12]
-  120092:	0039      	movs	r1, r7
-  120094:	0020      	movs	r0, r4
-  120096:	f000 f881 	bl	12019c <cmd_flash_read>
-  12009a:	e7c6      	b.n	12002a <main+0x2a>
+  12009a:	b005      	add	sp, #20
+  12009c:	bdf0      	pop	{r4, r5, r6, r7, pc}
 			cmd_stop_timer(intf, request_id, address, data32);
-  12009c:	002b      	movs	r3, r5
-  12009e:	9a03      	ldr	r2, [sp, #12]
-  1200a0:	0039      	movs	r1, r7
-  1200a2:	0020      	movs	r0, r4
-  1200a4:	f000 f8b0 	bl	120208 <cmd_stop_timer>
-  1200a8:	e7bf      	b.n	12002a <main+0x2a>
-  1200aa:	46c0      	nop			; (mov r8, r8)
-  1200ac:	deadbeef 	.word	0xdeadbeef
-  1200b0:	001204fa 	.word	0x001204fa
-  1200b4:	00120504 	.word	0x00120504
-  1200b8:	0000b5f0 	.word	0x0000b5f0
-  1200bc:	00117800 	.word	0x00117800
-  1200c0:	0012050c 	.word	0x0012050c
-  1200c4:	0000bdf0 	.word	0x0000bdf0
-  1200c8:	0000b530 	.word	0x0000b530
-  1200cc:	00120521 	.word	0x00120521
-  1200d0:	0000bd30 	.word	0x0000bd30
+  12009e:	002b      	movs	r3, r5
+  1200a0:	9a03      	ldr	r2, [sp, #12]
+  1200a2:	0039      	movs	r1, r7
+  1200a4:	0020      	movs	r0, r4
+  1200a6:	f000 f8b7 	bl	120218 <cmd_stop_timer>
+  1200aa:	e7c6      	b.n	12003a <main+0x3a>
+			cmd_fill_intf(intf, request_id, address, data32);
+  1200ac:	002b      	movs	r3, r5
+  1200ae:	9a03      	ldr	r2, [sp, #12]
+  1200b0:	0039      	movs	r1, r7
+  1200b2:	0020      	movs	r0, r4
+  1200b4:	f000 f8fe 	bl	1202b4 <cmd_fill_intf>
+  1200b8:	e7bf      	b.n	12003a <main+0x3a>
+  1200ba:	46c0      	nop			; (mov r8, r8)
+  1200bc:	deadbeef 	.word	0xdeadbeef
+  1200c0:	00120526 	.word	0x00120526
+  1200c4:	00120530 	.word	0x00120530
+  1200c8:	0000b5f0 	.word	0x0000b5f0
+  1200cc:	00117800 	.word	0x00117800
+  1200d0:	00120538 	.word	0x00120538
+  1200d4:	0000bdf0 	.word	0x0000bdf0
+  1200d8:	0000b530 	.word	0x0000b530
+  1200dc:	0012054d 	.word	0x0012054d
+  1200e0:	0000bd30 	.word	0x0000bd30
 
-001200d4 <parse_branch>:
+001200e4 <parse_branch>:
 #include "dump.h"
 
 uint8_t *parse_branch(uint16_t *data) {
 	uint32_t address = (uint32_t)data;
 
 	int16_t poff = data[0];
-  1200d4:	8802      	ldrh	r2, [r0, #0]
+  1200e4:	8802      	ldrh	r2, [r0, #0]
 uint8_t *parse_branch(uint16_t *data) {
-  1200d6:	0001      	movs	r1, r0
-  1200d8:	b510      	push	{r4, lr}
+  1200e6:	0001      	movs	r1, r0
+  1200e8:	b510      	push	{r4, lr}
 	if (((poff >> 11) & 0b11111) != 0b11110)
-  1200da:	0ad3      	lsrs	r3, r2, #11
+  1200ea:	0ad3      	lsrs	r3, r2, #11
 		return NULL;
-  1200dc:	2000      	movs	r0, #0
+  1200ec:	2000      	movs	r0, #0
 	if (((poff >> 11) & 0b11111) != 0b11110)
-  1200de:	2b1e      	cmp	r3, #30
-  1200e0:	d10a      	bne.n	1200f8 <parse_branch+0x24>
+  1200ee:	2b1e      	cmp	r3, #30
+  1200f0:	d10a      	bne.n	120108 <parse_branch+0x24>
 	uint16_t offs = data[1];
-  1200e2:	884b      	ldrh	r3, [r1, #2]
+  1200f2:	884b      	ldrh	r3, [r1, #2]
 	if (((offs >> 11) & 0b11111) != 0b11111)
-  1200e4:	0adc      	lsrs	r4, r3, #11
-  1200e6:	2c1f      	cmp	r4, #31
-  1200e8:	d106      	bne.n	1200f8 <parse_branch+0x24>
+  1200f4:	0adc      	lsrs	r4, r3, #11
+  1200f6:	2c1f      	cmp	r4, #31
+  1200f8:	d106      	bne.n	120108 <parse_branch+0x24>
 		return NULL;
 
 	poff <<= 5;
 	poff >>= 5;
 	offs <<= 5;
-  1200ea:	055b      	lsls	r3, r3, #21
+  1200fa:	055b      	lsls	r3, r3, #21
 	poff <<= 5;
-  1200ec:	0552      	lsls	r2, r2, #21
+  1200fc:	0552      	lsls	r2, r2, #21
 	offs >>= 5;
 	return (uint8_t *)(address + 4 + (poff << 12) + offs * 2);
-  1200ee:	0d1b      	lsrs	r3, r3, #20
-  1200f0:	1d08      	adds	r0, r1, #4
-  1200f2:	1818      	adds	r0, r3, r0
-  1200f4:	1252      	asrs	r2, r2, #9
-  1200f6:	1880      	adds	r0, r0, r2
+  1200fe:	0d1b      	lsrs	r3, r3, #20
+  120100:	1d08      	adds	r0, r1, #4
+  120102:	1818      	adds	r0, r3, r0
+  120104:	1252      	asrs	r2, r2, #9
+  120106:	1880      	adds	r0, r0, r2
 }
-  1200f8:	bd10      	pop	{r4, pc}
+  120108:	bd10      	pop	{r4, pc}
 
-001200fa <parse_ldr_pc>:
+0012010a <parse_ldr_pc>:
 
 uint32_t *parse_ldr_pc(uint16_t *data, uint8_t *reg) {
 	uint32_t address = (uint32_t)data;
 
 	uint8_t opc = *data >> 8;
 	if (((opc >> 3) & 0b01001) != 0b01001)
-  1200fa:	2309      	movs	r3, #9
+  12010a:	2309      	movs	r3, #9
 	uint8_t opc = *data >> 8;
-  1200fc:	8802      	ldrh	r2, [r0, #0]
+  12010c:	8802      	ldrh	r2, [r0, #0]
 uint32_t *parse_ldr_pc(uint16_t *data, uint8_t *reg) {
-  1200fe:	b510      	push	{r4, lr}
+  12010e:	b510      	push	{r4, lr}
 	uint8_t opc = *data >> 8;
-  120100:	0a12      	lsrs	r2, r2, #8
-  120102:	0612      	lsls	r2, r2, #24
-  120104:	0e14      	lsrs	r4, r2, #24
+  120110:	0a12      	lsrs	r2, r2, #8
+  120112:	0612      	lsls	r2, r2, #24
+  120114:	0e14      	lsrs	r4, r2, #24
 	if (((opc >> 3) & 0b01001) != 0b01001)
-  120106:	0ed2      	lsrs	r2, r2, #27
-  120108:	401a      	ands	r2, r3
+  120116:	0ed2      	lsrs	r2, r2, #27
+  120118:	401a      	ands	r2, r3
 		return NULL;
-  12010a:	2300      	movs	r3, #0
+  12011a:	2300      	movs	r3, #0
 	if (((opc >> 3) & 0b01001) != 0b01001)
-  12010c:	2a09      	cmp	r2, #9
-  12010e:	d10b      	bne.n	120128 <parse_ldr_pc+0x2e>
+  12011c:	2a09      	cmp	r2, #9
+  12011e:	d10b      	bne.n	120138 <parse_ldr_pc+0x2e>
 	if (reg)
-  120110:	4299      	cmp	r1, r3
-  120112:	d002      	beq.n	12011a <parse_ldr_pc+0x20>
+  120120:	4299      	cmp	r1, r3
+  120122:	d002      	beq.n	12012a <parse_ldr_pc+0x20>
 		*reg = opc & 0b111;
-  120114:	3307      	adds	r3, #7
-  120116:	4023      	ands	r3, r4
-  120118:	700b      	strb	r3, [r1, #0]
+  120124:	3307      	adds	r3, #7
+  120126:	4023      	ands	r3, r4
+  120128:	700b      	strb	r3, [r1, #0]
 
 	uint8_t immed = *data & 0xFF;
 
 	uint32_t target = address + 2 + (immed << 2);
 	return (uint32_t *)((((target - 1) / 4) + 1) * 4);
-  12011a:	2203      	movs	r2, #3
+  12012a:	2203      	movs	r2, #3
 	uint32_t target = address + 2 + (immed << 2);
-  12011c:	7803      	ldrb	r3, [r0, #0]
+  12012c:	7803      	ldrb	r3, [r0, #0]
 	return (uint32_t *)((((target - 1) / 4) + 1) * 4);
-  12011e:	3001      	adds	r0, #1
+  12012e:	3001      	adds	r0, #1
 	uint32_t target = address + 2 + (immed << 2);
-  120120:	009b      	lsls	r3, r3, #2
+  120130:	009b      	lsls	r3, r3, #2
 	return (uint32_t *)((((target - 1) / 4) + 1) * 4);
-  120122:	181b      	adds	r3, r3, r0
-  120124:	4393      	bics	r3, r2
-  120126:	3304      	adds	r3, #4
+  120132:	181b      	adds	r3, r3, r0
+  120134:	4393      	bics	r3, r2
+  120136:	3304      	adds	r3, #4
 }
-  120128:	0018      	movs	r0, r3
-  12012a:	bd10      	pop	{r4, pc}
+  120138:	0018      	movs	r0, r3
+  12013a:	bd10      	pop	{r4, pc}
 
-0012012c <cmd_send_response>:
+0012013c <cmd_send_response>:
 /* Copyright (c) Kuba Szczodrzyński 2022-09-26. */
 
 #include "dump.h"
 
 void cmd_send_response(FW_INTERFACE *intf, uint32_t request_id, uint32_t address, uint8_t *data, uint16_t len) {
-  12012c:	b5f0      	push	{r4, r5, r6, r7, lr}
-  12012e:	0005      	movs	r5, r0
-  120130:	b085      	sub	sp, #20
-  120132:	001f      	movs	r7, r3
-  120134:	ab0a      	add	r3, sp, #40	; 0x28
-  120136:	881c      	ldrh	r4, [r3, #0]
+  12013c:	b5f0      	push	{r4, r5, r6, r7, lr}
+  12013e:	0005      	movs	r5, r0
+  120140:	b085      	sub	sp, #20
+  120142:	001f      	movs	r7, r3
+  120144:	ab0a      	add	r3, sp, #40	; 0x28
+  120146:	881c      	ldrh	r4, [r3, #0]
 	int fd = intf->socket(1);
-  120138:	2001      	movs	r0, #1
-  12013a:	6e2b      	ldr	r3, [r5, #96]	; 0x60
+  120148:	2001      	movs	r0, #1
+  12014a:	6e2b      	ldr	r3, [r5, #96]	; 0x60
 void cmd_send_response(FW_INTERFACE *intf, uint32_t request_id, uint32_t address, uint8_t *data, uint16_t len) {
-  12013c:	9103      	str	r1, [sp, #12]
-  12013e:	9202      	str	r2, [sp, #8]
+  12014c:	9103      	str	r1, [sp, #12]
+  12014e:	9202      	str	r2, [sp, #8]
 	int fd = intf->socket(1);
-  120140:	4798      	blx	r3
-  120142:	1e06      	subs	r6, r0, #0
+  120150:	4798      	blx	r3
+  120152:	1e06      	subs	r6, r0, #0
 	if (fd < 0)
-  120144:	db21      	blt.n	12018a <cmd_send_response+0x5e>
+  120154:	db21      	blt.n	12019a <cmd_send_response+0x5e>
 		return;
 	LOG("Got fd %01x, send to %08x\n", fd, address);
-  120146:	0001      	movs	r1, r0
-  120148:	9a02      	ldr	r2, [sp, #8]
-  12014a:	692b      	ldr	r3, [r5, #16]
-  12014c:	4810      	ldr	r0, [pc, #64]	; (120190 <cmd_send_response+0x64>)
-  12014e:	4798      	blx	r3
+  120156:	0001      	movs	r1, r0
+  120158:	9a02      	ldr	r2, [sp, #8]
+  12015a:	692b      	ldr	r3, [r5, #16]
+  12015c:	4810      	ldr	r0, [pc, #64]	; (1201a0 <cmd_send_response+0x64>)
+  12015e:	4798      	blx	r3
 
 	uint32_t crc = intf->crc32(0, data, len);
-  120150:	0022      	movs	r2, r4
-  120152:	0039      	movs	r1, r7
-  120154:	696b      	ldr	r3, [r5, #20]
-  120156:	2000      	movs	r0, #0
-  120158:	4798      	blx	r3
+  120160:	0022      	movs	r2, r4
+  120162:	0039      	movs	r1, r7
+  120164:	696b      	ldr	r3, [r5, #20]
+  120166:	2000      	movs	r0, #0
+  120168:	4798      	blx	r3
 	data -= 8;
 	len += 8;
 	uint32_t *data32 = (uint32_t *)data;
 	data32[0]		 = request_id;
-  12015a:	0039      	movs	r1, r7
-  12015c:	9b03      	ldr	r3, [sp, #12]
-  12015e:	3908      	subs	r1, #8
-  120160:	600b      	str	r3, [r1, #0]
+  12016a:	0039      	movs	r1, r7
+  12016c:	9b03      	ldr	r3, [sp, #12]
+  12016e:	3908      	subs	r1, #8
+  120170:	600b      	str	r3, [r1, #0]
 	len += 8;
-  120162:	3408      	adds	r4, #8
+  120172:	3408      	adds	r4, #8
 	data32[1]		 = crc;
-  120164:	1f3b      	subs	r3, r7, #4
-  120166:	6018      	str	r0, [r3, #0]
+  120174:	1f3b      	subs	r3, r7, #4
+  120176:	6018      	str	r0, [r3, #0]
 	len += 8;
-  120168:	0424      	lsls	r4, r4, #16
+  120178:	0424      	lsls	r4, r4, #16
 
 	int ret = intf->sendto(fd, data, len, address, 6667);
-  12016a:	4b0a      	ldr	r3, [pc, #40]	; (120194 <cmd_send_response+0x68>)
+  12017a:	4b0a      	ldr	r3, [pc, #40]	; (1201a4 <cmd_send_response+0x68>)
 	len += 8;
-  12016c:	0c24      	lsrs	r4, r4, #16
+  12017c:	0c24      	lsrs	r4, r4, #16
 	int ret = intf->sendto(fd, data, len, address, 6667);
-  12016e:	9300      	str	r3, [sp, #0]
-  120170:	0022      	movs	r2, r4
-  120172:	9b02      	ldr	r3, [sp, #8]
-  120174:	0030      	movs	r0, r6
-  120176:	6eef      	ldr	r7, [r5, #108]	; 0x6c
-  120178:	47b8      	blx	r7
+  12017e:	9300      	str	r3, [sp, #0]
+  120180:	0022      	movs	r2, r4
+  120182:	9b02      	ldr	r3, [sp, #8]
+  120184:	0030      	movs	r0, r6
+  120186:	6eef      	ldr	r7, [r5, #108]	; 0x6c
+  120188:	47b8      	blx	r7
 	LOG("ret=%01x, len=%01x\n", ret, len);
-  12017a:	692b      	ldr	r3, [r5, #16]
+  12018a:	692b      	ldr	r3, [r5, #16]
 	int ret = intf->sendto(fd, data, len, address, 6667);
-  12017c:	0001      	movs	r1, r0
+  12018c:	0001      	movs	r1, r0
 	LOG("ret=%01x, len=%01x\n", ret, len);
-  12017e:	0022      	movs	r2, r4
-  120180:	4805      	ldr	r0, [pc, #20]	; (120198 <cmd_send_response+0x6c>)
-  120182:	4798      	blx	r3
+  12018e:	0022      	movs	r2, r4
+  120190:	4805      	ldr	r0, [pc, #20]	; (1201a8 <cmd_send_response+0x6c>)
+  120192:	4798      	blx	r3
 
 	intf->close(fd);
-  120184:	6f2b      	ldr	r3, [r5, #112]	; 0x70
-  120186:	0030      	movs	r0, r6
-  120188:	4798      	blx	r3
+  120194:	6f2b      	ldr	r3, [r5, #112]	; 0x70
+  120196:	0030      	movs	r0, r6
+  120198:	4798      	blx	r3
 }
-  12018a:	b005      	add	sp, #20
-  12018c:	bdf0      	pop	{r4, r5, r6, r7, pc}
-  12018e:	46c0      	nop			; (mov r8, r8)
-  120190:	00120530 	.word	0x00120530
-  120194:	00001a0b 	.word	0x00001a0b
-  120198:	0012054b 	.word	0x0012054b
+  12019a:	b005      	add	sp, #20
+  12019c:	bdf0      	pop	{r4, r5, r6, r7, pc}
+  12019e:	46c0      	nop			; (mov r8, r8)
+  1201a0:	0012055c 	.word	0x0012055c
+  1201a4:	00001a0b 	.word	0x00001a0b
+  1201a8:	00120577 	.word	0x00120577
 
-0012019c <cmd_flash_read>:
+001201ac <cmd_flash_read>:
 
 void cmd_flash_read(FW_INTERFACE *intf, uint32_t request_id, uint32_t address, uint32_t *data32) {
-  12019c:	b5f0      	push	{r4, r5, r6, r7, lr}
-  12019e:	0007      	movs	r7, r0
-  1201a0:	b087      	sub	sp, #28
+  1201ac:	b5f0      	push	{r4, r5, r6, r7, lr}
+  1201ae:	0007      	movs	r7, r0
+  1201b0:	b087      	sub	sp, #28
 
 	uint8_t *buf	= (uint8_t *)data32[2];
 	uint32_t *buf32 = (uint32_t *)buf;
 
 	uint32_t offset = data32[3];
 	uint32_t length = data32[4];
-  1201a2:	691c      	ldr	r4, [r3, #16]
+  1201b2:	691c      	ldr	r4, [r3, #16]
 void cmd_flash_read(FW_INTERFACE *intf, uint32_t request_id, uint32_t address, uint32_t *data32) {
-  1201a4:	9205      	str	r2, [sp, #20]
+  1201b4:	9205      	str	r2, [sp, #20]
 	uint8_t *buf	= (uint8_t *)data32[2];
-  1201a6:	689e      	ldr	r6, [r3, #8]
+  1201b6:	689e      	ldr	r6, [r3, #8]
 	uint32_t offset = data32[3];
-  1201a8:	68da      	ldr	r2, [r3, #12]
+  1201b8:	68da      	ldr	r2, [r3, #12]
 	uint32_t maxlen = data32[5];
-  1201aa:	695b      	ldr	r3, [r3, #20]
+  1201ba:	695b      	ldr	r3, [r3, #20]
 void cmd_flash_read(FW_INTERFACE *intf, uint32_t request_id, uint32_t address, uint32_t *data32) {
-  1201ac:	9104      	str	r1, [sp, #16]
+  1201bc:	9104      	str	r1, [sp, #16]
 	uint32_t maxlen = data32[5];
-  1201ae:	9303      	str	r3, [sp, #12]
+  1201be:	9303      	str	r3, [sp, #12]
 
 	LOG("Read %x from %06x\n", length, offset);
-  1201b0:	0021      	movs	r1, r4
-  1201b2:	4814      	ldr	r0, [pc, #80]	; (120204 <cmd_flash_read+0x68>)
-  1201b4:	693b      	ldr	r3, [r7, #16]
+  1201c0:	0021      	movs	r1, r4
+  1201c2:	4814      	ldr	r0, [pc, #80]	; (120214 <cmd_flash_read+0x68>)
+  1201c4:	693b      	ldr	r3, [r7, #16]
 	uint32_t offset = data32[3];
-  1201b6:	9202      	str	r2, [sp, #8]
+  1201c6:	9202      	str	r2, [sp, #8]
 	LOG("Read %x from %06x\n", length, offset);
-  1201b8:	4798      	blx	r3
+  1201c8:	4798      	blx	r3
+#ifdef BK7231N
+	uint32_t temp;
+	DD_HANDLE ddev = intf->ddev_open("flash", &temp, 0);
+#endif
 
 	while (length && maxlen) {
-  1201ba:	2c00      	cmp	r4, #0
-  1201bc:	d002      	beq.n	1201c4 <cmd_flash_read+0x28>
-  1201be:	9b03      	ldr	r3, [sp, #12]
-  1201c0:	2b00      	cmp	r3, #0
-  1201c2:	d101      	bne.n	1201c8 <cmd_flash_read+0x2c>
-		cmd_send_response(intf, request_id, address, buf, to_read + 8);
-
-		offset += to_read;
-		length -= to_read;
+  1201ca:	2c00      	cmp	r4, #0
+  1201cc:	d002      	beq.n	1201d4 <cmd_flash_read+0x28>
+  1201ce:	9b03      	ldr	r3, [sp, #12]
+  1201d0:	2b00      	cmp	r3, #0
+  1201d2:	d101      	bne.n	1201d8 <cmd_flash_read+0x2c>
 	}
+
+#ifdef BK7231N
+	intf->ddev_close(ddev);
+#endif
 }
-  1201c4:	b007      	add	sp, #28
-  1201c6:	bdf0      	pop	{r4, r5, r6, r7, pc}
+  1201d4:	b007      	add	sp, #28
+  1201d6:	bdf0      	pop	{r4, r5, r6, r7, pc}
 		uint32_t to_read = MIN(length, maxlen);
-  1201c8:	9b03      	ldr	r3, [sp, #12]
-  1201ca:	0025      	movs	r5, r4
-  1201cc:	429c      	cmp	r4, r3
-  1201ce:	d900      	bls.n	1201d2 <cmd_flash_read+0x36>
-  1201d0:	001d      	movs	r5, r3
+  1201d8:	9b03      	ldr	r3, [sp, #12]
+  1201da:	0025      	movs	r5, r4
+  1201dc:	429c      	cmp	r4, r3
+  1201de:	d900      	bls.n	1201e2 <cmd_flash_read+0x36>
+  1201e0:	001d      	movs	r5, r3
 		intf->flash_read(buf + 8, offset, to_read);
-  1201d2:	0030      	movs	r0, r6
+  1201e2:	0030      	movs	r0, r6
 		buf32[0] = offset;
-  1201d4:	9b02      	ldr	r3, [sp, #8]
+  1201e4:	9b02      	ldr	r3, [sp, #8]
 		intf->flash_read(buf + 8, offset, to_read);
-  1201d6:	002a      	movs	r2, r5
-  1201d8:	0019      	movs	r1, r3
+  1201e6:	002a      	movs	r2, r5
+  1201e8:	0019      	movs	r1, r3
 		buf32[0] = offset;
-  1201da:	6033      	str	r3, [r6, #0]
+  1201ea:	6033      	str	r3, [r6, #0]
 		buf32[1] = to_read;
-  1201dc:	6075      	str	r5, [r6, #4]
+  1201ec:	6075      	str	r5, [r6, #4]
 		intf->flash_read(buf + 8, offset, to_read);
-  1201de:	687b      	ldr	r3, [r7, #4]
-  1201e0:	3008      	adds	r0, #8
-  1201e2:	4798      	blx	r3
+  1201ee:	687b      	ldr	r3, [r7, #4]
+  1201f0:	3008      	adds	r0, #8
+  1201f2:	4798      	blx	r3
 		cmd_send_response(intf, request_id, address, buf, to_read + 8);
-  1201e4:	002b      	movs	r3, r5
-  1201e6:	3308      	adds	r3, #8
-  1201e8:	041b      	lsls	r3, r3, #16
-  1201ea:	0c1b      	lsrs	r3, r3, #16
-  1201ec:	9300      	str	r3, [sp, #0]
-  1201ee:	9a05      	ldr	r2, [sp, #20]
-  1201f0:	0033      	movs	r3, r6
-  1201f2:	9904      	ldr	r1, [sp, #16]
-  1201f4:	0038      	movs	r0, r7
-  1201f6:	f7ff ff99 	bl	12012c <cmd_send_response>
+  1201f4:	002b      	movs	r3, r5
+  1201f6:	3308      	adds	r3, #8
+  1201f8:	041b      	lsls	r3, r3, #16
+  1201fa:	0c1b      	lsrs	r3, r3, #16
+  1201fc:	9300      	str	r3, [sp, #0]
+  1201fe:	9a05      	ldr	r2, [sp, #20]
+  120200:	0033      	movs	r3, r6
+  120202:	9904      	ldr	r1, [sp, #16]
+  120204:	0038      	movs	r0, r7
+  120206:	f7ff ff99 	bl	12013c <cmd_send_response>
 		offset += to_read;
-  1201fa:	9b02      	ldr	r3, [sp, #8]
+  12020a:	9b02      	ldr	r3, [sp, #8]
 		length -= to_read;
-  1201fc:	1b64      	subs	r4, r4, r5
+  12020c:	1b64      	subs	r4, r4, r5
 		offset += to_read;
-  1201fe:	195b      	adds	r3, r3, r5
-  120200:	9302      	str	r3, [sp, #8]
-  120202:	e7da      	b.n	1201ba <cmd_flash_read+0x1e>
-  120204:	0012055f 	.word	0x0012055f
+  12020e:	195b      	adds	r3, r3, r5
+  120210:	9302      	str	r3, [sp, #8]
+  120212:	e7da      	b.n	1201ca <cmd_flash_read+0x1e>
+  120214:	0012058b 	.word	0x0012058b
 
-00120208 <cmd_stop_timer>:
+00120218 <cmd_stop_timer>:
 
 void cmd_stop_timer(FW_INTERFACE *intf, uint32_t request_id, uint32_t address, uint32_t *data32) {
-  120208:	b5f0      	push	{r4, r5, r6, r7, lr}
-  12020a:	001f      	movs	r7, r3
+  120218:	b5f0      	push	{r4, r5, r6, r7, lr}
+  12021a:	001f      	movs	r7, r3
 	bool period_mode	= data32[3] >> 8;
 	uint8_t timer_count = data32[3] & 0xFF;
 
 	uint16_t loops = 0;
 
 	for (uint8_t i = 0; i < timer_count; i++) {
-  12020c:	2500      	movs	r5, #0
+  12021c:	2500      	movs	r5, #0
 void cmd_stop_timer(FW_INTERFACE *intf, uint32_t request_id, uint32_t address, uint32_t *data32) {
-  12020e:	0006      	movs	r6, r0
+  12021e:	0006      	movs	r6, r0
 	uint32_t *buf32 = (uint32_t *)data32[2];
-  120210:	689b      	ldr	r3, [r3, #8]
+  120220:	689b      	ldr	r3, [r3, #8]
 void cmd_stop_timer(FW_INTERFACE *intf, uint32_t request_id, uint32_t address, uint32_t *data32) {
-  120212:	b08b      	sub	sp, #44	; 0x2c
+  120222:	b08b      	sub	sp, #44	; 0x2c
 	uint32_t *buf32 = (uint32_t *)data32[2];
-  120214:	9304      	str	r3, [sp, #16]
+  120224:	9304      	str	r3, [sp, #16]
 	bool period_mode	= data32[3] >> 8;
-  120216:	68fb      	ldr	r3, [r7, #12]
+  120226:	68fb      	ldr	r3, [r7, #12]
 void cmd_stop_timer(FW_INTERFACE *intf, uint32_t request_id, uint32_t address, uint32_t *data32) {
-  120218:	9209      	str	r2, [sp, #36]	; 0x24
+  120228:	9209      	str	r2, [sp, #36]	; 0x24
 	bool period_mode	= data32[3] >> 8;
-  12021a:	0a1a      	lsrs	r2, r3, #8
-  12021c:	9205      	str	r2, [sp, #20]
+  12022a:	0a1a      	lsrs	r2, r3, #8
+  12022c:	9205      	str	r2, [sp, #20]
 	uint8_t timer_count = data32[3] & 0xFF;
-  12021e:	061a      	lsls	r2, r3, #24
-  120220:	0e12      	lsrs	r2, r2, #24
-  120222:	0093      	lsls	r3, r2, #2
+  12022e:	061a      	lsls	r2, r3, #24
+  120230:	0e12      	lsrs	r2, r2, #24
+  120232:	0093      	lsls	r3, r2, #2
 void cmd_stop_timer(FW_INTERFACE *intf, uint32_t request_id, uint32_t address, uint32_t *data32) {
-  120224:	9108      	str	r1, [sp, #32]
+  120234:	9108      	str	r1, [sp, #32]
 	uint8_t timer_count = data32[3] & 0xFF;
-  120226:	9206      	str	r2, [sp, #24]
-  120228:	9307      	str	r3, [sp, #28]
+  120236:	9206      	str	r2, [sp, #24]
+  120238:	9307      	str	r3, [sp, #28]
 	uint16_t loops = 0;
-  12022a:	9503      	str	r5, [sp, #12]
+  12023a:	9503      	str	r5, [sp, #12]
 	for (uint8_t i = 0; i < timer_count; i++) {
-  12022c:	9b07      	ldr	r3, [sp, #28]
-  12022e:	429d      	cmp	r5, r3
-  120230:	d109      	bne.n	120246 <cmd_stop_timer+0x3e>
+  12023c:	9b07      	ldr	r3, [sp, #28]
+  12023e:	429d      	cmp	r5, r3
+  120240:	d109      	bne.n	120256 <cmd_stop_timer+0x3e>
 
 		buf32[i] = intf->sys_stop_timer(timer_id);
 		LOG("Stop tmr %02x ret=%x\n", timer_id, buf32[i]);
 	}
 
 	cmd_send_response(intf, request_id, address, (uint8_t *)buf32, timer_count * 4);
-  120232:	9b06      	ldr	r3, [sp, #24]
-  120234:	9a09      	ldr	r2, [sp, #36]	; 0x24
-  120236:	009b      	lsls	r3, r3, #2
-  120238:	9300      	str	r3, [sp, #0]
-  12023a:	9908      	ldr	r1, [sp, #32]
-  12023c:	9b04      	ldr	r3, [sp, #16]
-  12023e:	0030      	movs	r0, r6
-  120240:	f7ff ff74 	bl	12012c <cmd_send_response>
-  120244:	e01c      	b.n	120280 <cmd_stop_timer+0x78>
+  120242:	9b06      	ldr	r3, [sp, #24]
+  120244:	9a09      	ldr	r2, [sp, #36]	; 0x24
+  120246:	009b      	lsls	r3, r3, #2
+  120248:	9300      	str	r3, [sp, #0]
+  12024a:	9908      	ldr	r1, [sp, #32]
+  12024c:	9b04      	ldr	r3, [sp, #16]
+  12024e:	0030      	movs	r0, r6
+  120250:	f7ff ff74 	bl	12013c <cmd_send_response>
+  120254:	e01c      	b.n	120290 <cmd_stop_timer+0x78>
 		uint32_t timer_id = data32[4 + i];
-  120246:	197b      	adds	r3, r7, r5
-  120248:	691c      	ldr	r4, [r3, #16]
+  120256:	197b      	adds	r3, r7, r5
+  120258:	691c      	ldr	r4, [r3, #16]
 		if (period_mode) {
-  12024a:	9b05      	ldr	r3, [sp, #20]
-  12024c:	2b00      	cmp	r3, #0
-  12024e:	d01c      	beq.n	12028a <cmd_stop_timer+0x82>
+  12025a:	9b05      	ldr	r3, [sp, #20]
+  12025c:	2b00      	cmp	r3, #0
+  12025e:	d01c      	beq.n	12029a <cmd_stop_timer+0x82>
 			uint32_t *handle = intf->sys_timer_handle;
-  120250:	6ff2      	ldr	r2, [r6, #124]	; 0x7c
-  120252:	0013      	movs	r3, r2
+  120260:	6ff2      	ldr	r2, [r6, #124]	; 0x7c
+  120262:	0013      	movs	r3, r2
 			while (handle[4] != period) {
-  120254:	6919      	ldr	r1, [r3, #16]
-  120256:	42a1      	cmp	r1, r4
-  120258:	d108      	bne.n	12026c <cmd_stop_timer+0x64>
+  120264:	6919      	ldr	r1, [r3, #16]
+  120266:	42a1      	cmp	r1, r4
+  120268:	d108      	bne.n	12027c <cmd_stop_timer+0x64>
 			if (handle[4] != period) {
-  12025a:	691a      	ldr	r2, [r3, #16]
-  12025c:	42a2      	cmp	r2, r4
-  12025e:	d011      	beq.n	120284 <cmd_stop_timer+0x7c>
+  12026a:	691a      	ldr	r2, [r3, #16]
+  12026c:	42a2      	cmp	r2, r4
+  12026e:	d011      	beq.n	120294 <cmd_stop_timer+0x7c>
 				buf32[i] = -1;
-  120260:	2201      	movs	r2, #1
-  120262:	9b04      	ldr	r3, [sp, #16]
-  120264:	4252      	negs	r2, r2
-  120266:	515a      	str	r2, [r3, r5]
-  120268:	3504      	adds	r5, #4
-  12026a:	e7df      	b.n	12022c <cmd_stop_timer+0x24>
+  120270:	2201      	movs	r2, #1
+  120272:	9b04      	ldr	r3, [sp, #16]
+  120274:	4252      	negs	r2, r2
+  120276:	515a      	str	r2, [r3, r5]
+  120278:	3504      	adds	r5, #4
+  12027a:	e7df      	b.n	12023c <cmd_stop_timer+0x24>
 				handle = (uint32_t *)(handle[0]);
-  12026c:	681b      	ldr	r3, [r3, #0]
+  12027c:	681b      	ldr	r3, [r3, #0]
 				if (handle == intf->sys_timer_handle) {
-  12026e:	429a      	cmp	r2, r3
-  120270:	d0f3      	beq.n	12025a <cmd_stop_timer+0x52>
+  12027e:	429a      	cmp	r2, r3
+  120280:	d0f3      	beq.n	12026a <cmd_stop_timer+0x52>
 				if (++loops > 100)
-  120272:	9903      	ldr	r1, [sp, #12]
-  120274:	3101      	adds	r1, #1
-  120276:	0409      	lsls	r1, r1, #16
-  120278:	0c09      	lsrs	r1, r1, #16
-  12027a:	9103      	str	r1, [sp, #12]
-  12027c:	2964      	cmp	r1, #100	; 0x64
-  12027e:	d9e9      	bls.n	120254 <cmd_stop_timer+0x4c>
+  120282:	9903      	ldr	r1, [sp, #12]
+  120284:	3101      	adds	r1, #1
+  120286:	0409      	lsls	r1, r1, #16
+  120288:	0c09      	lsrs	r1, r1, #16
+  12028a:	9103      	str	r1, [sp, #12]
+  12028c:	2964      	cmp	r1, #100	; 0x64
+  12028e:	d9e9      	bls.n	120264 <cmd_stop_timer+0x4c>
 }
-  120280:	b00b      	add	sp, #44	; 0x2c
-  120282:	bdf0      	pop	{r4, r5, r6, r7, pc}
+  120290:	b00b      	add	sp, #44	; 0x2c
+  120292:	bdf0      	pop	{r4, r5, r6, r7, pc}
 			timer_id = handle[7] & 0xFFFF;
-  120284:	69dc      	ldr	r4, [r3, #28]
-  120286:	0424      	lsls	r4, r4, #16
-  120288:	0c24      	lsrs	r4, r4, #16
+  120294:	69dc      	ldr	r4, [r3, #28]
+  120296:	0424      	lsls	r4, r4, #16
+  120298:	0c24      	lsrs	r4, r4, #16
 		buf32[i] = intf->sys_stop_timer(timer_id);
-  12028a:	6f73      	ldr	r3, [r6, #116]	; 0x74
-  12028c:	0020      	movs	r0, r4
-  12028e:	4798      	blx	r3
-  120290:	9b04      	ldr	r3, [sp, #16]
-  120292:	0002      	movs	r2, r0
-  120294:	5158      	str	r0, [r3, r5]
+  12029a:	6f73      	ldr	r3, [r6, #116]	; 0x74
+  12029c:	0020      	movs	r0, r4
+  12029e:	4798      	blx	r3
+  1202a0:	9b04      	ldr	r3, [sp, #16]
+  1202a2:	0002      	movs	r2, r0
+  1202a4:	5158      	str	r0, [r3, r5]
 		LOG("Stop tmr %02x ret=%x\n", timer_id, buf32[i]);
-  120296:	0021      	movs	r1, r4
-  120298:	6933      	ldr	r3, [r6, #16]
-  12029a:	4801      	ldr	r0, [pc, #4]	; (1202a0 <cmd_stop_timer+0x98>)
-  12029c:	4798      	blx	r3
-  12029e:	e7e3      	b.n	120268 <cmd_stop_timer+0x60>
-  1202a0:	00120572 	.word	0x00120572
+  1202a6:	0021      	movs	r1, r4
+  1202a8:	6933      	ldr	r3, [r6, #16]
+  1202aa:	4801      	ldr	r0, [pc, #4]	; (1202b0 <cmd_stop_timer+0x98>)
+  1202ac:	4798      	blx	r3
+  1202ae:	e7e3      	b.n	120278 <cmd_stop_timer+0x60>
+  1202b0:	0012059e 	.word	0x0012059e
 
-001202a4 <find_data>:
+001202b4 <cmd_fill_intf>:
+	// data32[3] - intf length (words)
+	// data32[*] - intf data
+
+	uint32_t *intf32 = (uint32_t *)intf;
+
+	for (uint8_t i = 0; i < data32[3]; i++) {
+  1202b4:	2200      	movs	r2, #0
+void cmd_fill_intf(FW_INTERFACE *intf, uint32_t request_id, uint32_t address, uint32_t *data32) {
+  1202b6:	b510      	push	{r4, lr}
+	for (uint8_t i = 0; i < data32[3]; i++) {
+  1202b8:	68d9      	ldr	r1, [r3, #12]
+  1202ba:	428a      	cmp	r2, r1
+  1202bc:	d300      	bcc.n	1202c0 <cmd_fill_intf+0xc>
+		// do not overwrite intf->search_performed
+		intf32[1 + i] = data32[4 + 1];
+	}
+}
+  1202be:	bd10      	pop	{r4, pc}
+		intf32[1 + i] = data32[4 + 1];
+  1202c0:	3201      	adds	r2, #1
+  1202c2:	695c      	ldr	r4, [r3, #20]
+  1202c4:	0091      	lsls	r1, r2, #2
+	for (uint8_t i = 0; i < data32[3]; i++) {
+  1202c6:	0612      	lsls	r2, r2, #24
+		intf32[1 + i] = data32[4 + 1];
+  1202c8:	500c      	str	r4, [r1, r0]
+	for (uint8_t i = 0; i < data32[3]; i++) {
+  1202ca:	0e12      	lsrs	r2, r2, #24
+  1202cc:	e7f4      	b.n	1202b8 <cmd_fill_intf+0x4>
+  1202ce:	46c0      	nop			; (mov r8, r8)
+
+001202d0 <find_data>:
 /* Copyright (c) Kuba Szczodrzyński 2022-09-25. */
 
 #include "dump.h"
 
 uint8_t *find_data(uint8_t *start, uint8_t *end, uint8_t *data, uint8_t len) {
-  1202a4:	b570      	push	{r4, r5, r6, lr}
+  1202d0:	b570      	push	{r4, r5, r6, lr}
 	uint8_t pos = 0;
-  1202a6:	2400      	movs	r4, #0
+  1202d2:	2400      	movs	r4, #0
 	for (uint8_t *addr = start; addr < end; addr++) {
-  1202a8:	4288      	cmp	r0, r1
-  1202aa:	d301      	bcc.n	1202b0 <find_data+0xc>
+  1202d4:	4288      	cmp	r0, r1
+  1202d6:	d301      	bcc.n	1202dc <find_data+0xc>
 				return addr - len + 1;
 		} else {
 			pos = 0;
 		}
 	}
 	return NULL;
-  1202ac:	2000      	movs	r0, #0
-  1202ae:	e00a      	b.n	1202c6 <find_data+0x22>
+  1202d8:	2000      	movs	r0, #0
+  1202da:	e00a      	b.n	1202f2 <find_data+0x22>
 		if (*addr == data[pos]) {
-  1202b0:	7806      	ldrb	r6, [r0, #0]
-  1202b2:	5d15      	ldrb	r5, [r2, r4]
-  1202b4:	42ae      	cmp	r6, r5
-  1202b6:	d107      	bne.n	1202c8 <find_data+0x24>
+  1202dc:	7806      	ldrb	r6, [r0, #0]
+  1202de:	5d15      	ldrb	r5, [r2, r4]
+  1202e0:	42ae      	cmp	r6, r5
+  1202e2:	d107      	bne.n	1202f4 <find_data+0x24>
 			pos++;
-  1202b8:	3401      	adds	r4, #1
-  1202ba:	0624      	lsls	r4, r4, #24
-  1202bc:	0e24      	lsrs	r4, r4, #24
+  1202e4:	3401      	adds	r4, #1
+  1202e6:	0624      	lsls	r4, r4, #24
+  1202e8:	0e24      	lsrs	r4, r4, #24
 			if (pos == len)
-  1202be:	429c      	cmp	r4, r3
-  1202c0:	d103      	bne.n	1202ca <find_data+0x26>
+  1202ea:	429c      	cmp	r4, r3
+  1202ec:	d103      	bne.n	1202f6 <find_data+0x26>
 				return addr - len + 1;
-  1202c2:	1b00      	subs	r0, r0, r4
-  1202c4:	3001      	adds	r0, #1
+  1202ee:	1b00      	subs	r0, r0, r4
+  1202f0:	3001      	adds	r0, #1
 }
-  1202c6:	bd70      	pop	{r4, r5, r6, pc}
+  1202f2:	bd70      	pop	{r4, r5, r6, pc}
 			pos = 0;
-  1202c8:	2400      	movs	r4, #0
+  1202f4:	2400      	movs	r4, #0
 	for (uint8_t *addr = start; addr < end; addr++) {
-  1202ca:	3001      	adds	r0, #1
-  1202cc:	e7ec      	b.n	1202a8 <find_data+0x4>
+  1202f6:	3001      	adds	r0, #1
+  1202f8:	e7ec      	b.n	1202d4 <find_data+0x4>
 
-001202ce <find_word>:
+001202fa <find_word>:
 
 uint8_t *find_word(uint8_t *start, uint8_t *end, uint32_t number) {
 	for (uint8_t *addr = start; addr < end; addr += 4) {
-  1202ce:	4288      	cmp	r0, r1
-  1202d0:	d301      	bcc.n	1202d6 <find_word+0x8>
+  1202fa:	4288      	cmp	r0, r1
+  1202fc:	d301      	bcc.n	120302 <find_word+0x8>
 		if (*((uint32_t *)addr) == number) {
 			return addr;
 		}
 	}
 	return NULL;
-  1202d2:	2000      	movs	r0, #0
+  1202fe:	2000      	movs	r0, #0
 }
-  1202d4:	4770      	bx	lr
+  120300:	4770      	bx	lr
 		if (*((uint32_t *)addr) == number) {
-  1202d6:	6803      	ldr	r3, [r0, #0]
-  1202d8:	4293      	cmp	r3, r2
-  1202da:	d0fb      	beq.n	1202d4 <find_word+0x6>
+  120302:	6803      	ldr	r3, [r0, #0]
+  120304:	4293      	cmp	r3, r2
+  120306:	d0fb      	beq.n	120300 <find_word+0x6>
 	for (uint8_t *addr = start; addr < end; addr += 4) {
-  1202dc:	3004      	adds	r0, #4
-  1202de:	e7f6      	b.n	1202ce <find_word>
+  120308:	3004      	adds	r0, #4
+  12030a:	e7f6      	b.n	1202fa <find_word>
 
-001202e0 <find_short>:
+0012030c <find_short>:
 
 uint8_t *find_short(uint8_t *start, uint8_t *end, uint16_t number) {
 	start = THUMB_ADDR(start);
-  1202e0:	2301      	movs	r3, #1
+  12030c:	2301      	movs	r3, #1
 uint8_t *find_short(uint8_t *start, uint8_t *end, uint16_t number) {
-  1202e2:	b510      	push	{r4, lr}
+  12030e:	b510      	push	{r4, lr}
 	start = THUMB_ADDR(start);
-  1202e4:	4398      	bics	r0, r3
+  120310:	4398      	bics	r0, r3
 	for (uint8_t *addr = start; addr < end; addr += 2) {
-  1202e6:	4288      	cmp	r0, r1
-  1202e8:	d301      	bcc.n	1202ee <find_short+0xe>
+  120312:	4288      	cmp	r0, r1
+  120314:	d301      	bcc.n	12031a <find_short+0xe>
 		uint16_t data = addr[0] | addr[1] << 8;
 		if (data == number) {
 			return addr;
 		}
 	}
 	return NULL;
-  1202ea:	2000      	movs	r0, #0
+  120316:	2000      	movs	r0, #0
 }
-  1202ec:	bd10      	pop	{r4, pc}
+  120318:	bd10      	pop	{r4, pc}
 		uint16_t data = addr[0] | addr[1] << 8;
-  1202ee:	7844      	ldrb	r4, [r0, #1]
-  1202f0:	7803      	ldrb	r3, [r0, #0]
-  1202f2:	0224      	lsls	r4, r4, #8
+  12031a:	7844      	ldrb	r4, [r0, #1]
+  12031c:	7803      	ldrb	r3, [r0, #0]
+  12031e:	0224      	lsls	r4, r4, #8
 		if (data == number) {
-  1202f4:	4323      	orrs	r3, r4
-  1202f6:	4293      	cmp	r3, r2
-  1202f8:	d0f8      	beq.n	1202ec <find_short+0xc>
+  120320:	4323      	orrs	r3, r4
+  120322:	4293      	cmp	r3, r2
+  120324:	d0f8      	beq.n	120318 <find_short+0xc>
 	for (uint8_t *addr = start; addr < end; addr += 2) {
-  1202fa:	3002      	adds	r0, #2
-  1202fc:	e7f3      	b.n	1202e6 <find_short+0x6>
+  120326:	3002      	adds	r0, #2
+  120328:	e7f3      	b.n	120312 <find_short+0x6>
 
-001202fe <find_short_rev>:
+0012032a <find_short_rev>:
 
 uint8_t *find_short_rev(uint8_t *start, uint8_t *end, uint16_t number) {
-  1202fe:	b510      	push	{r4, lr}
+  12032a:	b510      	push	{r4, lr}
 	for (uint8_t *addr = end; addr > start; addr -= 2) {
-  120300:	4281      	cmp	r1, r0
-  120302:	d802      	bhi.n	12030a <find_short_rev+0xc>
+  12032c:	4281      	cmp	r1, r0
+  12032e:	d802      	bhi.n	120336 <find_short_rev+0xc>
 		uint16_t data = addr[0] | addr[1] << 8;
 		if (data == number) {
 			return addr;
 		}
 	}
 	return NULL;
-  120304:	2100      	movs	r1, #0
+  120330:	2100      	movs	r1, #0
 }
-  120306:	0008      	movs	r0, r1
-  120308:	bd10      	pop	{r4, pc}
+  120332:	0008      	movs	r0, r1
+  120334:	bd10      	pop	{r4, pc}
 		uint16_t data = addr[0] | addr[1] << 8;
-  12030a:	784c      	ldrb	r4, [r1, #1]
-  12030c:	780b      	ldrb	r3, [r1, #0]
-  12030e:	0224      	lsls	r4, r4, #8
+  120336:	784c      	ldrb	r4, [r1, #1]
+  120338:	780b      	ldrb	r3, [r1, #0]
+  12033a:	0224      	lsls	r4, r4, #8
 		if (data == number) {
-  120310:	4323      	orrs	r3, r4
-  120312:	4293      	cmp	r3, r2
-  120314:	d0f7      	beq.n	120306 <find_short_rev+0x8>
+  12033c:	4323      	orrs	r3, r4
+  12033e:	4293      	cmp	r3, r2
+  120340:	d0f7      	beq.n	120332 <find_short_rev+0x8>
 	for (uint8_t *addr = end; addr > start; addr -= 2) {
-  120316:	3902      	subs	r1, #2
-  120318:	e7f2      	b.n	120300 <find_short_rev+0x2>
+  120342:	3902      	subs	r1, #2
+  120344:	e7f2      	b.n	12032c <find_short_rev+0x2>
 
-0012031a <find_function>:
+00120346 <find_function>:
 
 uint8_t *find_function(FW_INTERFACE *intf, uint8_t *start, uint8_t *end, char *string, uint16_t push_opcode) {
-  12031a:	b5f0      	push	{r4, r5, r6, r7, lr}
-  12031c:	001d      	movs	r5, r3
-  12031e:	b085      	sub	sp, #20
-  120320:	ab0a      	add	r3, sp, #40	; 0x28
-  120322:	881b      	ldrh	r3, [r3, #0]
-  120324:	0006      	movs	r6, r0
+  120346:	b5f0      	push	{r4, r5, r6, r7, lr}
+  120348:	001d      	movs	r5, r3
+  12034a:	b085      	sub	sp, #20
+  12034c:	ab0a      	add	r3, sp, #40	; 0x28
+  12034e:	881b      	ldrh	r3, [r3, #0]
+  120350:	0006      	movs	r6, r0
 	uint8_t len = strlen(string) + 1;
-  120326:	0028      	movs	r0, r5
+  120352:	0028      	movs	r0, r5
 uint8_t *find_function(FW_INTERFACE *intf, uint8_t *start, uint8_t *end, char *string, uint16_t push_opcode) {
-  120328:	9202      	str	r2, [sp, #8]
-  12032a:	9101      	str	r1, [sp, #4]
-  12032c:	9303      	str	r3, [sp, #12]
+  120354:	9202      	str	r2, [sp, #8]
+  120356:	9101      	str	r1, [sp, #4]
+  120358:	9303      	str	r3, [sp, #12]
 	uint8_t len = strlen(string) + 1;
-  12032e:	f000 f8db 	bl	1204e8 <strlen>
-  120332:	0004      	movs	r4, r0
+  12035a:	f000 f8db 	bl	120514 <strlen>
+  12035e:	0004      	movs	r4, r0
 
 	LOG("Search %s\n", string);
-  120334:	0029      	movs	r1, r5
-  120336:	6933      	ldr	r3, [r6, #16]
-  120338:	481d      	ldr	r0, [pc, #116]	; (1203b0 <find_function+0x96>)
-  12033a:	4798      	blx	r3
+  120360:	0029      	movs	r1, r5
+  120362:	6933      	ldr	r3, [r6, #16]
+  120364:	481d      	ldr	r0, [pc, #116]	; (1203dc <find_function+0x96>)
+  120366:	4798      	blx	r3
 	uint8_t len = strlen(string) + 1;
-  12033c:	1c63      	adds	r3, r4, #1
+  120368:	1c63      	adds	r3, r4, #1
 
 	uint8_t *str_addr = find_data(start, end, (uint8_t *)string, len);
-  12033e:	061b      	lsls	r3, r3, #24
-  120340:	0e1b      	lsrs	r3, r3, #24
-  120342:	002a      	movs	r2, r5
-  120344:	9902      	ldr	r1, [sp, #8]
-  120346:	9801      	ldr	r0, [sp, #4]
-  120348:	f7ff ffac 	bl	1202a4 <find_data>
-  12034c:	6933      	ldr	r3, [r6, #16]
-  12034e:	0004      	movs	r4, r0
-  120350:	001f      	movs	r7, r3
+  12036a:	061b      	lsls	r3, r3, #24
+  12036c:	0e1b      	lsrs	r3, r3, #24
+  12036e:	002a      	movs	r2, r5
+  120370:	9902      	ldr	r1, [sp, #8]
+  120372:	9801      	ldr	r0, [sp, #4]
+  120374:	f7ff ffac 	bl	1202d0 <find_data>
+  120378:	6933      	ldr	r3, [r6, #16]
+  12037a:	0004      	movs	r4, r0
+  12037c:	001f      	movs	r7, r3
 	if (str_addr == NULL) {
-  120352:	2800      	cmp	r0, #0
-  120354:	d104      	bne.n	120360 <find_function+0x46>
+  12037e:	2800      	cmp	r0, #0
+  120380:	d104      	bne.n	12038c <find_function+0x46>
 		LOG("Not found\n");
-  120356:	4817      	ldr	r0, [pc, #92]	; (1203b4 <find_function+0x9a>)
-  120358:	4798      	blx	r3
+  120382:	4817      	ldr	r0, [pc, #92]	; (1203e0 <find_function+0x9a>)
+  120384:	4798      	blx	r3
 		LOG("Not found\n");
 		return NULL;
 	}
 	LOG("Found %s %01x: %06x\n", string, 3, func_addr);
 	return func_addr + 1;
 }
-  12035a:	0020      	movs	r0, r4
-  12035c:	b005      	add	sp, #20
-  12035e:	bdf0      	pop	{r4, r5, r6, r7, pc}
+  120386:	0020      	movs	r0, r4
+  120388:	b005      	add	sp, #20
+  12038a:	bdf0      	pop	{r4, r5, r6, r7, pc}
 	LOG("Found %s %01x: %06x\n", string, 1, str_addr);
-  120360:	0003      	movs	r3, r0
-  120362:	2201      	movs	r2, #1
-  120364:	0029      	movs	r1, r5
-  120366:	4814      	ldr	r0, [pc, #80]	; (1203b8 <find_function+0x9e>)
-  120368:	47b8      	blx	r7
+  12038c:	0003      	movs	r3, r0
+  12038e:	2201      	movs	r2, #1
+  120390:	0029      	movs	r1, r5
+  120392:	4814      	ldr	r0, [pc, #80]	; (1203e4 <find_function+0x9e>)
+  120394:	47b8      	blx	r7
 	uint8_t *str_offset_addr = find_word(start, end, (uint32_t)str_addr);
-  12036a:	0022      	movs	r2, r4
-  12036c:	9902      	ldr	r1, [sp, #8]
-  12036e:	9801      	ldr	r0, [sp, #4]
-  120370:	f7ff ffad 	bl	1202ce <find_word>
-  120374:	6937      	ldr	r7, [r6, #16]
-  120376:	1e04      	subs	r4, r0, #0
+  120396:	0022      	movs	r2, r4
+  120398:	9902      	ldr	r1, [sp, #8]
+  12039a:	9801      	ldr	r0, [sp, #4]
+  12039c:	f7ff ffad 	bl	1202fa <find_word>
+  1203a0:	6937      	ldr	r7, [r6, #16]
+  1203a2:	1e04      	subs	r4, r0, #0
 	if (str_offset_addr == NULL) {
-  120378:	d102      	bne.n	120380 <find_function+0x66>
+  1203a4:	d102      	bne.n	1203ac <find_function+0x66>
 		LOG("Not found\n");
-  12037a:	480e      	ldr	r0, [pc, #56]	; (1203b4 <find_function+0x9a>)
-  12037c:	47b8      	blx	r7
+  1203a6:	480e      	ldr	r0, [pc, #56]	; (1203e0 <find_function+0x9a>)
+  1203a8:	47b8      	blx	r7
 		return NULL;
-  12037e:	e7ec      	b.n	12035a <find_function+0x40>
+  1203aa:	e7ec      	b.n	120386 <find_function+0x40>
 	LOG("Found %s %01x: %06x\n", string, 2, str_offset_addr);
-  120380:	0003      	movs	r3, r0
-  120382:	2202      	movs	r2, #2
-  120384:	0029      	movs	r1, r5
-  120386:	480c      	ldr	r0, [pc, #48]	; (1203b8 <find_function+0x9e>)
-  120388:	47b8      	blx	r7
+  1203ac:	0003      	movs	r3, r0
+  1203ae:	2202      	movs	r2, #2
+  1203b0:	0029      	movs	r1, r5
+  1203b2:	480c      	ldr	r0, [pc, #48]	; (1203e4 <find_function+0x9e>)
+  1203b4:	47b8      	blx	r7
 	uint8_t *func_addr = find_short_rev(start, str_offset_addr, push_opcode);
-  12038a:	0021      	movs	r1, r4
-  12038c:	9a03      	ldr	r2, [sp, #12]
-  12038e:	9801      	ldr	r0, [sp, #4]
-  120390:	f7ff ffb5 	bl	1202fe <find_short_rev>
-  120394:	6936      	ldr	r6, [r6, #16]
-  120396:	1e04      	subs	r4, r0, #0
+  1203b6:	0021      	movs	r1, r4
+  1203b8:	9a03      	ldr	r2, [sp, #12]
+  1203ba:	9801      	ldr	r0, [sp, #4]
+  1203bc:	f7ff ffb5 	bl	12032a <find_short_rev>
+  1203c0:	6936      	ldr	r6, [r6, #16]
+  1203c2:	1e04      	subs	r4, r0, #0
 	if (func_addr == NULL) {
-  120398:	d102      	bne.n	1203a0 <find_function+0x86>
+  1203c4:	d102      	bne.n	1203cc <find_function+0x86>
 		LOG("Not found\n");
-  12039a:	4806      	ldr	r0, [pc, #24]	; (1203b4 <find_function+0x9a>)
-  12039c:	47b0      	blx	r6
+  1203c6:	4806      	ldr	r0, [pc, #24]	; (1203e0 <find_function+0x9a>)
+  1203c8:	47b0      	blx	r6
 		return NULL;
-  12039e:	e7dc      	b.n	12035a <find_function+0x40>
+  1203ca:	e7dc      	b.n	120386 <find_function+0x40>
 	LOG("Found %s %01x: %06x\n", string, 3, func_addr);
-  1203a0:	0003      	movs	r3, r0
-  1203a2:	2203      	movs	r2, #3
-  1203a4:	0029      	movs	r1, r5
-  1203a6:	4804      	ldr	r0, [pc, #16]	; (1203b8 <find_function+0x9e>)
-  1203a8:	47b0      	blx	r6
+  1203cc:	0003      	movs	r3, r0
+  1203ce:	2203      	movs	r2, #3
+  1203d0:	0029      	movs	r1, r5
+  1203d2:	4804      	ldr	r0, [pc, #16]	; (1203e4 <find_function+0x9e>)
+  1203d4:	47b0      	blx	r6
 	return func_addr + 1;
-  1203aa:	3401      	adds	r4, #1
-  1203ac:	e7d5      	b.n	12035a <find_function+0x40>
-  1203ae:	46c0      	nop			; (mov r8, r8)
-  1203b0:	00120588 	.word	0x00120588
-  1203b4:	00120593 	.word	0x00120593
-  1203b8:	0012059e 	.word	0x0012059e
+  1203d6:	3401      	adds	r4, #1
+  1203d8:	e7d5      	b.n	120386 <find_function+0x40>
+  1203da:	46c0      	nop			; (mov r8, r8)
+  1203dc:	001205b4 	.word	0x001205b4
+  1203e0:	001205bf 	.word	0x001205bf
+  1203e4:	001205ca 	.word	0x001205ca
 
-001203bc <find_app_intf>:
+001203e8 <find_app_intf>:
 
 void find_app_intf(FW_INTERFACE *intf) {
 	uint8_t **store = NULL;
 	uint16_t *start, *end;
 
 	start = (uint16_t *)THUMB_ADDR(intf->ap_cfg_send_err_code);
-  1203bc:	2301      	movs	r3, #1
+  1203e8:	2301      	movs	r3, #1
 void find_app_intf(FW_INTERFACE *intf) {
-  1203be:	b5f7      	push	{r0, r1, r2, r4, r5, r6, r7, lr}
-  1203c0:	0004      	movs	r4, r0
+  1203ea:	b5f7      	push	{r0, r1, r2, r4, r5, r6, r7, lr}
+  1203ec:	0004      	movs	r4, r0
 	start = (uint16_t *)THUMB_ADDR(intf->ap_cfg_send_err_code);
-  1203c2:	6d85      	ldr	r5, [r0, #88]	; 0x58
-  1203c4:	439d      	bics	r5, r3
+  1203ee:	6d85      	ldr	r5, [r0, #88]	; 0x58
+  1203f0:	439d      	bics	r5, r3
 	end	  = (uint16_t *)intf->ap_cfg_send_err_code_end;
-  1203c6:	6dc3      	ldr	r3, [r0, #92]	; 0x5c
-  1203c8:	9301      	str	r3, [sp, #4]
+  1203f2:	6dc3      	ldr	r3, [r0, #92]	; 0x5c
+  1203f4:	9301      	str	r3, [sp, #4]
 	for (uint16_t *data = start; data < end; data++) {
-  1203ca:	9b01      	ldr	r3, [sp, #4]
-  1203cc:	429d      	cmp	r5, r3
-  1203ce:	d320      	bcc.n	120412 <find_app_intf+0x56>
+  1203f6:	9b01      	ldr	r3, [sp, #4]
+  1203f8:	429d      	cmp	r5, r3
+  1203fa:	d320      	bcc.n	12043e <find_app_intf+0x56>
 		}
 
 		store = NULL;
 	}
 
 	LOG("Found: create=%x, sendto=%x, close=%x\n", intf->socket, intf->sendto, intf->close);
-  1203d0:	6f23      	ldr	r3, [r4, #112]	; 0x70
-  1203d2:	6925      	ldr	r5, [r4, #16]
-  1203d4:	6ee2      	ldr	r2, [r4, #108]	; 0x6c
-  1203d6:	6e21      	ldr	r1, [r4, #96]	; 0x60
-  1203d8:	4835      	ldr	r0, [pc, #212]	; (1204b0 <find_app_intf+0xf4>)
-  1203da:	47a8      	blx	r5
+  1203fc:	6f23      	ldr	r3, [r4, #112]	; 0x70
+  1203fe:	6925      	ldr	r5, [r4, #16]
+  120400:	6ee2      	ldr	r2, [r4, #108]	; 0x6c
+  120402:	6e21      	ldr	r1, [r4, #96]	; 0x60
+  120404:	4835      	ldr	r0, [pc, #212]	; (1204dc <find_app_intf+0xf4>)
+  120406:	47a8      	blx	r5
 
 	start = (uint16_t *)THUMB_ADDR(intf->sys_stop_timer);
-  1203dc:	2301      	movs	r3, #1
-  1203de:	6f65      	ldr	r5, [r4, #116]	; 0x74
-  1203e0:	439d      	bics	r5, r3
+  120408:	2301      	movs	r3, #1
+  12040a:	6f65      	ldr	r5, [r4, #116]	; 0x74
+  12040c:	439d      	bics	r5, r3
 	end	  = (uint16_t *)intf->sys_stop_timer_end;
-  1203e2:	6fa3      	ldr	r3, [r4, #120]	; 0x78
-  1203e4:	9301      	str	r3, [sp, #4]
+  12040e:	6fa3      	ldr	r3, [r4, #120]	; 0x78
+  120410:	9301      	str	r3, [sp, #4]
 	for (uint16_t *data = start; data < end; data++) {
-  1203e6:	9b01      	ldr	r3, [sp, #4]
-  1203e8:	429d      	cmp	r5, r3
-  1203ea:	d33e      	bcc.n	12046a <find_app_intf+0xae>
+  120412:	9b01      	ldr	r3, [sp, #4]
+  120414:	429d      	cmp	r5, r3
+  120416:	d33e      	bcc.n	120496 <find_app_intf+0xae>
 			LOG("Found %s %01x: %06x\n", "hnd", 2, *addr);
 			intf->sys_timer_handle = **addr;
 		}
 	}
 
 	LOG("Found: tmr_hndl: %x\n", intf->sys_timer_handle);
-  1203ec:	6923      	ldr	r3, [r4, #16]
-  1203ee:	6fe1      	ldr	r1, [r4, #124]	; 0x7c
-  1203f0:	4830      	ldr	r0, [pc, #192]	; (1204b4 <find_app_intf+0xf8>)
-  1203f2:	4798      	blx	r3
+  120418:	6923      	ldr	r3, [r4, #16]
+  12041a:	6fe1      	ldr	r1, [r4, #124]	; 0x7c
+  12041c:	4830      	ldr	r0, [pc, #192]	; (1204e0 <find_app_intf+0xf8>)
+  12041e:	4798      	blx	r3
 
 	if (intf->socket && intf->sendto && intf->close && intf->sys_timer_handle)
-  1203f4:	6e23      	ldr	r3, [r4, #96]	; 0x60
-  1203f6:	2b00      	cmp	r3, #0
-  1203f8:	d057      	beq.n	1204aa <find_app_intf+0xee>
-  1203fa:	6ee3      	ldr	r3, [r4, #108]	; 0x6c
-  1203fc:	2b00      	cmp	r3, #0
-  1203fe:	d054      	beq.n	1204aa <find_app_intf+0xee>
-  120400:	6f23      	ldr	r3, [r4, #112]	; 0x70
-  120402:	2b00      	cmp	r3, #0
-  120404:	d051      	beq.n	1204aa <find_app_intf+0xee>
-  120406:	6fe3      	ldr	r3, [r4, #124]	; 0x7c
-  120408:	2b00      	cmp	r3, #0
-  12040a:	d04e      	beq.n	1204aa <find_app_intf+0xee>
+  120420:	6e23      	ldr	r3, [r4, #96]	; 0x60
+  120422:	2b00      	cmp	r3, #0
+  120424:	d057      	beq.n	1204d6 <find_app_intf+0xee>
+  120426:	6ee3      	ldr	r3, [r4, #108]	; 0x6c
+  120428:	2b00      	cmp	r3, #0
+  12042a:	d054      	beq.n	1204d6 <find_app_intf+0xee>
+  12042c:	6f23      	ldr	r3, [r4, #112]	; 0x70
+  12042e:	2b00      	cmp	r3, #0
+  120430:	d051      	beq.n	1204d6 <find_app_intf+0xee>
+  120432:	6fe3      	ldr	r3, [r4, #124]	; 0x7c
+  120434:	2b00      	cmp	r3, #0
+  120436:	d04e      	beq.n	1204d6 <find_app_intf+0xee>
 		intf->search_performed = 0xDEADBEEF;
-  12040c:	4b2a      	ldr	r3, [pc, #168]	; (1204b8 <find_app_intf+0xfc>)
+  120438:	4b2a      	ldr	r3, [pc, #168]	; (1204e4 <find_app_intf+0xfc>)
 	else
 		intf->search_performed = 0;
-  12040e:	6023      	str	r3, [r4, #0]
+  12043a:	6023      	str	r3, [r4, #0]
 }
-  120410:	bdf7      	pop	{r0, r1, r2, r4, r5, r6, r7, pc}
+  12043c:	bdf7      	pop	{r0, r1, r2, r4, r5, r6, r7, pc}
 		if (data[0] == 0x2001) {
-  120412:	4b2a      	ldr	r3, [pc, #168]	; (1204bc <find_app_intf+0x100>)
-  120414:	882a      	ldrh	r2, [r5, #0]
-  120416:	1caf      	adds	r7, r5, #2
-  120418:	2600      	movs	r6, #0
-  12041a:	429a      	cmp	r2, r3
-  12041c:	d105      	bne.n	12042a <find_app_intf+0x6e>
+  12043e:	4b2a      	ldr	r3, [pc, #168]	; (1204e8 <find_app_intf+0x100>)
+  120440:	882a      	ldrh	r2, [r5, #0]
+  120442:	1caf      	adds	r7, r5, #2
+  120444:	2600      	movs	r6, #0
+  120446:	429a      	cmp	r2, r3
+  120448:	d105      	bne.n	120456 <find_app_intf+0x6e>
 			LOG("Found create\n");
-  12041e:	4828      	ldr	r0, [pc, #160]	; (1204c0 <find_app_intf+0x104>)
-  120420:	6923      	ldr	r3, [r4, #16]
+  12044a:	4828      	ldr	r0, [pc, #160]	; (1204ec <find_app_intf+0x104>)
+  12044c:	6923      	ldr	r3, [r4, #16]
 			store = (uint8_t **)&intf->socket;
-  120422:	0026      	movs	r6, r4
+  12044e:	0026      	movs	r6, r4
 			LOG("Found create\n");
-  120424:	4798      	blx	r3
+  120450:	4798      	blx	r3
 			data++;
-  120426:	003d      	movs	r5, r7
+  120452:	003d      	movs	r5, r7
 			store = (uint8_t **)&intf->socket;
-  120428:	3660      	adds	r6, #96	; 0x60
+  120454:	3660      	adds	r6, #96	; 0x60
 		if (data[0] == 0x425B) {
-  12042a:	4b26      	ldr	r3, [pc, #152]	; (1204c4 <find_app_intf+0x108>)
-  12042c:	882a      	ldrh	r2, [r5, #0]
-  12042e:	1caf      	adds	r7, r5, #2
-  120430:	429a      	cmp	r2, r3
-  120432:	d105      	bne.n	120440 <find_app_intf+0x84>
+  120456:	4b26      	ldr	r3, [pc, #152]	; (1204f0 <find_app_intf+0x108>)
+  120458:	882a      	ldrh	r2, [r5, #0]
+  12045a:	1caf      	adds	r7, r5, #2
+  12045c:	429a      	cmp	r2, r3
+  12045e:	d105      	bne.n	12046c <find_app_intf+0x84>
 			LOG("Found sendto\n");
-  120434:	4824      	ldr	r0, [pc, #144]	; (1204c8 <find_app_intf+0x10c>)
-  120436:	6923      	ldr	r3, [r4, #16]
+  120460:	4824      	ldr	r0, [pc, #144]	; (1204f4 <find_app_intf+0x10c>)
+  120462:	6923      	ldr	r3, [r4, #16]
 			store = (uint8_t **)&intf->sendto;
-  120438:	0026      	movs	r6, r4
+  120464:	0026      	movs	r6, r4
 			LOG("Found sendto\n");
-  12043a:	4798      	blx	r3
+  120466:	4798      	blx	r3
 			data++;
-  12043c:	003d      	movs	r5, r7
+  120468:	003d      	movs	r5, r7
 			store = (uint8_t **)&intf->sendto;
-  12043e:	366c      	adds	r6, #108	; 0x6c
+  12046a:	366c      	adds	r6, #108	; 0x6c
 		if (data[2] == 0x23A4) {
-  120440:	4b22      	ldr	r3, [pc, #136]	; (1204cc <find_app_intf+0x110>)
-  120442:	88aa      	ldrh	r2, [r5, #4]
-  120444:	429a      	cmp	r2, r3
-  120446:	d10c      	bne.n	120462 <find_app_intf+0xa6>
+  12046c:	4b22      	ldr	r3, [pc, #136]	; (1204f8 <find_app_intf+0x110>)
+  12046e:	88aa      	ldrh	r2, [r5, #4]
+  120470:	429a      	cmp	r2, r3
+  120472:	d10c      	bne.n	12048e <find_app_intf+0xa6>
 			LOG("Found close\n");
-  120448:	4821      	ldr	r0, [pc, #132]	; (1204d0 <find_app_intf+0x114>)
-  12044a:	6923      	ldr	r3, [r4, #16]
+  120474:	4821      	ldr	r0, [pc, #132]	; (1204fc <find_app_intf+0x114>)
+  120476:	6923      	ldr	r3, [r4, #16]
 			store = (uint8_t **)&intf->close;
-  12044c:	0026      	movs	r6, r4
+  120478:	0026      	movs	r6, r4
 			LOG("Found close\n");
-  12044e:	4798      	blx	r3
+  12047a:	4798      	blx	r3
 			store = (uint8_t **)&intf->close;
-  120450:	3670      	adds	r6, #112	; 0x70
+  12047c:	3670      	adds	r6, #112	; 0x70
 			uint8_t *target_address = parse_branch(data);
-  120452:	0028      	movs	r0, r5
-  120454:	f7ff fe3e 	bl	1200d4 <parse_branch>
+  12047e:	0028      	movs	r0, r5
+  120480:	f7ff fe30 	bl	1200e4 <parse_branch>
 			if (target_address)
-  120458:	2800      	cmp	r0, #0
-  12045a:	d004      	beq.n	120466 <find_app_intf+0xaa>
+  120484:	2800      	cmp	r0, #0
+  120486:	d004      	beq.n	120492 <find_app_intf+0xaa>
 				*store = target_address + 1;
-  12045c:	3001      	adds	r0, #1
-  12045e:	6030      	str	r0, [r6, #0]
-  120460:	e001      	b.n	120466 <find_app_intf+0xaa>
+  120488:	3001      	adds	r0, #1
+  12048a:	6030      	str	r0, [r6, #0]
+  12048c:	e001      	b.n	120492 <find_app_intf+0xaa>
 		if (store) {
-  120462:	2e00      	cmp	r6, #0
-  120464:	d1f5      	bne.n	120452 <find_app_intf+0x96>
+  12048e:	2e00      	cmp	r6, #0
+  120490:	d1f5      	bne.n	12047e <find_app_intf+0x96>
 	for (uint16_t *data = start; data < end; data++) {
-  120466:	3502      	adds	r5, #2
-  120468:	e7af      	b.n	1203ca <find_app_intf+0xe>
+  120492:	3502      	adds	r5, #2
+  120494:	e7af      	b.n	1203f6 <find_app_intf+0xe>
 		if (data[1] == 0x1C29 && data[2] == 0x6818) {
-  12046a:	4b1a      	ldr	r3, [pc, #104]	; (1204d4 <find_app_intf+0x118>)
-  12046c:	886a      	ldrh	r2, [r5, #2]
-  12046e:	429a      	cmp	r2, r3
-  120470:	d119      	bne.n	1204a6 <find_app_intf+0xea>
-  120472:	4b19      	ldr	r3, [pc, #100]	; (1204d8 <find_app_intf+0x11c>)
-  120474:	88aa      	ldrh	r2, [r5, #4]
-  120476:	429a      	cmp	r2, r3
-  120478:	d115      	bne.n	1204a6 <find_app_intf+0xea>
+  120496:	4b1a      	ldr	r3, [pc, #104]	; (120500 <find_app_intf+0x118>)
+  120498:	886a      	ldrh	r2, [r5, #2]
+  12049a:	429a      	cmp	r2, r3
+  12049c:	d119      	bne.n	1204d2 <find_app_intf+0xea>
+  12049e:	4b19      	ldr	r3, [pc, #100]	; (120504 <find_app_intf+0x11c>)
+  1204a0:	88aa      	ldrh	r2, [r5, #4]
+  1204a2:	429a      	cmp	r2, r3
+  1204a4:	d115      	bne.n	1204d2 <find_app_intf+0xea>
 			uint32_t ***addr = (uint32_t ***)parse_ldr_pc(data, NULL);
-  12047a:	2100      	movs	r1, #0
-  12047c:	0028      	movs	r0, r5
-  12047e:	f7ff fe3c 	bl	1200fa <parse_ldr_pc>
+  1204a6:	2100      	movs	r1, #0
+  1204a8:	0028      	movs	r0, r5
+  1204aa:	f7ff fe2e 	bl	12010a <parse_ldr_pc>
 			LOG("Found %s %01x: %06x\n", "imm", 1, addr);
-  120482:	2201      	movs	r2, #1
+  1204ae:	2201      	movs	r2, #1
 			uint32_t ***addr = (uint32_t ***)parse_ldr_pc(data, NULL);
-  120484:	0006      	movs	r6, r0
+  1204b0:	0006      	movs	r6, r0
 			LOG("Found %s %01x: %06x\n", "imm", 1, addr);
-  120486:	0003      	movs	r3, r0
-  120488:	4914      	ldr	r1, [pc, #80]	; (1204dc <find_app_intf+0x120>)
-  12048a:	4815      	ldr	r0, [pc, #84]	; (1204e0 <find_app_intf+0x124>)
-  12048c:	6927      	ldr	r7, [r4, #16]
-  12048e:	47b8      	blx	r7
+  1204b2:	0003      	movs	r3, r0
+  1204b4:	4914      	ldr	r1, [pc, #80]	; (120508 <find_app_intf+0x120>)
+  1204b6:	4815      	ldr	r0, [pc, #84]	; (12050c <find_app_intf+0x124>)
+  1204b8:	6927      	ldr	r7, [r4, #16]
+  1204ba:	47b8      	blx	r7
 			if (addr == NULL)
-  120490:	2e00      	cmp	r6, #0
-  120492:	d008      	beq.n	1204a6 <find_app_intf+0xea>
+  1204bc:	2e00      	cmp	r6, #0
+  1204be:	d008      	beq.n	1204d2 <find_app_intf+0xea>
 			LOG("Found %s %01x: %06x\n", "hnd", 2, *addr);
-  120494:	6833      	ldr	r3, [r6, #0]
-  120496:	2202      	movs	r2, #2
-  120498:	4912      	ldr	r1, [pc, #72]	; (1204e4 <find_app_intf+0x128>)
-  12049a:	4811      	ldr	r0, [pc, #68]	; (1204e0 <find_app_intf+0x124>)
-  12049c:	6927      	ldr	r7, [r4, #16]
-  12049e:	47b8      	blx	r7
+  1204c0:	6833      	ldr	r3, [r6, #0]
+  1204c2:	2202      	movs	r2, #2
+  1204c4:	4912      	ldr	r1, [pc, #72]	; (120510 <find_app_intf+0x128>)
+  1204c6:	4811      	ldr	r0, [pc, #68]	; (12050c <find_app_intf+0x124>)
+  1204c8:	6927      	ldr	r7, [r4, #16]
+  1204ca:	47b8      	blx	r7
 			intf->sys_timer_handle = **addr;
-  1204a0:	6833      	ldr	r3, [r6, #0]
-  1204a2:	681b      	ldr	r3, [r3, #0]
-  1204a4:	67e3      	str	r3, [r4, #124]	; 0x7c
+  1204cc:	6833      	ldr	r3, [r6, #0]
+  1204ce:	681b      	ldr	r3, [r3, #0]
+  1204d0:	67e3      	str	r3, [r4, #124]	; 0x7c
 	for (uint16_t *data = start; data < end; data++) {
-  1204a6:	3502      	adds	r5, #2
-  1204a8:	e79d      	b.n	1203e6 <find_app_intf+0x2a>
+  1204d2:	3502      	adds	r5, #2
+  1204d4:	e79d      	b.n	120412 <find_app_intf+0x2a>
 		intf->search_performed = 0;
-  1204aa:	2300      	movs	r3, #0
-  1204ac:	e7af      	b.n	12040e <find_app_intf+0x52>
-  1204ae:	46c0      	nop			; (mov r8, r8)
-  1204b0:	001205dc 	.word	0x001205dc
-  1204b4:	0012060b 	.word	0x0012060b
-  1204b8:	deadbeef 	.word	0xdeadbeef
-  1204bc:	00002001 	.word	0x00002001
-  1204c0:	001205b3 	.word	0x001205b3
-  1204c4:	0000425b 	.word	0x0000425b
-  1204c8:	001205c1 	.word	0x001205c1
-  1204cc:	000023a4 	.word	0x000023a4
-  1204d0:	001205cf 	.word	0x001205cf
-  1204d4:	00001c29 	.word	0x00001c29
-  1204d8:	00006818 	.word	0x00006818
-  1204dc:	00120603 	.word	0x00120603
-  1204e0:	0012059e 	.word	0x0012059e
-  1204e4:	00120607 	.word	0x00120607
+  1204d6:	2300      	movs	r3, #0
+  1204d8:	e7af      	b.n	12043a <find_app_intf+0x52>
+  1204da:	46c0      	nop			; (mov r8, r8)
+  1204dc:	00120608 	.word	0x00120608
+  1204e0:	00120637 	.word	0x00120637
+  1204e4:	deadbeef 	.word	0xdeadbeef
+  1204e8:	00002001 	.word	0x00002001
+  1204ec:	001205df 	.word	0x001205df
+  1204f0:	0000425b 	.word	0x0000425b
+  1204f4:	001205ed 	.word	0x001205ed
+  1204f8:	000023a4 	.word	0x000023a4
+  1204fc:	001205fb 	.word	0x001205fb
+  120500:	00001c29 	.word	0x00001c29
+  120504:	00006818 	.word	0x00006818
+  120508:	0012062f 	.word	0x0012062f
+  12050c:	001205ca 	.word	0x001205ca
+  120510:	00120633 	.word	0x00120633
 
-001204e8 <strlen>:
+00120514 <strlen>:
 
 #include "dump.h"
 
 uint8_t strlen(char *str) {
 	uint8_t len = 0;
 	while (*(str++)) {
-  1204e8:	2300      	movs	r3, #0
-  1204ea:	5cc1      	ldrb	r1, [r0, r3]
-  1204ec:	061a      	lsls	r2, r3, #24
-  1204ee:	0e12      	lsrs	r2, r2, #24
-  1204f0:	3301      	adds	r3, #1
-  1204f2:	2900      	cmp	r1, #0
-  1204f4:	d1f9      	bne.n	1204ea <strlen+0x2>
+  120514:	2300      	movs	r3, #0
+  120516:	5cc1      	ldrb	r1, [r0, r3]
+  120518:	061a      	lsls	r2, r3, #24
+  12051a:	0e12      	lsrs	r2, r2, #24
+  12051c:	3301      	adds	r3, #1
+  12051e:	2900      	cmp	r1, #0
+  120520:	d1f9      	bne.n	120516 <strlen+0x2>
 		len++;
 	}
 	return len;
 }
-  1204f6:	0010      	movs	r0, r2
-  1204f8:	4770      	bx	lr
+  120522:	0010      	movs	r0, r2
+  120524:	4770      	bx	lr
