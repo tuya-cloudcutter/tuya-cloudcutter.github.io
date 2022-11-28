@@ -1,8 +1,6 @@
 {
 	"manufacturer": "FCmila",
 	"name": "GU10 Smart Spotlight",
-	"uuid": "b0ea575dc5c09db4",
-	"auth_key": "8t1YH67xM0dWZBEkKmlza2SDGjeTELlw",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		76

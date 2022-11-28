@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Tuya Generic",
 	"name": "WF-CS01 Curtain Switch",
-	"uuid": "3476c6618b8eea31",
-	"auth_key": "69mAdXu8mIAMZhCafVGVVcFTGCXtkTZi",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		83

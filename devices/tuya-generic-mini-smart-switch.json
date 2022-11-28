@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Tuya Generic",
 	"name": "Mini Smart Switch",
-	"uuid": "61501a6dea0ab877",
-	"auth_key": "r29VCKqMZM7vczXHg4G3RRoZAjNVtu5O",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		128

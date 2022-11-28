@@ -1,8 +1,6 @@
 {
 	"manufacturer": "MartinJerry",
 	"name": "US FC 01 Fan Controller",
-	"uuid": "ebf08122b50f4b7f",
-	"auth_key": "jPAx110bviLZyS7lQK4anH5tII4xokKB",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		36

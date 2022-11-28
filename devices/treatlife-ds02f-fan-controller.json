@@ -1,8 +1,6 @@
 {
 	"manufacturer": "TreatLife",
 	"name": "DS02F Fan Controller",
-	"uuid": "dd442b2e3dea7835",
-	"auth_key": "LdinoLGGF07lVARbiZrkhXebBalpbq1m",
 	"ap_ssid": "TreatLife-SL",
 	"github_issues": [
 		26

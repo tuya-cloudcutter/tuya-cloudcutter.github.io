@@ -1,8 +1,6 @@
 {
 	"manufacturer": "BlitzWolf",
 	"name": "BW-CLT1 Ceiling Light",
-	"uuid": "dee13b91b716ce71",
-	"auth_key": "X36BIWAlA2rphpJwECQBpD3gAT0z77wq",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		185

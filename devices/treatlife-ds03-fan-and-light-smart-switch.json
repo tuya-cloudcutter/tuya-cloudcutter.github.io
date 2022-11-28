@@ -1,8 +1,6 @@
 {
 	"manufacturer": "TreatLife",
 	"name": "DS03 Fan and Light Smart Switch",
-	"uuid": "7f13260665076589",
-	"auth_key": "ISJEUQowi989CAVQKdTxmiyn0APQaoKU",
 	"ap_ssid": "TreatLife-SL",
 	"github_issues": [
 		73

@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Tuya Generic",
 	"name": "ZN268131 Mini Smart Switch",
-	"uuid": "6019e290aa831d00",
-	"auth_key": "ZH99vor561108O8y0FsQHKjMdulE3x1b",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		65

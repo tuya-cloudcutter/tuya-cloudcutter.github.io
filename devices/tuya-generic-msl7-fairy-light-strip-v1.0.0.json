@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Tuya Generic",
 	"name": "MSL7 Fairy Light Strip v1.0.0",
-	"uuid": "a2ad21990ba4d96b",
-	"auth_key": "Li1V1gl51jJWGzLTkIlpOH1YHlwKXCLW",
 	"ap_ssid": "SmartLife",
 	"image_urls": [],
 	"profiles": [

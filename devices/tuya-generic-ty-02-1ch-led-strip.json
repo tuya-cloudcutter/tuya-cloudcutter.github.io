@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Tuya Generic",
 	"name": "TY-02-1CH LED Strip",
-	"uuid": "f5b97caba8d3b8bd",
-	"auth_key": "nwiyl4xW2p8lZOlJrA40u6wwlR2YSGmQ",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		189

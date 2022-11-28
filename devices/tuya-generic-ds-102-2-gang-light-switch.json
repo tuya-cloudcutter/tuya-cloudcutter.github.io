@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Tuya Generic",
 	"name": "DS-102 2-gang Light Switch",
-	"uuid": "8a92ea4e3a7c6b87",
-	"auth_key": "vZQrRoZorYckkGSeLrw2y75KUdSl3bHA",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		77

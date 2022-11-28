@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Tuya Generic",
 	"name": "E27 RGBCT WB2L M1 Bulb",
-	"uuid": "fba862f9525dfd17",
-	"auth_key": "UXcobYjyTrbT72ZdMihJHCmwnwQOyicd",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		91

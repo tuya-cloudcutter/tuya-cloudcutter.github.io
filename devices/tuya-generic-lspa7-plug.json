@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Tuya Generic",
 	"name": "LSPA7 Plug",
-	"uuid": "f4a418094e83e640",
-	"auth_key": "qfjdASSk4nLTps9S6gtTJEKAOz9Eq1i2",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		139

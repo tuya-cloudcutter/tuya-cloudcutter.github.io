@@ -1,8 +1,6 @@
 {
 	"manufacturer": "ihome",
 	"name": "IH-BW948-999 G25 RGBCT Bulb",
-	"uuid": "4c9f3cd878f2b147",
-	"auth_key": "BOuRN01wBhAvgMvSmJjj6y0Furs68Dwu",
 	"ap_ssid": "iHome",
 	"image_urls": [
 		"ih-bw948-999.jpg"

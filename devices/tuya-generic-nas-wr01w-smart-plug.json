@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Tuya Generic",
 	"name": "NAS-WR01W Smart Plug",
-	"uuid": "c8bb2b37d3a73da0",
-	"auth_key": "sVFlGDVG47Sx6on4cGiJNuDc948E4bED",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		194

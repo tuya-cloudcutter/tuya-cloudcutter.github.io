@@ -1,8 +1,6 @@
 {
 	"manufacturer": "UltraPro",
 	"name": "WFD4001 Light Switch",
-	"uuid": "0c42eae64f7a341a",
-	"auth_key": "BqmGUOJgwD8Mgvsvup3Dvcf8219b7e2R",
 	"ap_ssid": "UltraPro",
 	"image_urls": [
 		"ultrapro-wfd4001-switch.jpg"

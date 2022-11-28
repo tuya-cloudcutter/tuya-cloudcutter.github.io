@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Woox",
 	"name": "R6080 Smart Plug",
-	"uuid": "4b4956d24cb6c14b",
-	"auth_key": "Xk8WLgchknJEzYTwDMxvjCWMFKhNA7eG",
 	"ap_ssid": "Woox",
 	"github_issues": [
 		193

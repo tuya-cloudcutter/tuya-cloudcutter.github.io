@@ -1,8 +1,6 @@
 {
 	"manufacturer": "TreatLife",
 	"name": "DS02S Dimmer Switch",
-	"uuid": "21b0530235131e22",
-	"auth_key": "qaZcuhdMx9Mri2hJjSAcGOJbUr77L4zG",
 	"ap_ssid": "TreatLife-SL",
 	"github_issues": [
 		151

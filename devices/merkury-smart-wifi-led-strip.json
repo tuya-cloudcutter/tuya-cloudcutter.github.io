@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Merkury",
 	"name": "Smart Wifi LED Strip",
-	"uuid": "686ea61362aeaf96",
-	"auth_key": "uhXA3voxOwXPtl5kYBGLY6SYIm9q4nyc",
 	"ap_ssid": "Merkury",
 	"github_issues": [
 		119

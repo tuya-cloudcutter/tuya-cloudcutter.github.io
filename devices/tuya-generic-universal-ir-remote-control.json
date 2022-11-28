@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Tuya Generic",
 	"name": "Universal IR Remote Control",
-	"uuid": "aa93aec454b1e053",
-	"auth_key": "c1G9LfPMV20cniV9XN2po6FjrLznniFo",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		166

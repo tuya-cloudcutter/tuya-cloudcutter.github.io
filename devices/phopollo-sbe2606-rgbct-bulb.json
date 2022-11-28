@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Phopollo",
 	"name": "SBE2606 RGBCT Bulb",
-	"uuid": "6e1177795e15062b",
-	"auth_key": "756OsX26C3lpljrylq5hy8QCpYbFQ93C",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		25

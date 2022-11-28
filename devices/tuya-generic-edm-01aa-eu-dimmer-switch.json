@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Tuya Generic",
 	"name": "EDM-01AA-EU Dimmer Switch",
-	"uuid": "b00d5de254c98b59",
-	"auth_key": "XwdLc2sqWoVHlRw0AhUb2AVnVm7iG0X2",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		158

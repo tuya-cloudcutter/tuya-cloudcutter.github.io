@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Merkury",
 	"name": "Smart Plug",
-	"uuid": "9784a9404ce326ed",
-	"auth_key": "obFxcJh7c9tfatacngxQiQ2Jb02f9lX3",
 	"ap_ssid": "Merkury",
 	"github_issues": [
 		105

@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Qiachip",
 	"name": "Smart Switch",
-	"uuid": "5510d0ad674e96e3",
-	"auth_key": "R4nuQYa3oM8abwcyLAxPD8Tjut8eVz4R",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		62

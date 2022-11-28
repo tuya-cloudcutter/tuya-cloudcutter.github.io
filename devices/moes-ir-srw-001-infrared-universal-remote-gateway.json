@@ -1,8 +1,6 @@
 {
 	"manufacturer": "MOES",
 	"name": "IR SRW 001 Infrared Universal Remote Gateway",
-	"uuid": "8eea56b7c9c83db1",
-	"auth_key": "LMorJlQvib3JoeKxANPLWARXTT9nPOrT",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		127

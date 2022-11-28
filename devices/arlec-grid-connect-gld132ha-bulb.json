@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Arlec",
 	"name": "Grid Connect GLD132HA Bulb",
-	"uuid": "ecb463d696228392",
-	"auth_key": "hPlGIThLZAzoPqftTDAblmKHwQOXCPpJ",
 	"ap_ssid": "GRID",
 	"github_issues": [
 		104

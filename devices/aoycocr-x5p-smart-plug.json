@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Aoycocr",
 	"name": "X5P Smart Plug",
-	"uuid": "2b3e68976fc386e7",
-	"auth_key": "hf2uVSvfoRInO9br2oGCHylH7TMTC6va",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		87

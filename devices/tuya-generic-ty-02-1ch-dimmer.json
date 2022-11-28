@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Tuya Generic",
 	"name": "TY-02-1CH Dimmer",
-	"uuid": "3363837d1674b59d",
-	"auth_key": "7szlvd0MjJwkkZn58Spq43gnbrmhAjGY",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		155

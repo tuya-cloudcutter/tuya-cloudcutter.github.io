@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Athom",
 	"name": "Garage Door Opener",
-	"uuid": "6d9c0f0b44866496",
-	"auth_key": "aGZO0jL5JoRbIYqYQKwHGXvJq3nQz1S2",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		188

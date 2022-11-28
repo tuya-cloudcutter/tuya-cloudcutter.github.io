@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Nous",
 	"name": "P3 A19 RGB Bulb",
-	"uuid": "fa643cbb95c231c5",
-	"auth_key": "4KDNApYJFcXJlaMS2IWEBPWHOcc6YAaj",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		136

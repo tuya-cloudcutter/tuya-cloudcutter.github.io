@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Tuya Generic",
 	"name": "LSPA9 Smart Plug",
-	"uuid": "7bb1d3dea8655495",
-	"auth_key": "tQql66KT11FEPTGfPtNrTE4xa0L9FmTN",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		98

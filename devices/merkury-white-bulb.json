@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Merkury",
 	"name": "White Bulb",
-	"uuid": "3cd6f881fd4e0073",
-	"auth_key": "26nqI4GhRiCEAkK5R7JLPggHnZNho5X1",
 	"ap_ssid": "Merkury",
 	"github_issues": [
 		106

@@ -1,8 +1,6 @@
 {
 	"manufacturer": "BNETA IoT",
 	"name": "Smart WIFI LED E27 RGBCT Bulb",
-	"uuid": "86b687aa92cccc08",
-	"auth_key": "kjIZ5Cex8FiooobLRo55jXIPc4AqLB8l",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		159

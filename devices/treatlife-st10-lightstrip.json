@@ -1,8 +1,6 @@
 {
 	"manufacturer": "TreatLife",
 	"name": "ST10 Lightstrip",
-	"uuid": "e74263468938d582",
-	"auth_key": "Gaq3tuyyAsRkdLXkBpn4cBcG8CoAeqZm",
 	"ap_ssid": "TreatLife-SL",
 	"github_issues": [
 		27

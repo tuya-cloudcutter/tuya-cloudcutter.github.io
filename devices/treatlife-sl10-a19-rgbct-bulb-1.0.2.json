@@ -1,8 +1,6 @@
 {
 	"manufacturer": "TreatLife",
 	"name": "SL10 A19 RGBCT Bulb 1.0.2",
-	"uuid": "74a8c16bb15a25d8",
-	"auth_key": "Wfddkq8vcGiRWmFkywYjanUZwLALQmBy",
 	"ap_ssid": "TreatLife-SL",
 	"github_issues": [
 		184

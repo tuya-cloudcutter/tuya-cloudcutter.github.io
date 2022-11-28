@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Arlec",
 	"name": "RGB B22 Bulb",
-	"uuid": "3eaf9b96341e66c5",
-	"auth_key": "vxJi5eZOwpZ0ZkLYjjyD5oKD6AMcriG2",
 	"ap_ssid": "GRID",
 	"github_issues": [
 		126

@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Tuya Generic",
 	"name": "TY-02-3CH RGBLED Strip With IR and Mic",
-	"uuid": "6ced888d07f54f68",
-	"auth_key": "zj0PfyVvhxPo5nquG5QMMQI4QTgQDtut",
 	"ap_ssid": "SmartLife",
 	"image_urls": [],
 	"profiles": [

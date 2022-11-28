@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Daybetter",
 	"name": "RGBCT Bulb",
-	"uuid": "9fe61632fcfa9849",
-	"auth_key": "bKhwGONT4oR78jZdFwLqOLcxoV2Pq06C",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		143

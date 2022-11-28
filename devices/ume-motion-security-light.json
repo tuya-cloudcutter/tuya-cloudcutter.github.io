@@ -1,8 +1,6 @@
 {
 	"manufacturer": "UME",
 	"name": "Motion Security Light",
-	"uuid": "f1cd67f0f8dfccb8",
-	"auth_key": "J3V9GNarZ3ZcFf2GAqPjvqhkArfRwgxq",
 	"ap_ssid": "SmartLife",
 	"image_urls": [],
 	"profiles": [

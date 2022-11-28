@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Tuya Generic",
 	"name": "LV300 LV400 LV480 LV600ST LED Square LED Ceiling Light",
-	"uuid": "eb1918b8062b9ca0",
-	"auth_key": "6NvVNvGQWCdLQAufBQorOzgTWx6GWoIL",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		174

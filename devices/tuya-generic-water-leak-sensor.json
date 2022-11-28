@@ -1,8 +1,6 @@
 {
 	"manufacturer": "Tuya Generic",
 	"name": "Water Leak Sensor",
-	"uuid": "1416802cde497b2f",
-	"auth_key": "HpgsySRLwKbGOb1gqeoOlLr6ZPML0m5H",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		129
