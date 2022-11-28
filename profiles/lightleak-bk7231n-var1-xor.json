@@ -1,5 +1,5 @@
 {
-	"name": "Lightleak - BK7231N (debug)",
+	"name": "Lightleak - BK7231N - Variant 1 (XOR)",
 	"type": "LIGHTLEAK",
 	"icon": "cloud-download-outline",
 	"data": {
@@ -19,41 +19,41 @@
 			{
 				"name": "proper",
 				"address": "0x120001",
-				"branch_offset": "0x00"
+				"branch_offset": "0x02"
 			},
 			{
 				"name": "finish",
 				"address": "0x0",
-				"branch_offset": "0x1A"
+				"branch_offset": "0x1F"
 			},
 			{
 				"name": "ddev_open",
 				"intf_offset": 4,
-				"address": "0x14781",
-				"branch_offset": "0x04"
+				"address": "0x147D1",
+				"branch_offset": "0x08"
 			},
 			{
 				"name": "ddev_close",
 				"intf_offset": 8,
-				"address": "0x14889",
-				"branch_offset": "0x18"
+				"address": "0x148D9",
+				"branch_offset": "0x1C"
 			},
 			{
 				"name": "ddev_read",
 				"intf_offset": 12,
-				"address": "0x14919"
+				"address": "0x14969"
 			},
 			{
 				"name": "ddev_write",
 				"intf_offset": 16,
-				"address": "0x14951",
-				"branch_offset": "0x0E"
+				"address": "0x149A1",
+				"branch_offset": "0x12"
 			},
 			{
 				"name": "ddev_control",
 				"intf_offset": 20,
-				"address": "0x14989",
-				"branch_offset": "0x14"
+				"address": "0x149D9",
+				"branch_offset": "0x18"
 			},
 			{
 				"name": "crc32",
