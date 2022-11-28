@@ -12,7 +12,6 @@
 	},
 	"data": {
 		"address_finish": "0x1B39B",
-		"address_ssid": "0xD74A1",
-		"address_datagram": "0xD74A1"
+		"address_ssid": "0xD74A1"
 	}
 }
