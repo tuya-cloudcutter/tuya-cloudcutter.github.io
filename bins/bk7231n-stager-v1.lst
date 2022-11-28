@@ -5,7 +5,7 @@ build/bk7231n-stager-v1.o:     file format elf32-littlearm
 Disassembly of section .text:
 
 001b5ac0 <_start>:
-  1b5ac0:	b5f0      	push	{r4, r5, r6, r7, lr}
+  1b5ac0:	b5f1      	push	{r0, r4, r5, r6, r7, lr}
   1b5ac2:	6867      	ldr	r7, [r4, #4]
   1b5ac4:	2fff      	cmp	r7, #255	; 0xff
   1b5ac6:	d001      	beq.n	1b5acc <prepare>
@@ -30,7 +30,7 @@ Disassembly of section .text:
   1b5ae0:	cc06      	ldmia	r4!, {r1, r2}
   1b5ae2:	0020      	movs	r0, r4
   1b5ae4:	47c0      	blx	r8
-  1b5ae6:	6030      	str	r0, [r6, #0]
+  1b5ae6:	6038      	str	r0, [r7, #0]
   1b5ae8:	e005      	b.n	1b5af6 <finish>
 
 001b5aea <ddev_write>:
@@ -46,4 +46,4 @@ Disassembly of section .text:
   1b5af4:	47c0      	blx	r8
 
 001b5af6 <finish>:
-  1b5af6:	bdf0      	pop	{r4, r5, r6, r7, pc}
+  1b5af6:	bdf1      	pop	{r0, r4, r5, r6, r7, pc}
