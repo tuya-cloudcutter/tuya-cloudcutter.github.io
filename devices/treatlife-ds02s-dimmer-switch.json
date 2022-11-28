@@ -1,0 +1,109 @@
+{
+	"manufacturer": "TreatLife",
+	"name": "DS02S Dimmer Switch",
+	"uuid": "21b0530235131e22",
+	"auth_key": "qaZcuhdMx9Mri2hJjSAcGOJbUr77L4zG",
+	"ap_ssid": "TreatLife-SL",
+	"github_issues": [
+		151
+	],
+	"image_urls": [],
+	"profiles": [
+		"bk7231t-common-user-config-ty-1.1.71-sdk-1.0.2-40.00"
+	],
+	"schemas": {
+		"0000031ee1": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 2,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 3,
+				"type": "obj"
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"LED",
+						"incandescent",
+						"halogen"
+					],
+					"type": "enum"
+				},
+				"id": 4
+			},
+			{
+				"mode": "rw",
+				"id": 101,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 1440,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 102,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 103,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 2,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 104,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"id": 105,
+				"type": "raw"
+			}
+		]
+	}
+}

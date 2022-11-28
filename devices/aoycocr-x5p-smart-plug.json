@@ -1,0 +1,40 @@
+{
+	"manufacturer": "Aoycocr",
+	"name": "X5P Smart Plug",
+	"uuid": "2b3e68976fc386e7",
+	"auth_key": "hf2uVSvfoRInO9br2oGCHylH7TMTC6va",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		87
+	],
+	"image_urls": [
+		"ayococr-x5p.jpg"
+	],
+	"profiles": [
+		"oem-bk7231s-rnd-switch-1.1.8-sdk-1.0.2-40.00"
+	],
+	"schemas": {
+		"000001oahn": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 9
+			}
+		]
+	}
+}

@@ -1,20 +1,20 @@
 {
-	"manufacturer": "Qiachip",
-	"name": "Smart Switch",
-	"uuid": "5510d0ad674e96e3",
-	"auth_key": "R4nuQYa3oM8abwcyLAxPD8Tjut8eVz4R",
+	"manufacturer": "Tuya Generic",
+	"name": "DS-102 2-gang Light Switch",
+	"uuid": "8a92ea4e3a7c6b87",
+	"auth_key": "vZQrRoZorYckkGSeLrw2y75KUdSl3bHA",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
-		62
+		77
 	],
 	"image_urls": [
-		"qiachip-smart-switch.jpg"
+		"minco-heat-ds-102-2-gang-wifi-switch.jpg"
 	],
 	"profiles": [
-		"oem-bk7231n-plug-1.1.7-sdk-2.3.1-40.00"
+		"oem-bk7231s-rnd-zero-dctrl-switch-1.1.5-sdk-1.0.6-40.00"
 	],
 	"schemas": {
-		"0000039ewk": [
+		"0000030tuw": [
 			{
 				"type": "obj",
 				"mode": "rw",
@@ -27,13 +27,33 @@
 				"type": "obj",
 				"mode": "rw",
 				"property": {
+					"type": "bool"
+				},
+				"id": 2
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
 					"min": 0,
 					"max": 86400,
 					"scale": 0,
 					"step": 1,
 					"type": "value"
 				},
-				"id": 9
+				"id": 7
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 8
 			},
 			{
 				"type": "obj",
@@ -46,15 +66,7 @@
 					],
 					"type": "enum"
 				},
-				"id": 38
-			},
-			{
-				"type": "obj",
-				"mode": "rw",
-				"property": {
-					"type": "bool"
-				},
-				"id": 41
+				"id": 14
 			},
 			{
 				"type": "obj",
@@ -63,7 +75,7 @@
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 42
+				"id": 17
 			},
 			{
 				"type": "obj",
@@ -72,7 +84,7 @@
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 43
+				"id": 18
 			},
 			{
 				"type": "obj",
@@ -81,7 +93,7 @@
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 44
+				"id": 19
 			}
 		]
 	}

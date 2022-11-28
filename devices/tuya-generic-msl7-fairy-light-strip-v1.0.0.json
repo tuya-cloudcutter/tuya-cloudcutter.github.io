@@ -1,0 +1,75 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "MSL7 Fairy Light Strip v1.0.0",
+	"uuid": "a2ad21990ba4d96b",
+	"auth_key": "Li1V1gl51jJWGzLTkIlpOH1YHlwKXCLW",
+	"ap_ssid": "SmartLife",
+	"image_urls": [],
+	"profiles": [
+		"hys-03-018-bk7231t-tjsama0rocl95kdn-1.0.0-sdk-1.0.2-40.00"
+	],
+	"schemas": {
+		"000002r7dt": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 20
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"colour",
+						"scene",
+						"music"
+					],
+					"type": "enum"
+				},
+				"id": 21
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 24
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 25
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 26
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 101,
+				"type": "obj"
+			}
+		]
+	}
+}

@@ -1,0 +1,51 @@
+{
+	"manufacturer": "Merkury",
+	"name": "Smart Plug",
+	"uuid": "9784a9404ce326ed",
+	"auth_key": "obFxcJh7c9tfatacngxQiQ2Jb02f9lX3",
+	"ap_ssid": "Merkury",
+	"github_issues": [
+		105
+	],
+	"image_urls": [],
+	"profiles": [
+		"oem-bk7231s-rnd-switch-1.0.8-sdk-1.0.1-40.00"
+	],
+	"schemas": {
+		"0000020cbt": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 9
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"off",
+						"on",
+						"memory"
+					],
+					"type": "enum"
+				},
+				"id": 38
+			}
+		]
+	}
+}

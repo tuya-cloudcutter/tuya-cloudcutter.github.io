@@ -1,0 +1,38 @@
+{
+	"manufacturer": "Merkury",
+	"name": "White Bulb",
+	"uuid": "3cd6f881fd4e0073",
+	"auth_key": "26nqI4GhRiCEAkK5R7JLPggHnZNho5X1",
+	"ap_ssid": "Merkury",
+	"github_issues": [
+		106
+	],
+	"image_urls": [],
+	"profiles": [
+		"oem-bk7231s-light-ty-olddp-1.0.10-sdk-2.0.0-30.06"
+	],
+	"schemas": {
+		"000001xrqd": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 25,
+					"max": 255,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 2
+			}
+		]
+	}
+}

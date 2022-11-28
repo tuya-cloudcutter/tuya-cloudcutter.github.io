@@ -1,20 +1,18 @@
 {
-	"manufacturer": "Qiachip",
-	"name": "Smart Switch",
-	"uuid": "5510d0ad674e96e3",
-	"auth_key": "R4nuQYa3oM8abwcyLAxPD8Tjut8eVz4R",
+	"manufacturer": "Tuya Generic",
+	"name": "LSPS5 Smart Wifi Switch 3-Gang",
+	"uuid": "98fb75ea76a2bb8e",
+	"auth_key": "rIO8BuxnVUknASxCg40MO6rpaHfYxaQA",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
-		62
+		59
 	],
-	"image_urls": [
-		"qiachip-smart-switch.jpg"
-	],
+	"image_urls": [],
 	"profiles": [
-		"oem-bk7231n-plug-1.1.7-sdk-2.3.1-40.00"
+		"oem-bk7231n-dctrl-switch-1.0.5-sdk-2.3.1-40.00"
 	],
 	"schemas": {
-		"0000039ewk": [
+		"000003efws": [
 			{
 				"type": "obj",
 				"mode": "rw",
@@ -22,6 +20,46 @@
 					"type": "bool"
 				},
 				"id": 1
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 2
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 3
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 7
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 8
 			},
 			{
 				"type": "obj",
@@ -46,15 +84,7 @@
 					],
 					"type": "enum"
 				},
-				"id": 38
-			},
-			{
-				"type": "obj",
-				"mode": "rw",
-				"property": {
-					"type": "bool"
-				},
-				"id": 41
+				"id": 14
 			},
 			{
 				"type": "obj",
@@ -63,7 +93,7 @@
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 42
+				"id": 17
 			},
 			{
 				"type": "obj",
@@ -72,7 +102,7 @@
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 43
+				"id": 18
 			},
 			{
 				"type": "obj",
@@ -81,7 +111,7 @@
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 44
+				"id": 19
 			}
 		]
 	}

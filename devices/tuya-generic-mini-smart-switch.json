@@ -1,20 +1,18 @@
 {
-	"manufacturer": "Qiachip",
-	"name": "Smart Switch",
-	"uuid": "5510d0ad674e96e3",
-	"auth_key": "R4nuQYa3oM8abwcyLAxPD8Tjut8eVz4R",
+	"manufacturer": "Tuya Generic",
+	"name": "Mini Smart Switch",
+	"uuid": "61501a6dea0ab877",
+	"auth_key": "r29VCKqMZM7vczXHg4G3RRoZAjNVtu5O",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
-		62
+		128
 	],
-	"image_urls": [
-		"qiachip-smart-switch.jpg"
-	],
+	"image_urls": [],
 	"profiles": [
-		"oem-bk7231n-plug-1.1.7-sdk-2.3.1-40.00"
+		"oem-bk7231n-control-switch-1.2.1-sdk-2.3.3-40.00"
 	],
 	"schemas": {
-		"0000039ewk": [
+		"000004f9y7": [
 			{
 				"type": "obj",
 				"mode": "rw",
@@ -52,14 +50,6 @@
 				"type": "obj",
 				"mode": "rw",
 				"property": {
-					"type": "bool"
-				},
-				"id": 41
-			},
-			{
-				"type": "obj",
-				"mode": "rw",
-				"property": {
 					"type": "string",
 					"maxlen": 255
 				},
@@ -75,13 +65,26 @@
 				"id": 43
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 44
+				"id": 44,
+				"type": "obj"
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"flip",
+						"sync",
+						"button"
+					],
+					"type": "enum"
+				},
+				"id": 47
 			}
 		]
 	}

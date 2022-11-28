@@ -1,0 +1,66 @@
+{
+	"manufacturer": "MartinJerry",
+	"name": "US FC 01 Fan Controller",
+	"uuid": "ebf08122b50f4b7f",
+	"auth_key": "jPAx110bviLZyS7lQK4anH5tII4xokKB",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		36
+	],
+	"image_urls": [
+		"martinjerry-us-fc-01.jpg"
+	],
+	"profiles": [
+		"bk7231t-common-user-config-ty-1.1.71-sdk-1.0.2-40.00"
+	],
+	"schemas": {
+		"0000034422": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"level_1",
+						"level_2",
+						"level_3",
+						"level_4"
+					],
+					"type": "enum"
+				},
+				"id": 3
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"white"
+					],
+					"type": "enum"
+				},
+				"id": 10
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"off",
+						"on",
+						"memory"
+					],
+					"type": "enum"
+				},
+				"id": 11
+			}
+		]
+	}
+}

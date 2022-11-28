@@ -1,0 +1,133 @@
+{
+	"manufacturer": "TreatLife",
+	"name": "DS03 Fan and Light Smart Switch",
+	"uuid": "7f13260665076589",
+	"auth_key": "ISJEUQowi989CAVQKdTxmiyn0APQaoKU",
+	"ap_ssid": "TreatLife-SL",
+	"github_issues": [
+		73
+	],
+	"image_urls": [
+		"treatlife-ds03-fr-fan-15h-484.jpg"
+	],
+	"profiles": [
+		"bk7231t-common-user-config-ty-1.1.71-sdk-1.0.2-40.00"
+	],
+	"schemas": {
+		"000002gp51": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"1",
+						"2",
+						"3",
+						"4"
+					],
+					"type": "enum"
+				},
+				"id": 3
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 9
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 10
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 1440,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 101,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 1440,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 103,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 105,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"mode1",
+						"mode2",
+						"mode3"
+					],
+					"type": "enum"
+				},
+				"id": 106,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"id": 107,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 2,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 108,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"id": 109,
+				"type": "raw"
+			}
+		]
+	}
+}
