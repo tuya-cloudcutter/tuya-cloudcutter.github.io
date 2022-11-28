@@ -10,10 +10,10 @@
 		},
 		"address_map": {
 			"stager": "0x1B5AC1",
-			"buffer": "0x43E000",
-			"handle": "0x43E800",
-			"temp": "0x43E804",
-			"intf": "0x43E810"
+			"buffer": "0x42E000",
+			"handle": "0x42E800",
+			"temp": "0x42E804",
+			"intf": "0x42E810"
 		},
 		"gadgets": [
 			{
@@ -29,30 +29,30 @@
 			{
 				"name": "ddev_open",
 				"intf_offset": 4,
-				"address": "0x4781",
+				"address": "0x14781",
 				"branch_offset": "0x04"
 			},
 			{
 				"name": "ddev_close",
 				"intf_offset": 8,
-				"address": "0x4889",
+				"address": "0x14889",
 				"branch_offset": "0x18"
 			},
 			{
 				"name": "ddev_read",
 				"intf_offset": 12,
-				"address": "0x4919"
+				"address": "0x14919"
 			},
 			{
 				"name": "ddev_write",
 				"intf_offset": 16,
-				"address": "0x4951",
+				"address": "0x14951",
 				"branch_offset": "0x0E"
 			},
 			{
 				"name": "ddev_control",
 				"intf_offset": 20,
-				"address": "0x4989",
+				"address": "0x14989",
 				"branch_offset": "0x14"
 			},
 			{
