@@ -2,6 +2,7 @@
 	"manufacturer": "LSC",
 	"name": "8435606703567 WOOX Smart Bulb Full Colour and White E14 470Lumen",
 	"ap_ssid": "Woox",
+	"github_issues": [],
 	"image_urls": [],
 	"profiles": [
 		"oem-bk7231s-light-ty-1.1.2-sdk-2.0.0-30.06"

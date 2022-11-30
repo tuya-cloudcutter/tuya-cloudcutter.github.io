@@ -2,6 +2,7 @@
 	"manufacturer": "Tuya Generic",
 	"name": "TY-02-3CH RGBLED Strip With IR and Mic",
 	"ap_ssid": "SmartLife",
+	"github_issues": [],
 	"image_urls": [],
 	"profiles": [
 		"oem-bk7231s-strip-ty-1.1.6-sdk-1.0.2-40.00"

@@ -1,14 +1,16 @@
 {
-	"manufacturer": "Horevo",
-	"name": "RGBCT Ceiling Light",
-	"ap_ssid": "SmartLife",
-	"github_issues": [],
+	"manufacturer": "LEDVANCE",
+	"name": "Tunable White A60 B27 Bulb v1.1.4",
+	"ap_ssid": "LDV SMART+",
+	"github_issues": [
+		72
+	],
 	"image_urls": [],
 	"profiles": [
-		"oem-bk7231s-ceiling-light-ty-1.1.9-sdk-1.0.1-40.00"
+		"oem-bk7231s-ty-ffc-db-ldv-1.1.4-sdk-1.0.8-40.00"
 	],
 	"schemas": {
-		"000002ksdg": [
+		"000001q4s9": [
 			{
 				"type": "obj",
 				"mode": "rw",
@@ -62,15 +64,6 @@
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 24
-			},
-			{
-				"type": "obj",
-				"mode": "rw",
-				"property": {
-					"type": "string",
-					"maxlen": 255
-				},
 				"id": 25
 			},
 			{
@@ -92,25 +85,7 @@
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 27
-			},
-			{
-				"type": "obj",
-				"mode": "wr",
-				"property": {
-					"type": "string",
-					"maxlen": 255
-				},
 				"id": 28
-			},
-			{
-				"type": "obj",
-				"mode": "wr",
-				"property": {
-					"type": "string",
-					"maxlen": 255
-				},
-				"id": 29
 			},
 			{
 				"mode": "rw",
@@ -129,36 +104,11 @@
 			},
 			{
 				"mode": "rw",
-				"id": 33,
-				"type": "raw"
-			},
-			{
-				"type": "obj",
-				"mode": "rw",
 				"property": {
 					"type": "bool"
 				},
-				"id": 34
-			},
-			{
-				"mode": "rw",
-				"id": 35,
-				"type": "raw"
-			},
-			{
-				"mode": "rw",
-				"id": 52,
-				"type": "raw"
-			},
-			{
-				"mode": "rw",
-				"id": 209,
-				"type": "raw"
-			},
-			{
-				"mode": "rw",
-				"id": 210,
-				"type": "raw"
+				"id": 101,
+				"type": "obj"
 			}
 		]
 	}

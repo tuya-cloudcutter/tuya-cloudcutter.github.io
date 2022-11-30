@@ -2,6 +2,7 @@
 	"manufacturer": "Gosund",
 	"name": "LED Strip",
 	"ap_ssid": "SmartLife",
+	"github_issues": [],
 	"image_urls": [],
 	"profiles": [
 		"cuco-sl1-b-bk-1.0.4-sdk-1.0.2-40.00"

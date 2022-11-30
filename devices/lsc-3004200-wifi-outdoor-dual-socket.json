@@ -2,6 +2,7 @@
 	"manufacturer": "LSC",
 	"name": "3004200 WiFi Outdoor Dual Socket",
 	"ap_ssid": "SmartLife",
+	"github_issues": [],
 	"image_urls": [],
 	"profiles": [
 		"oem-bk7231s-rnd-switch-1.0.7-sdk-2.0.0-30.06"
