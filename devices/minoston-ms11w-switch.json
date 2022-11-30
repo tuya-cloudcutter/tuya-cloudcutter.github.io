@@ -1,0 +1,34 @@
+{
+	"manufacturer": "Minoston",
+	"name": "MS11W Switch",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [],
+	"profiles": [
+		"bk7231t-common-user-config-ty-1.0.2-sdk-2.0.0-30.06"
+	],
+	"schemas": {
+		"0000020q0q": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 7,
+				"type": "obj"
+			}
+		]
+	}
+}

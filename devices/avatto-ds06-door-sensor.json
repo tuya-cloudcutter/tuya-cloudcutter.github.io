@@ -1,0 +1,37 @@
+{
+	"manufacturer": "Avatto",
+	"name": "DS06 Door Sensor",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		81
+	],
+	"image_urls": [],
+	"profiles": [
+		"bk7231n-lowpower-common-ty-1.0.10-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"000003agra": [
+			{
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"range": [
+						"low",
+						"middle",
+						"high"
+					],
+					"type": "enum"
+				},
+				"id": 3
+			}
+		]
+	}
+}

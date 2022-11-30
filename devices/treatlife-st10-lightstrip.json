@@ -1,25 +1,57 @@
 {
-	"manufacturer": "Qiachip",
-	"name": "Smart Switch",
-	"ap_ssid": "SmartLife",
+	"manufacturer": "TreatLife",
+	"name": "ST10 Lightstrip",
+	"ap_ssid": "TreatLife-SL",
 	"github_issues": [
-		62
+		27
 	],
 	"image_urls": [
-		"qiachip-smart-switch.jpg"
+		"treatlife-st10.jpg"
 	],
 	"profiles": [
-		"oem-bk7231n-plug-1.1.7-sdk-2.3.1-40.00"
+		"oem-bk7231s-strip-ty-1.0.5-sdk-2.0.0-30.05"
 	],
 	"schemas": {
-		"0000039ewk": [
+		"000001o8y4": [
 			{
 				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"type": "bool"
 				},
-				"id": 1
+				"id": 20
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"white",
+						"colour",
+						"scene",
+						"music"
+					],
+					"type": "enum"
+				},
+				"id": 21
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 24
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 25
 			},
 			{
 				"type": "obj",
@@ -31,55 +63,34 @@
 					"step": 1,
 					"type": "value"
 				},
-				"id": 9
+				"id": 26
 			},
 			{
 				"type": "obj",
-				"mode": "rw",
-				"property": {
-					"range": [
-						"off",
-						"on",
-						"memory"
-					],
-					"type": "enum"
-				},
-				"id": 38
-			},
-			{
-				"type": "obj",
-				"mode": "rw",
-				"property": {
-					"type": "bool"
-				},
-				"id": 41
-			},
-			{
-				"type": "obj",
-				"mode": "rw",
+				"mode": "wr",
 				"property": {
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 42
+				"id": 27
 			},
 			{
 				"type": "obj",
-				"mode": "rw",
+				"mode": "wr",
 				"property": {
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 43
+				"id": 28
 			},
 			{
 				"type": "obj",
-				"mode": "rw",
+				"mode": "wr",
 				"property": {
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 44
+				"id": 29
 			}
 		]
 	}

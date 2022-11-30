@@ -1,18 +1,14 @@
 {
-	"manufacturer": "Qiachip",
-	"name": "Smart Switch",
+	"manufacturer": "Aubess",
+	"name": "16A Mini Smart Switch",
 	"ap_ssid": "SmartLife",
-	"github_issues": [
-		62
-	],
-	"image_urls": [
-		"qiachip-smart-switch.jpg"
-	],
+	"github_issues": [],
+	"image_urls": [],
 	"profiles": [
-		"oem-bk7231n-plug-1.1.7-sdk-2.3.1-40.00"
+		"oem-bk7231n-control-switch-1.2.1-sdk-2.3.3-40.00"
 	],
 	"schemas": {
-		"0000039ewk": [
+		"0000044a3e": [
 			{
 				"type": "obj",
 				"mode": "rw",
@@ -50,14 +46,6 @@
 				"type": "obj",
 				"mode": "rw",
 				"property": {
-					"type": "bool"
-				},
-				"id": 41
-			},
-			{
-				"type": "obj",
-				"mode": "rw",
-				"property": {
 					"type": "string",
 					"maxlen": 255
 				},
@@ -73,13 +61,31 @@
 				"id": 43
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 44
+				"id": 44,
+				"type": "obj"
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"flip",
+						"sync",
+						"button"
+					],
+					"type": "enum"
+				},
+				"id": 47
+			},
+			{
+				"mode": "rw",
+				"id": 48,
+				"type": "raw"
 			}
 		]
 	}

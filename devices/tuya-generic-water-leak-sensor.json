@@ -1,0 +1,42 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "Water Leak Sensor",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		129
+	],
+	"image_urls": [],
+	"profiles": [
+		"bk7231n-lowpower-common-ty-1.0.10-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"000003ald7": [
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"range": [
+						"alarm",
+						"normal"
+					],
+					"type": "enum"
+				},
+				"id": 1
+			},
+			{
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"range": [
+						"low",
+						"middle",
+						"high"
+					],
+					"type": "enum"
+				},
+				"id": 3
+			}
+		]
+	}
+}

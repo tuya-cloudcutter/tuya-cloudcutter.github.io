@@ -1,0 +1,30 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "Universal IR Remote Control",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		166
+	],
+	"image_urls": [],
+	"profiles": [
+		"oem-bk7231n-irbox-mol-ty-2.0.0-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"000003g9uv": [
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 3072
+				},
+				"id": 201,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"id": 202,
+				"type": "raw"
+			}
+		]
+	}
+}

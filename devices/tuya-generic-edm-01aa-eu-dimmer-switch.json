@@ -1,18 +1,16 @@
 {
-	"manufacturer": "Qiachip",
-	"name": "Smart Switch",
+	"manufacturer": "Tuya Generic",
+	"name": "EDM-01AA-EU Dimmer Switch",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
-		62
+		158
 	],
-	"image_urls": [
-		"qiachip-smart-switch.jpg"
-	],
+	"image_urls": [],
 	"profiles": [
-		"oem-bk7231n-plug-1.1.7-sdk-2.3.1-40.00"
+		"bk7231t-common-user-config-ty-1.1.71-sdk-1.0.2-40.00"
 	],
 	"schemas": {
-		"0000039ewk": [
+		"000002e2om": [
 			{
 				"type": "obj",
 				"mode": "rw",
@@ -25,61 +23,71 @@
 				"type": "obj",
 				"mode": "rw",
 				"property": {
-					"min": 0,
-					"max": 86400,
+					"min": 10,
+					"max": 1000,
 					"scale": 0,
 					"step": 1,
 					"type": "value"
 				},
-				"id": 9
+				"id": 2
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 3
 			},
 			{
 				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"range": [
-						"off",
-						"on",
-						"memory"
+						"led",
+						"incandescent",
+						"halogen"
 					],
 					"type": "enum"
 				},
-				"id": 38
+				"id": 4
 			},
 			{
 				"type": "obj",
 				"mode": "rw",
 				"property": {
-					"type": "bool"
+					"range": [
+						"light_white"
+					],
+					"type": "enum"
 				},
-				"id": 41
+				"id": 13
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
-					"type": "string",
-					"maxlen": 255
+					"range": [
+						"none",
+						"relay",
+						"pos"
+					],
+					"type": "enum"
 				},
-				"id": 42
+				"id": 21,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
-				"mode": "rw",
-				"property": {
-					"type": "string",
-					"maxlen": 255
-				},
-				"id": 43
-			},
-			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 44
+				"id": 101,
+				"type": "obj"
 			}
 		]
 	}

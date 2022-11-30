@@ -1,18 +1,16 @@
 {
-	"manufacturer": "Qiachip",
-	"name": "Smart Switch",
-	"ap_ssid": "SmartLife",
+	"manufacturer": "Woox",
+	"name": "R6080 Smart Plug",
+	"ap_ssid": "Woox",
 	"github_issues": [
-		62
+		193
 	],
-	"image_urls": [
-		"qiachip-smart-switch.jpg"
-	],
+	"image_urls": [],
 	"profiles": [
-		"oem-bk7231n-plug-1.1.7-sdk-2.3.1-40.00"
+		"oem-bk7231s-rnd-switch-1.1.2-sdk-1.0.2-40.00"
 	],
 	"schemas": {
-		"0000039ewk": [
+		"000003611y": [
 			{
 				"type": "obj",
 				"mode": "rw",
@@ -45,14 +43,6 @@
 					"type": "enum"
 				},
 				"id": 38
-			},
-			{
-				"type": "obj",
-				"mode": "rw",
-				"property": {
-					"type": "bool"
-				},
-				"id": 41
 			},
 			{
 				"type": "obj",
