@@ -9,7 +9,7 @@
 			"proper": "bk7231t-proper-v1.bin"
 		},
 		"address_map": {
-			"magic": "0xC000",
+			"magic": "0xB000",
 			"stager": "0x1C5AC1",
 			"buffer": "0x43E000",
 			"store": "0x43E800",
