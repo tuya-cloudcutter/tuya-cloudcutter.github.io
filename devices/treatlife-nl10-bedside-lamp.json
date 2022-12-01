@@ -1,6 +1,7 @@
 {
 	"manufacturer": "TreatLife",
-	"name": "NL10",
+	"name": "NL10 Bedside Lamp",
+	"ap_ssid": "TreatLife-SL",
 	"github_issues": [
 		35
 	],
