@@ -1,6 +1,7 @@
 {
 	"manufacturer": "Gosund",
-	"name": "Smart Switch SW5 A V2.1",
+	"name": "SW5 A V2.1 Smart Switch",
+	"ap_ssid": "SmartLife",
 	"github_issues": [
 		85
 	],
