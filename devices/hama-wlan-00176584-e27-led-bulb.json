@@ -1,19 +1,17 @@
 {
-	"manufacturer": "Tuya Generic",
-	"name": "E27 RGBCT WB2L M1 Bulb",
-	"key": "key8u54q9dtru5jw",
+	"manufacturer": "Hama",
+	"name": "WLAN 00176584 E27 LED Bulb",
+	"key": "keytg5kq8gvkv9dh",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
-		91
+		175
 	],
-	"image_urls": [
-		"tuya-generic-e27-rgbcw-smart-life-wb2l-m1.jpg"
-	],
+	"image_urls": [],
 	"profiles": [
-		"oem-bk7231n-light-ty-1.2.16-sdk-2.3.1-40.00"
+		"oem-bk7231s-light-ty-1.1.2-sdk-2.0.0-30.06"
 	],
 	"schemas": {
-		"000003kwzt": [
+		"000002ij9n": [
 			{
 				"type": "obj",
 				"mode": "rw",
@@ -67,15 +65,6 @@
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 24
-			},
-			{
-				"type": "obj",
-				"mode": "rw",
-				"property": {
-					"type": "string",
-					"maxlen": 255
-				},
 				"id": 25
 			},
 			{
@@ -97,20 +86,11 @@
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 27
-			},
-			{
-				"type": "obj",
-				"mode": "wr",
-				"property": {
-					"type": "string",
-					"maxlen": 255
-				},
 				"id": 28
 			},
 			{
 				"type": "obj",
-				"mode": "rw",
+				"mode": "wr",
 				"property": {
 					"type": "string",
 					"maxlen": 255
@@ -130,29 +110,6 @@
 			{
 				"mode": "rw",
 				"id": 32,
-				"type": "raw"
-			},
-			{
-				"mode": "rw",
-				"id": 33,
-				"type": "raw"
-			},
-			{
-				"type": "obj",
-				"mode": "rw",
-				"property": {
-					"type": "bool"
-				},
-				"id": 34
-			},
-			{
-				"mode": "rw",
-				"id": 209,
-				"type": "raw"
-			},
-			{
-				"mode": "rw",
-				"id": 210,
 				"type": "raw"
 			}
 		]

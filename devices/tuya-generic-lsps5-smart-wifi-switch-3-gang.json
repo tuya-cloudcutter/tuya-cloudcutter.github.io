@@ -1,6 +1,7 @@
 {
 	"manufacturer": "Tuya Generic",
 	"name": "LSPS5 Smart Wifi Switch 3-Gang",
+	"key": "key5ckdnys3pqgec",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		59

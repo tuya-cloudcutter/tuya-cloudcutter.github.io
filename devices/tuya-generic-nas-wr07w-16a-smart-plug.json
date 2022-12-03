@@ -1,6 +1,7 @@
 {
 	"manufacturer": "Tuya Generic",
 	"name": "NAS-WR07W 16A Smart Plug",
+	"key": "keym9qkuywghyrvs",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		112

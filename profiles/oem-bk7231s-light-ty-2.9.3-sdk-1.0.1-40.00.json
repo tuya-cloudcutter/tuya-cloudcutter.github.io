@@ -7,7 +7,8 @@
 		"chip": "BK7231T",
 		"name": "oem_bk7231s_light_ty",
 		"version": "2.9.3",
-		"sdk": "1.0.1-40.00"
+		"sdk": "1.0.1-40.00",
+		"key": "keytg5kq8gvkv9dh"
 	},
 	"data": {
 		"address_finish": "0xAC14D",

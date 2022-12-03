@@ -1,8 +1,11 @@
 {
 	"manufacturer": "Fitop",
 	"name": "B22 10W RGBCT Bulb",
+	"key": "keytg5kq8gvkv9dh",
 	"ap_ssid": "SmartLife",
-	"github_issues": [],
+	"github_issues": [
+		200
+	],
 	"image_urls": [
 		"fitop-b22-10w-rgbct-bulb.jpg"
 	],

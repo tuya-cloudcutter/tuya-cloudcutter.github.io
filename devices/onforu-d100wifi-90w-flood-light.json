@@ -1,16 +1,15 @@
 {
-	"manufacturer": "Hama",
-	"name": "176584 E27 CT LED Bulb",
+	"manufacturer": "Onforu",
+	"name": "D100WIFI 90W Flood Light",
+	"key": "keynremrcjf97twe",
 	"ap_ssid": "SmartLife",
-	"github_issues": [
-		175
-	],
+	"github_issues": [],
 	"image_urls": [],
 	"profiles": [
-		"oem-bk7231s-light-ty-1.1.2-sdk-2.0.0-30.06"
+		"oem-bk7231n-strip-ty-2.0.0-sdk-2.3.1-40.00"
 	],
 	"schemas": {
-		"000002ij9n": [
+		"000003ddwh": [
 			{
 				"type": "obj",
 				"mode": "rw",
@@ -64,6 +63,15 @@
 					"type": "string",
 					"maxlen": 255
 				},
+				"id": 24
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
 				"id": 25
 			},
 			{
@@ -85,7 +93,7 @@
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 28
+				"id": 27
 			},
 			{
 				"type": "obj",
@@ -94,12 +102,7 @@
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 29
-			},
-			{
-				"mode": "rw",
-				"id": 30,
-				"type": "raw"
+				"id": 28
 			},
 			{
 				"mode": "rw",
@@ -110,6 +113,19 @@
 				"mode": "rw",
 				"id": 32,
 				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 33,
+				"type": "raw"
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 34
 			}
 		]
 	}

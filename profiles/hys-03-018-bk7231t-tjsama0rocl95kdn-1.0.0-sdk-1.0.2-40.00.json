@@ -7,8 +7,7 @@
 		"chip": "BK7231T",
 		"name": "HYS_03_018_bk7231t_tjsama0rocl95kdn",
 		"version": "1.0.0",
-		"sdk": "1.0.2-40.00",
-		"key": "tjsama0rocl95kdn"
+		"sdk": "1.0.2-40.00"
 	},
 	"data": {
 		"address_finish": "0xA20A9",
