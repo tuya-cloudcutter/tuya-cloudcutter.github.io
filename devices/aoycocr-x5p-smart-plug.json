@@ -35,5 +35,27 @@
 				"id": 9
 			}
 		]
+	},
+	"device_configuration": {
+		"bt1_lv": 0,
+		"bt1_pin": 8,
+		"bt_type": 0,
+		"ch_cddpid1": 9,
+		"ch_dpid1": 1,
+		"ch_flag1": 1,
+		"ch_num": 1,
+		"crc": 126,
+		"jv": "1.0.0",
+		"module": "WB3S",
+		"net_trig": 1,
+		"netled_lv": 0,
+		"netled_pin": 1,
+		"netn_led": 2,
+		"nety_led": 2,
+		"reset_t": 3,
+		"reuse_led_m": 1,
+		"rl1_lv": 1,
+		"rl1_pin": 7,
+		"total_stat": 2
 	}
 }

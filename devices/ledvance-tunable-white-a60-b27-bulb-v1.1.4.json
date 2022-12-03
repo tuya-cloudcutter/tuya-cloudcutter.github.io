@@ -114,5 +114,41 @@
 				"type": "obj"
 			}
 		]
+	},
+	"device_configuration": {
+		"Jsonver": "1.1.8",
+		"brightmax": 100,
+		"brightmin": 10,
+		"c_lv": 1,
+		"c_pin": 8,
+		"cagt": 20,
+		"category": "0502",
+		"cmod": "cw",
+		"colormax": 100,
+		"colormin": 10,
+		"crc": 97,
+		"cwmaxp": 100,
+		"cwtype": "0",
+		"defbright": 100,
+		"defcolor": "c",
+		"deftemp": "0",
+		"dmod": "0",
+		"module": "WB8P",
+		"notdisturb": "0",
+		"onoffmode": 1,
+		"pmemory": 1,
+		"prodagain": "0",
+		"pwmhz": 2000,
+		"remdmode": "0",
+		"rgbt": "0",
+		"rstbr": 100,
+		"rstcor": "c",
+		"rstnum": 5,
+		"rsttemp": "0",
+		"title20": 1,
+		"w_lv": 1,
+		"w_pin": 9,
+		"wfcfg": "prod",
+		"wt": 20
 	}
 }

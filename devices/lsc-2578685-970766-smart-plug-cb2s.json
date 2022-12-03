@@ -43,5 +43,29 @@
 				"id": 38
 			}
 		]
+	},
+	"device_configuration": {
+		"bt_type": 0,
+		"ch_cddpid1": 9,
+		"ch_dpid1": 1,
+		"ch_num": 1,
+		"crc": 91,
+		"ffc_select": 1,
+		"jv": "1.0.1",
+		"led1_lv": 1,
+		"led1_pin": 8,
+		"module": "CB2S",
+		"net_trig": 2,
+		"netled1_lv": 1,
+		"netled1_pin": 26,
+		"netled_reuse": 0,
+		"netn_led": 0,
+		"nety_led": 1,
+		"reset_t": 3,
+		"rl1_lv": 1,
+		"rl1_pin": 6,
+		"total_bt_lv": 0,
+		"total_bt_pin": 7,
+		"total_stat": 2
 	}
 }

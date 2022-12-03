@@ -55,5 +55,34 @@
 				"id": 42
 			}
 		]
+	},
+	"device_configuration": {
+		"ch_cddpid1": 9,
+		"ch_dpid1": 1,
+		"ch_num": 1,
+		"clean_t": 5,
+		"crc": 51,
+		"init_conf": 38,
+		"jv": "1.1.0",
+		"net_trig": 4,
+		"net_type": 0,
+		"netled1_lv": 0,
+		"netled1_pin": 7,
+		"netn_led": 0,
+		"nety_led": 0,
+		"on_off_cnt": 7,
+		"onoff1": 26,
+		"onoff_clear_t": 5,
+		"onoff_n": 6,
+		"onoff_rst_m": 1,
+		"onoff_rst_type": 2,
+		"onoff_type": 0,
+		"rand_dpid": 42,
+		"reset_t": 5,
+		"rl1_lv": 1,
+		"rl1_pin": 6,
+		"total_bt_lv": 0,
+		"total_bt_pin": 10,
+		"total_stat": 2
 	}
 }

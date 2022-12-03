@@ -7,7 +7,8 @@
 		"chip": "BK7231T",
 		"name": "WB3S_RMD_Night_Light",
 		"version": "2.0.6",
-		"sdk": "2.0.0-30.06"
+		"sdk": "2.0.0-30.06",
+		"key": "dxkmsiimcumdkoxb"
 	},
 	"data": {
 		"address_finish": "0x9CCD3",

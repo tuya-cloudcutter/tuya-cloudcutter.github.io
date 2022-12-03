@@ -131,5 +131,41 @@
 				"type": "raw"
 			}
 		]
+	},
+	"device_configuration": {
+		"Jsonver": "1.1.2",
+		"b_lv": 1,
+		"b_pin": 26,
+		"brightmax": 100,
+		"brightmin": 10,
+		"c_lv": 1,
+		"c_pin": 7,
+		"category": "0505",
+		"cmod": "rgbcw",
+		"colormax": 100,
+		"colormin": 10,
+		"crc": 121,
+		"cwmaxp": 100,
+		"cwtype": 0,
+		"defbright": 100,
+		"defcolor": "c",
+		"deftemp": 100,
+		"dmod": 0,
+		"g_lv": 1,
+		"g_pin": 24,
+		"module": "WB3L",
+		"onoffmode": 1,
+		"pmemory": 1,
+		"pwmhz": 1000,
+		"r_lv": 1,
+		"r_pin": 8,
+		"rstbr": 50,
+		"rstcor": "c",
+		"rstnum": 3,
+		"rsttemp": 100,
+		"title20": 0,
+		"w_lv": 1,
+		"w_pin": 6,
+		"wfcfg": "spcl"
 	}
 }

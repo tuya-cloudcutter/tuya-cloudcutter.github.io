@@ -220,5 +220,39 @@
 				"type": "obj"
 			}
 		]
+	},
+	"device_configuration": {
+		"bt1_lv": 0,
+		"bt1_pin": 10,
+		"bt1_type": 0,
+		"ch1_stat": 2,
+		"ch_cddpid1": 9,
+		"ch_dpid1": 1,
+		"ch_num": 1,
+		"chip_type": 0,
+		"crc": 8,
+		"ele_fun_en": 1,
+		"ele_pin": 7,
+		"ffc_select": 1,
+		"jv": "1.0.4",
+		"led1_lv": 0,
+		"led1_pin": 23,
+		"lose_vol": 90,
+		"module": "CB2S",
+		"net_trig": 4,
+		"netled1_lv": 0,
+		"netled1_pin": 8,
+		"netled_reuse": 1,
+		"over_cur": 25000,
+		"over_vol": 270,
+		"reset_t": 3,
+		"resistor": 1,
+		"rl1_lv": 1,
+		"rl1_pin": 26,
+		"rl1_type": 0,
+		"sel_pin_lv": 1,
+		"sel_pin_pin": 24,
+		"vi_pin": 6,
+		"vol_def": 1
 	}
 }

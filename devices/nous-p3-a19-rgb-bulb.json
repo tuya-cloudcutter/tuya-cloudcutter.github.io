@@ -112,5 +112,117 @@
 				"type": "raw"
 			}
 		]
+	},
+	"device_configuration": {
+		"Jsonver": "1.0.0",
+		"brightmax": 100,
+		"brightmin": 5,
+		"cagt": 20,
+		"category": "0505",
+		"cmod": "rgbcw",
+		"colormax": 100,
+		"colormaxp": 100,
+		"colormin": 10,
+		"colorpfun": 1,
+		"crc": 107,
+		"cwtype": 0,
+		"dccur": 27,
+		"defbright": 100,
+		"defcolor": "c",
+		"deftemp": 0,
+		"dmod": 6,
+		"drgbcur": 15,
+		"gmkb": 60,
+		"gmkg": 60,
+		"gmkr": 80,
+		"gmwb": 75,
+		"gmwg": 70,
+		"gmwr": 100,
+		"iicb": 0,
+		"iicc": 4,
+		"iicg": 1,
+		"iicr": 2,
+		"iicscl": 7,
+		"iicsda": 8,
+		"mixway": 3,
+		"module": "CB2L",
+		"notdisturb": 0,
+		"onoffmode": 1,
+		"pmemory": 1,
+		"prodagain": 0,
+		"remdmode": 0,
+		"rgbt": 10,
+		"rstbr": 50,
+		"rstcor": "c",
+		"rstnum": 3,
+		"rsttemp": 0,
+		"tempmix": [
+			[
+				"T27",
+				"000",
+				"000",
+				"000",
+				"3e8"
+			],
+			[
+				"T30",
+				"000",
+				"0af",
+				"019",
+				"37f"
+			],
+			[
+				"T35",
+				"000",
+				"13b",
+				"069",
+				"30c"
+			],
+			[
+				"T40",
+				"000",
+				"1a1",
+				"0a2",
+				"2b2"
+			],
+			[
+				"T45",
+				"000",
+				"1c2",
+				"0e1",
+				280
+			],
+			[
+				"T50",
+				"000",
+				203,
+				"0ff",
+				"24e"
+			],
+			[
+				"T57",
+				"000",
+				258,
+				"11d",
+				208
+			],
+			[
+				"T60",
+				"000",
+				271,
+				"12c",
+				"1f4"
+			],
+			[
+				"T65",
+				"000",
+				"2c6",
+				131,
+				"1c8"
+			]
+		],
+		"title20": 1,
+		"wfcfg": "spcl_auto",
+		"wfct": 3
 	}
 }

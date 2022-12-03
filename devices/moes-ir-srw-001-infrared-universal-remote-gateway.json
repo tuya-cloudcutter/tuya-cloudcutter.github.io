@@ -27,5 +27,18 @@
 				"type": "raw"
 			}
 		]
+	},
+	"device_configuration": {
+		"crc": 2,
+		"infre": 26,
+		"infrr": 8,
+		"netnc": 0,
+		"netyc": 1,
+		"owm": 0,
+		"reset_lv": 0,
+		"reset_pin": 6,
+		"rsthold": 3,
+		"wfst_lv": 1,
+		"wfst_pin": 9
 	}
 }

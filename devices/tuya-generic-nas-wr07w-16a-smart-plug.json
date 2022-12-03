@@ -150,5 +150,35 @@
 				"type": "obj"
 			}
 		]
+	},
+	"device_configuration": {
+		"bt1_lv": 0,
+		"bt1_pin": 1,
+		"bt1_type": 0,
+		"ch1_stat": 2,
+		"ch_cddpid1": 9,
+		"ch_dpid1": 1,
+		"ch_num": 1,
+		"chip_type": 0,
+		"crc": 104,
+		"ele_pin": 9,
+		"jv": "1.1.1",
+		"lose_vol": 85,
+		"module": "WB3S",
+		"net_trig": 3,
+		"netled1_lv": 0,
+		"netled1_pin": 6,
+		"netn_led": 2,
+		"nety_led": 2,
+		"over_cur": 16000,
+		"over_vol": 250,
+		"reset_t": 5,
+		"resistor": 1,
+		"rl1_lv": 1,
+		"rl1_pin": 26,
+		"sel_pin_lv": 1,
+		"sel_pin_pin": 24,
+		"vi_pin": 8,
+		"vol_def": 0
 	}
 }
