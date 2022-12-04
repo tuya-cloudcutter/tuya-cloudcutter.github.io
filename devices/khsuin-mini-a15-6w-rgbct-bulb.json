@@ -1,17 +1,15 @@
 {
 	"manufacturer": "KHSUIN",
-	"name": "16W RGBW Bulb",
-	"key": "0qjbwe2ybnlf1out",
+	"name": "Mini A15 6W RGBCT Bulb",
+	"key": "key8u54q9dtru5jw",
 	"ap_ssid": "SmartLife",
-	"github_issues": [
-		172
-	],
+	"github_issues": [],
 	"image_urls": [],
 	"profiles": [
-		"bk-light-lm99xe1-16w-1.0.0-sdk-1.0.2-40.00"
+		"oem-bk7231n-light-ty-1.2.16-sdk-2.3.1-40.00"
 	],
 	"schemas": {
-		"000002unqo": [
+		"00000394px": [
 			{
 				"type": "obj",
 				"mode": "rw",
@@ -105,7 +103,95 @@
 					"maxlen": 255
 				},
 				"id": 28
+			},
+			{
+				"mode": "rw",
+				"id": 30,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 31,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 32,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 33,
+				"type": "raw"
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 34
+			},
+			{
+				"mode": "rw",
+				"id": 209,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 210,
+				"type": "raw"
 			}
 		]
+	},
+	"device_configuration": {
+		"Jsonver": "1.0.0",
+		"brightmax": 100,
+		"brightmin": 10,
+		"cagt": 20,
+		"category": "0505",
+		"cjccur": 5,
+		"cjwcur": 8,
+		"cmod": "rgbcw",
+		"colormax": 100,
+		"colormaxp": 100,
+		"colormin": 10,
+		"colorpfun": 1,
+		"crc": 91,
+		"cwmaxp": 100,
+		"cwtype": 0,
+		"defbright": 100,
+		"defcolor": "c",
+		"deftemp": 0,
+		"dmod": 5,
+		"gmkb": 60,
+		"gmkg": 60,
+		"gmkr": 80,
+		"gmwb": 75,
+		"gmwg": 70,
+		"gmwr": 100,
+		"iicb": 0,
+		"iicc": 4,
+		"iicg": 1,
+		"iicr": 2,
+		"iicscl": 6,
+		"iicsda": 8,
+		"iicw": 3,
+		"mixway": 0,
+		"module": "CBU",
+		"notdisturb": 0,
+		"onoffmode": 0,
+		"pmemory": 1,
+		"prodagain": 0,
+		"remdmode": 0,
+		"rgbt": 10,
+		"rstbr": 50,
+		"rstcor": "c",
+		"rstnum": 3,
+		"rsttemp": 0,
+		"title20": 1,
+		"wfcfg": "spcl",
+		"wfct": 3,
+		"wt": 20
 	}
 }
