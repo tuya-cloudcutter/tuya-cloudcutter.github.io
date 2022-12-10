@@ -3,7 +3,9 @@
 	"name": "A19 800lm RGBCT Bulb 2.9.6",
 	"key": "keytg5kq8gvkv9dh",
 	"ap_ssid": "SmartLife",
-	"github_issues": [],
+	"github_issues": [
+		216
+	],
 	"image_urls": [
 		"daybetter-a19-800lm-rgbct-bulb.jpg"
 	],
