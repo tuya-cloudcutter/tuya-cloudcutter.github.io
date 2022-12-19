@@ -1,0 +1,16 @@
+{
+	"name": "7.0.2 - BK7231N",
+	"sub_name": "Klarstein_Wonderwall_Smart",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "Klarstein_Wonderwall_Smart",
+		"version": "7.0.2",
+		"sdk": "2.3.1-40.00"
+	},
+	"data": {
+		"address_finish": "0x1B3AB",
+		"address_ssid": "0xC42A1"
+	}
+}

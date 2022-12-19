@@ -1,0 +1,98 @@
+{
+	"manufacturer": "Klarstein",
+	"name": "Wonderwall Air 60 Infrared Heater",
+	"key": "iuahvrtxktwuuyaf",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		221
+	],
+	"image_urls": [
+		"klarstein-wonderwall-air-60-infrared-heater.jpg"
+	],
+	"profiles": [
+		"klarstein-wonderwall-smart-7.0.2-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"000003y3t2": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 37,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 2
+			},
+			{
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 99,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 3
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"0",
+						"1",
+						"2",
+						"3",
+						"4",
+						"5",
+						"6",
+						"7",
+						"8",
+						"9",
+						"10",
+						"11",
+						"12",
+						"13",
+						"14",
+						"15",
+						"16",
+						"17",
+						"18",
+						"19",
+						"20",
+						"21",
+						"22",
+						"23",
+						"24"
+					],
+					"type": "enum"
+				},
+				"id": 10
+			},
+			{
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 1440,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 11
+			}
+		]
+	}
+}
