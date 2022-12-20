@@ -1,0 +1,53 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "TYSM-01 Smoke Detector",
+	"key": "jypukhecbhaw1c47",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		223
+	],
+	"image_urls": [
+		"tuya-generic-tysm-01-smoke-detector.jpg"
+	],
+	"profiles": [
+		"dy-yg400a-1.0.5-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"000004nm84": [
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"range": [
+						"alarm",
+						"normal"
+					],
+					"type": "enum"
+				},
+				"id": 1
+			},
+			{
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"type": "bool"
+				},
+				"id": 4
+			},
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 100,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 15
+			}
+		]
+	}
+}
