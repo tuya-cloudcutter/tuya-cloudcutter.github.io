@@ -1,12 +1,14 @@
 {
 	"manufacturer": "Feit",
-	"name": "OM60 RGBW CA AG 3 Bulb",
+	"name": "OM60/RGBW/CA/AG/3 Bulb",
 	"key": "key8u54q9dtru5jw",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		116
 	],
-	"image_urls": [],
+	"image_urls": [
+		"feit-om60-rgbw-ca-ag-3-bulb.jpg"
+	],
 	"profiles": [
 		"oem-bk7231n-light-ty-1.2.16-sdk-2.3.1-40.00"
 	],
