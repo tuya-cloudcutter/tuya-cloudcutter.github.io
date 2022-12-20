@@ -1,12 +1,14 @@
 {
-	"manufacturer": "Aldi Lightway",
-	"name": "SMART AL2017 TGTS Downlight",
+	"manufacturer": "Aldi",
+	"name": "Lightway 8W Downlight SMART-AL2017-TGTS",
 	"key": "keytg5kq8gvkv9dh",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		94
 	],
-	"image_urls": [],
+	"image_urls": [
+		"aldi-lightway-smart-al2017-tgts-downlight.jpg"
+	],
 	"profiles": [
 		"oem-bk7231s-light-ty-2.9.16-sdk-1.0.8-40.00"
 	],

@@ -6,7 +6,9 @@
 	"github_issues": [
 		185
 	],
-	"image_urls": [],
+	"image_urls": [
+		"blitzwolf-bw-clt1-ceiling-light"
+	],
 	"profiles": [
 		"oem-bk7231s-ceiling-light-ty-1.1.9-sdk-1.0.1-40.00"
 	],
