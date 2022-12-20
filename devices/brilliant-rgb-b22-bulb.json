@@ -1,12 +1,14 @@
 {
 	"manufacturer": "Brilliant",
-	"name": "RGB B22 Bulb",
+	"name": "20698 Smart RGB A60 B22 Bulb",
 	"key": "keytg5kq8gvkv9dh",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		122
 	],
-	"image_urls": [],
+	"image_urls": [
+		"brilliant-rgb-b22-bulb.jpg"
+	],
 	"profiles": [
 		"oem-bk7231s-light-ty-2.9.16-sdk-1.0.8-40.00"
 	],

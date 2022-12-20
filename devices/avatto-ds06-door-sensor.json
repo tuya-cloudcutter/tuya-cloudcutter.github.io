@@ -6,7 +6,9 @@
 	"github_issues": [
 		81
 	],
-	"image_urls": [],
+	"image_urls": [
+		"avatto-ds06-door-sensor.jpg"
+	],
 	"profiles": [
 		"bk7231n-lowpower-common-ty-1.0.10-sdk-2.3.1-40.00"
 	],
