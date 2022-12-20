@@ -1,12 +1,14 @@
 {
 	"manufacturer": "Enshine",
-	"name": "GU10 Bulb",
+	"name": "YX-PAR-S 5W RGBCT GU10 Bulb",
 	"key": "keytg5kq8gvkv9dh",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		180
 	],
-	"image_urls": [],
+	"image_urls": [
+		"enshine-gu10-bulb.jpg"
+	],
 	"profiles": [
 		"oem-bk7231s-light-ty-2.9.12-sdk-1.0.3-40.00"
 	],
