@@ -4,8 +4,12 @@
 	"key": "key7axydcvmea3x9",
 	"ap_ssid": "SmartLife",
 	"github_issues": [],
-	"image_urls": ["rabit-light-switch-click-1gang.png"],
-	"profiles": ["oem-bk7231s-rnd-zero-dctrl-switch-1.1.5-sdk-1.0.6-40.00"],
+	"image_urls": [
+		"rabit-light-switch-click-1gang.png"
+	],
+	"profiles": [
+		"oem-bk7231s-rnd-zero-dctrl-switch-1.1.5-sdk-1.0.6-40.00"
+	],
 	"schemas": {
 		"0000048avj": [
 			{
