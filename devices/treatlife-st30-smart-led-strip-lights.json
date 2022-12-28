@@ -1,0 +1,89 @@
+{
+	"manufacturer": "TreatLife",
+	"name": "ST30 Smart LED Strip Lights",
+	"key": "xhsx0clcbovz5xre",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		236
+	],
+	"image_urls": [
+		"treatlife-st30-smart-led-strip-lights.jpg"
+	],
+	"profiles": [
+		"hys-03-010-rgb-xhsx0clcbovz5xre-1.0.2-sdk-1.0.2-40.00"
+	],
+	"schemas": {
+		"000002fli4": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 20
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"white",
+						"colour",
+						"scene",
+						"music"
+					],
+					"type": "enum"
+				},
+				"id": 21,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 24,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 25,
+				"type": "obj"
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 26
+			},
+			{
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 27,
+				"type": "obj"
+			},
+			{
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 28,
+				"type": "obj"
+			}
+		]
+	}
+}
