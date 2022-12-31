@@ -1,0 +1,243 @@
+{
+	"manufacturer": "LSC",
+	"name": "3003366 Oudoor Flood Light",
+	"key": "key3pw4guvnat9ad",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"lsc-3003366-oudoor-flood-light.jpg"
+	],
+	"profiles": [
+		"oem-bk7231s-light2-pir-mk-1.0.8-sdk-2.0.0-30.06"
+	],
+	"schemas": {
+		"000001ywi7": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 20
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"white",
+						"colour"
+					],
+					"type": "enum"
+				},
+				"id": 21
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 22
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 23
+			},
+			{
+				"type": "obj",
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 28
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"auto",
+						"manual"
+					],
+					"type": "enum"
+				},
+				"id": 51
+			},
+			{
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"range": [
+						"pir",
+						"none"
+					],
+					"type": "enum"
+				},
+				"id": 52
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"2000lux",
+						"300lux",
+						"50lux",
+						"10lux",
+						"5lux",
+						"now"
+					],
+					"type": "enum"
+				},
+				"id": 53
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"low",
+						"middle",
+						"high"
+					],
+					"type": "enum"
+				},
+				"id": 54,
+				"type": "obj"
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 5,
+					"max": 3600,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 55
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 56
+			},
+			{
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 480,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 57
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 1,
+					"max": 480,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 58
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 59
+			}
+		]
+	},
+	"device_configuration": {
+		"Jsonver": "1.1.0",
+		"alarm_lv": 1,
+		"alarm_pin": 7,
+		"brightmax": 100,
+		"brightmin": 10,
+		"c_lv": 1,
+		"c_pin": 8,
+		"cagt": 20,
+		"category": "0502",
+		"cmod": "cw",
+		"colormax": 100,
+		"colormin": 10,
+		"cwmaxp": 200,
+		"cwtype": 0,
+		"daylight_limit": 0,
+		"defbright": 100,
+		"defcolor": "c",
+		"deftemp": 100,
+		"detec_range": 0,
+		"dimm_lv": 0,
+		"dimm_mode": 1,
+		"dimm_time": 5,
+		"dmod": 0,
+		"h_sense_lv": 2,
+		"hold_lv": 100,
+		"hold_mode": 1,
+		"hold_time": 5,
+		"ir_func": 1,
+		"ir_lv": 1,
+		"ir_pin": 1,
+		"l_sense_lv": 9,
+		"led_lv": 1,
+		"led_pin": 14,
+		"m_sense_lv": 5,
+		"module": "WB3S",
+		"onoffmode": 0,
+		"pairt": 6,
+		"pir_lv": 1,
+		"pir_mode": 1,
+		"pir_pin": 6,
+		"pmemory": 1,
+		"preheat_time": 5,
+		"prodagain": 0,
+		"pwmhz": 1000,
+		"relay_lv": 1,
+		"relay_pin": 24,
+		"remdmode": 0,
+		"resume_time": 5,
+		"rstbr": 50,
+		"rstcor": "c",
+		"rstmode": 0,
+		"rstnum": 3,
+		"rsttemp": 100,
+		"sense_lv": 1,
+		"sense_pin": 26,
+		"sense_pwmhz": 1000,
+		"title20": 0,
+		"w_lv": 1,
+		"w_pin": 9,
+		"wfcfg": "spcl_auto",
+		"wfct": 3,
+		"wt": 20
+	}
+}
