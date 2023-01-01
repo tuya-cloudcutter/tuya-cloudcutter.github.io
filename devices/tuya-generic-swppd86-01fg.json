@@ -1,0 +1,98 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "SWPPD86-FG01 In Wall Smart Socket",
+	"key": "njspoesenvdrgsj4",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		""
+	],
+	"profiles": [
+		"ua-app-1.0.1-sdk-2.3.3-40.00"
+	],
+	"schemas": {
+		"000004iwsz": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 9
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"off",
+						"on",
+						"memory"
+					],
+					"type": "enum"
+				},
+				"id": 38
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"relay",
+						"pos",
+						"none"
+					],
+					"type": "enum"
+				},
+				"id": 39
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 40
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 41
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 42
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 43
+			}
+		]
+	}
+}
