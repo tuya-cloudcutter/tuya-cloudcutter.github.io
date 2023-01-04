@@ -1,13 +1,13 @@
 {
 	"manufacturer": "Tuya Generic",
-	"name": "LED Controller Single Color",
+	"name": "iH001 LED Controller Single Color",
 	"key": "keynremrcjf97twe",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		248
 	],
 	"image_urls": [
-		"tuya-generic-led-controller-single-color.jpg"
+		"tuya-generic-ih001-led-controller-single-color.jpg"
 	],
 	"profiles": [
 		"oem-bk7231n-strip-ty-2.0.0-sdk-2.3.1-40.00"
