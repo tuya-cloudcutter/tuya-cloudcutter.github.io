@@ -135,5 +135,43 @@
 				"type": "raw"
 			}
 		]
+	},
+	"device_configuration": {
+		"Jsonver": "1.1.0",
+		"b_lv": 1,
+		"b_pin": 26,
+		"brightmax": 100,
+		"brightmin": 9,
+		"c_lv": 1,
+		"c_pin": 7,
+		"cmod": "rgbcw",
+		"colormax": 100,
+		"colormin": 10,
+		"cwmaxp": 100,
+		"cwtype": 1,
+		"defbright": 100,
+		"defcolor": "c",
+		"deftemp": 100,
+		"dmod": 0,
+		"g_lv": 1,
+		"g_pin": 9,
+		"module": "WB8P",
+		"onoffmode": 1,
+		"pairt": 600,
+		"pmemory": 1,
+		"pwmhz": 2000,
+		"r_lv": 1,
+		"r_pin": 24,
+		"remdmode": 1,
+		"rstbr": 50,
+		"rstcor": "c",
+		"rstmode": 0,
+		"rstnum": 4,
+		"rsttemp": 100,
+		"title20": 1,
+		"w_lv": 1,
+		"w_pin": 8,
+		"wfcfg": "spcl_auto",
+		"wfct": 10
 	}
 }
