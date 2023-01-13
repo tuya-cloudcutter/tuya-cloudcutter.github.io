@@ -1,0 +1,18 @@
+{
+	"name": "1.1.7 - BK7231N",
+	"sub_name": "CL_DREAM_RGB_STRIP_19KEY_1KEY_5V_BK7231N",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "CL_DREAM_RGB_STRIP_19KEY_1KEY_5V_BK7231N",
+		"version": "1.1.7",
+		"sdk": "0.0.2-40.00",
+		"key": "keypxx4x97wptvch"
+	},
+	"data": {
+		"address_finish": "0x1B93F",
+		"address_ssid": "0xCD329",
+		"address_ssid_padding": 4
+	}
+}
