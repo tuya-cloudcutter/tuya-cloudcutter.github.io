@@ -1,0 +1,168 @@
+{
+	"manufacturer": "Brilo",
+	"name": "8464455 Ceiling Light",
+	"key": "keyg7gsncqtf57gs",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		259
+	],
+	"image_urls": [
+		"brilo-8464455-ceiling-light.jpg"
+	],
+	"profiles": [
+		"oem-bk7231s-ceiling-light-ty-1.3.2-sdk-1.0.2-40.00"
+	],
+	"schemas": {
+		"0000039f0z": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 20
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"white",
+						"colour",
+						"scene",
+						"music"
+					],
+					"type": "enum"
+				},
+				"id": 21
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 22
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 23
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 25
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 26
+			},
+			{
+				"type": "obj",
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 28
+			}
+		]
+	},
+	"device_configuration": {
+		"0err": 70,
+		"1err": 40,
+		"Jsonver": "1.0.2",
+		"bitseq": 0,
+		"brightmax": 100,
+		"brightmin": 10,
+		"buzzer": 0,
+		"c_lv": 1,
+		"c_pin": 26,
+		"cagt": 20,
+		"category": "0502",
+		"cctseg": 10,
+		"cmod": "cw",
+		"count1": 30,
+		"crc": 114,
+		"customcode": 510,
+		"cwmaxp": 100,
+		"cwtype": 0,
+		"defbright": 100,
+		"defcolor": "c",
+		"deftemp": 100,
+		"dmod": 0,
+		"ir": 8,
+		"irfunc": 1,
+		"irk10fun": 18,
+		"irk10val": 41,
+		"irk1fun": 2,
+		"irk1val": 1,
+		"irk2fun": 3,
+		"irk2val": 2,
+		"irk3fun": 8,
+		"irk3val": 3,
+		"irk4fun": 9,
+		"irk4val": 8,
+		"irk5fun": 11,
+		"irk5val": 5,
+		"irk6fun": 10,
+		"irk6val": 6,
+		"irk7fun": 21,
+		"irk7val": 7,
+		"irk8fun": 22,
+		"irk8val": 39,
+		"irk9fun": 31,
+		"irk9val": 40,
+		"keynumber": 10,
+		"leaderr": 15,
+		"module": "wb2l",
+		"mutex": 1,
+		"nightbrig": 10,
+		"nightcct": 0,
+		"nightled": 0,
+		"notdisturb": 0,
+		"onoffmode": 1,
+		"pmemory": 1,
+		"prodagain": 0,
+		"pwmhz": 1000,
+		"remdmode": 0,
+		"rgbt": 0,
+		"rstbr": 50,
+		"rstcor": "c",
+		"rstnum": 3,
+		"rsttemp": 100,
+		"starterr": 70,
+		"w_lv": 1,
+		"w_pin": 24,
+		"wfcfg": "spcl",
+		"wfct": 3,
+		"whiteseg": 10,
+		"workbrig": 100,
+		"workcct": 100,
+		"wt": 20
+	}
+}
