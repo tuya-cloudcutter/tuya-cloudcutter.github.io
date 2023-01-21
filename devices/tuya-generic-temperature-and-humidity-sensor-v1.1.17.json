@@ -1,16 +1,14 @@
 {
 	"manufacturer": "Tuya Generic",
-	"name": "Temperature Sensor",
+	"name": "Temperature and Humidity Sensor v1.1.17",
 	"key": "key3hmkmn4k58ten",
 	"ap_ssid": "SmartLife",
-	"github_issues": [
-		246
-	],
+	"github_issues": [],
 	"image_urls": [
-		"tuya-generic-temperature-sensor.jpg"
+		"tuya-generic-temperature-sensor-v1.1.17.jpg"
 	],
 	"profiles": [
-		"oem-bk7231n-temp-hum-sensor-1.1.11-sdk-2.3.1-40.00"
+		"oem-bk7231n-temp-hum-sensor-1.1.17-sdk-2.3.1-40.00"
 	],
 	"schemas": {
 		"000004rexe": [
