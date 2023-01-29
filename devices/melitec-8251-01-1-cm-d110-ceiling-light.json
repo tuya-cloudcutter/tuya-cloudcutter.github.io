@@ -1,0 +1,95 @@
+{
+	"manufacturer": "Melitec",
+	"name": "8251-01-1-CM D110 Ceiling Light",
+	"key": "qkxx6pesucrqp8ew",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		273
+	],
+	"image_urls": [
+		"melitec-8251-01-1-cm-d110-ceiling-light.jpg"
+	],
+	"profiles": [
+		"bk7231n-common-user-config-ty-2.1.6-sdk-2.3.3-40.00"
+	],
+	"schemas": {
+		"000003fvok": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 20
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"white",
+						"colour",
+						"scene",
+						"music"
+					],
+					"type": "enum"
+				},
+				"id": 21
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 22
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 23
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 25
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 26
+			},
+			{
+				"type": "obj",
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 28
+			}
+		]
+	}
+}
