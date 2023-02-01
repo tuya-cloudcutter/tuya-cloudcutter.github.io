@@ -1,0 +1,209 @@
+{
+	"manufacturer": "Mirabella Genio",
+	"name": "I003869 PAR38 RGBCT Bulb",
+	"key": "key8u54q9dtru5jw",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		276
+	],
+	"image_urls": [
+		"mirabella-genio-i003869-par38-rgbct-bulb.jpg"
+	],
+	"profiles": [
+		"oem-bk7231n-light-ty-1.2.7-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"0000033qjy": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 20
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"white",
+						"colour",
+						"scene",
+						"music"
+					],
+					"type": "enum"
+				},
+				"id": 21
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 22
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 23
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 24
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 25
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 26
+			},
+			{
+				"type": "obj",
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 27
+			},
+			{
+				"type": "obj",
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 28
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 29
+			},
+			{
+				"mode": "rw",
+				"id": 30,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 31,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 32,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 33,
+				"type": "raw"
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 34
+			},
+			{
+				"mode": "rw",
+				"id": 209,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 210,
+				"type": "raw"
+			}
+		]
+	},
+	"device_configuration": {
+		"Jsonver": "1.0.0",
+		"brightmax": 100,
+		"brightmin": 10,
+		"cagt": 20,
+		"category": "0505",
+		"cmod": "rgbcw",
+		"colormax": 100,
+		"colormin": 10,
+		"colorpfun": 0,
+		"crc": 1,
+		"cwmaxp": 100,
+		"cwtype": 0,
+		"defbright": 100,
+		"defcolor": "c",
+		"deftemp": 100,
+		"dmod": 3,
+		"ehccur": 0,
+		"ehwcur": 10,
+		"gmkb": 60,
+		"gmkg": 60,
+		"gmkr": 80,
+		"gmwb": 75,
+		"gmwg": 70,
+		"gmwr": 100,
+		"iicb": 2,
+		"iicc": 4,
+		"iicg": 1,
+		"iicr": 0,
+		"iicscl": 7,
+		"iicsda": 8,
+		"iicw": 3,
+		"mixway": 0,
+		"module": "CBU",
+		"notdisturb": 0,
+		"onoffmode": 0,
+		"pmemory": 1,
+		"prodagain": 0,
+		"remdmode": 0,
+		"rgbt": 10,
+		"rstbr": 50,
+		"rstcor": "c",
+		"rstnum": 3,
+		"rsttemp": 100,
+		"title20": 0,
+		"wfcfg": "spcl_auto",
+		"wfct": 3,
+		"wt": 20
+	}
+}
