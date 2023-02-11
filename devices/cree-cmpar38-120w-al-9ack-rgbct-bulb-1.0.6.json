@@ -1,14 +1,14 @@
 {
 	"manufacturer": "Cree",
-	"name": "CMPAR38-120W-AL-9ACK RGBCT Bulb",
+	"name": "CMPAR38-120W-AL-9ACK RGBCT Bulb 1.0.6",
 	"key": "key4emr7fgcfvnuh",
 	"ap_ssid": "SL-CreeLighting",
 	"github_issues": [],
 	"image_urls": [
-		"cree-cmpar38-120w-al-9ack-rgbct-bulb.jpg"
+		"cree-cmpar38-120w-al-9ack-rgbct-bulb-1.0.6.jpg"
 	],
 	"profiles": [
-		"oem-bk7231s-light-db-par38-1.0.8-sdk-2.3.2-40.00"
+		"oem-bk7231s-light-db-par38-1.0.6-sdk-1.0.3-40.00"
 	],
 	"schemas": {
 		"000001nbvo": [
