@@ -1,19 +1,17 @@
 {
-	"manufacturer": "Merkury",
-	"name": "MI-OW101-300W Outdoor Smart Plug",
+	"manufacturer": "Merkury Innovations",
+	"name": "MI-WW218-199WW Smart Plug",
 	"key": "keya4gvchmtapm8n",
 	"ap_ssid": "Merkury",
 	"github_issues": [
-		252
+		105
 	],
-	"image_urls": [
-		"merkury-mi-ow101-300w-outdoor-smart-plug.jpg"
-	],
+	"image_urls": [],
 	"profiles": [
-		"oem-bk7231s-rnd-switch-1.0.7-sdk-2.0.0-30.06"
+		"oem-bk7231s-rnd-switch-1.0.8-sdk-1.0.1-40.00"
 	],
 	"schemas": {
-		"000001z9pq": [
+		"0000020cbt": [
 			{
 				"type": "obj",
 				"mode": "rw",
@@ -51,32 +49,31 @@
 	},
 	"device_configuration": {
 		"bt1_lv": 0,
-		"bt1_pin": 7,
+		"bt1_pin": 6,
 		"bt_type": 0,
 		"ch_cddpid1": 9,
 		"ch_dpid1": 1,
 		"ch_flag1": 1,
 		"ch_num": 1,
-		"crc": 108,
+		"crc": 75,
 		"cyc_dpid": 42,
 		"inch_dp": 44,
 		"init_conf": 38,
-		"jv": "1.0.6",
+		"jv": "1.0.9",
 		"led_dp": 40,
 		"lock_dp": 41,
 		"module": "WB2S",
-		"mxcl_led_m": 0,
 		"net_trig": 1,
 		"netled_lv": 0,
 		"netled_pin": 8,
-		"netn_led": 0,
-		"nety_led": 1,
+		"netn_led": 2,
+		"nety_led": 2,
 		"rand_dpid": 43,
-		"reset_t": 3,
-		"reuse_led_m": 0,
+		"reset_t": 6,
+		"reuse_led_m": 1,
 		"rl1_lv": 1,
-		"rl1_pin": 6,
+		"rl1_pin": 24,
 		"rl_type": 0,
-		"total_stat": 2
+		"total_stat": 0
 	}
 }
