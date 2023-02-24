@@ -1,0 +1,65 @@
+{
+	"manufacturer": "Merkury Innovations",
+	"name": "MI-BW942-999W",
+	"key": "keydpkw438xwpdtm",
+	"ap_ssid": "Merkury",
+	"github_issues": [],
+	"image_urls": [
+    "merkury-innovations-mi-bw942-999w.jpg"
+  ],
+	"profiles": [
+		"oem-bk7231s-light-ty-olddp-1.0.3-sdk-2.0.0-30.05"
+	],
+	"schemas": {
+		"000000h2vb": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 25,
+					"max": 255,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 2
+			}
+		]
+	},
+	"device_configuration": {
+		"Jsonver": "1.1.2",
+		"brightmax": 100,
+		"brightmin": 1,
+		"c_lv": 1,
+		"c_pin": 8,
+		"category": "0501",
+		"cmod": "c",
+		"colormax": 100,
+		"colormin": 10,
+		"crc": 126,
+		"cwmaxp": 100,
+		"cwtype": 0,
+		"defbright": 100,
+		"defcolor": "c",
+		"deftemp": 100,
+		"dmod": 0,
+		"module": "WB2L",
+		"onoffmode": 1,
+		"pmemory": 1,
+		"pwmhz": 2000,
+		"rstbr": 50,
+		"rstcor": "c",
+		"rstnum": 3,
+		"rsttemp": 100,
+		"title20": 1,
+		"wfcfg": "prod"
+	}
+}
