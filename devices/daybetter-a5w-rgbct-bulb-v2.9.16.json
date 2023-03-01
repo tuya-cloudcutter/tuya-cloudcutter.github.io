@@ -1,19 +1,17 @@
 {
 	"manufacturer": "Daybetter",
-	"name": "A19 800lm RGBCT Bulb 2.9.6",
+	"name": "A5W RGBCT Bulb v2.9.16",
 	"key": "keytg5kq8gvkv9dh",
 	"ap_ssid": "SmartLife",
-	"github_issues": [
-		216
-	],
+	"github_issues": [],
 	"image_urls": [
-		"daybetter-a19-800lm-rgbct-bulb.jpg"
+		"daybetter-a5w-rgbct-bulb-v2.9.16.jpg"
 	],
 	"profiles": [
-		"oem-bk7231s-light-ty-2.9.6-sdk-1.0.2-40.00"
+		"oem-bk7231s-light-ty-2.9.16-sdk-1.0.8-40.00"
 	],
 	"schemas": {
-		"000002p9xg": [
+		"000004kvcq": [
 			{
 				"type": "obj",
 				"mode": "rw",
@@ -107,11 +105,6 @@
 					"maxlen": 255
 				},
 				"id": 28
-			},
-			{
-				"mode": "rw",
-				"id": 33,
-				"type": "raw"
 			}
 		]
 	},
@@ -126,15 +119,16 @@
 		"colormaxp": 100,
 		"colormin": 10,
 		"colorpfun": 1,
-		"crc": 21,
+		"crc": 120,
 		"cwmaxp": 100,
 		"cwtype": 0,
+		"dccur": 50,
 		"defbright": 100,
 		"defcolor": "c",
 		"deftemp": 0,
-		"dmod": 3,
-		"ehccur": 4,
-		"ehwcur": 11,
+		"dmod": 6,
+		"drgbcur": 28,
+		"dwcur": 50,
 		"gmkb": 60,
 		"gmkg": 60,
 		"gmkr": 80,
@@ -145,8 +139,8 @@
 		"iicc": 4,
 		"iicg": 1,
 		"iicr": 2,
-		"iicscl": 7,
-		"iicsda": 8,
+		"iicscl": 8,
+		"iicsda": 7,
 		"iicw": 3,
 		"mixway": 0,
 		"module": "WB2L",
