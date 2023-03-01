@@ -1,10 +1,12 @@
 {
 	"manufacturer": "Antela",
-	"name": "smart bulb E27 RGB BAW534 9W",
+	"name": "BAW534 E27 9W RGBCT Bulb",
 	"key": "key8u54q9dtru5jw",
 	"ap_ssid": "SL-ANTELA",
 	"github_issues": [],
-	"image_urls": [],
+	"image_urls": [
+		"antela-baw534-e27-9w-rgbct-bulb.jpg"
+	],
 	"profiles": [
 		"oem-bk7231n-light-ty-1.2.16-sdk-2.3.1-40.00"
 	],
