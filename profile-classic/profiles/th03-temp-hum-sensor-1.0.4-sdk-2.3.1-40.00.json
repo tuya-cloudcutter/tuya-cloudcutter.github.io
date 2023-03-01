@@ -1,0 +1,17 @@
+{
+	"name": "1.0.4 - BK7231N",
+	"sub_name": "th03_temp_hum_sensor",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "th03_temp_hum_sensor",
+		"version": "1.0.4",
+		"sdk": "2.3.1-40.00"
+	},
+	"data": {
+		"address_finish": "0x1B3F7",
+		"address_ssid": "0xC4915",
+		"address_ssid_padding": 4
+	}
+}
