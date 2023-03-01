@@ -12,6 +12,7 @@
 	},
 	"data": {
 		"address_finish": "0x1B4C3",
-		"address_ssid": "0xC6231"
+		"address_ssid": "0xC6231",
+		"address_ssid_padding": 4
 	}
 }
