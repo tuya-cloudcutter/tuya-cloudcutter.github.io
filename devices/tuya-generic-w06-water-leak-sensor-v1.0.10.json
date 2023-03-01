@@ -1,12 +1,14 @@
 {
 	"manufacturer": "Tuya Generic",
-	"name": "Water Leak Sensor",
+	"name": "W06 Water Leak Sensor v1.0.10",
 	"key": "j53rkdu55ydc0fkq",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		129
 	],
-	"image_urls": [],
+	"image_urls": [
+		"tuya-generic-w06-water-leak-sensor-v1.0.10.jpg"
+	],
 	"profiles": [
 		"bk7231n-lowpower-common-ty-1.0.10-sdk-2.3.1-40.00"
 	],
