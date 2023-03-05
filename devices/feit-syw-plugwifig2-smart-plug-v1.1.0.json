@@ -1,0 +1,52 @@
+{
+	"manufacturer": "Feit",
+	"name": "SYW PLUGWIFIG2 Smart Plug v1.1.0",
+	"key": "keya4gvchmtapm8n",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		301
+	],
+	"image_urls": [
+		"feit-syw-plugwifig2-smart-plug-v1.1.0.jpg"
+	],
+	"profiles": [
+		"oem-bk7231s-rnd-switch-1.1.0-sdk-1.0.2-40.00"
+	],
+	"schemas": {
+		"0000023292": [
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 9,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"off",
+						"on",
+						"memory"
+					],
+					"type": "enum"
+				},
+				"id": 38,
+				"type": "obj"
+			}
+		]
+	}
+}
