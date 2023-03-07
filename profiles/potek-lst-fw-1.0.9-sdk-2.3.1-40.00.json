@@ -1,0 +1,17 @@
+{
+	"name": "1.0.9 - BK7231N",
+	"sub_name": "POTEK_LST_FW",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "POTEK_LST_FW",
+		"version": "1.0.9",
+		"sdk": "2.3.1-40.00"
+	},
+	"data": {
+		"address_finish": "0x1B39B",
+		"address_ssid": "0xC8691",
+		"address_ssid_padding": 4
+	}
+}
