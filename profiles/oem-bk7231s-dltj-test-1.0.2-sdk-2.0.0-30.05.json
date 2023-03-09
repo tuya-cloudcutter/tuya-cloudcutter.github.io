@@ -1,0 +1,17 @@
+{
+	"name": "1.0.2 - BK7231T",
+	"sub_name": "oem_bk7231s_dltj_test",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "oem_bk7231s_dltj_test",
+		"version": "1.0.2",
+		"sdk": "2.0.0-30.05",
+		"key": "keym9qkuywghyrvs"
+	},
+	"data": {
+		"address_finish": "0x986CF",
+		"address_datagram": "0x8DB2F"
+	}
+}
