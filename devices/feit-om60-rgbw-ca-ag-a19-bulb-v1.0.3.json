@@ -1,13 +1,13 @@
 {
 	"manufacturer": "Feit",
-	"name": "OM60/RGBW/CA/AG A19 RGBW Bulb",
+	"name": "OM60-RGBW-CA-AG A19 Bulb v1.0.3",
 	"key": "keydpkw438xwpdtm",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		11
 	],
 	"image_urls": [
-		"feit-om60-rgbw-ca-ag.jpg"
+		"feit-om60-rgbw-ca-ag-a19-bulb-v1.0.3.jpg"
 	],
 	"profiles": [
 		"oem-bk7231s-light-ty-olddp-1.0.3-sdk-2.0.0-30.05"
