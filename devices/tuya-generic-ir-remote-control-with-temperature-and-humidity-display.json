@@ -1,0 +1,57 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "IR Remote Control with Temperature and Humidity Display",
+	"key": "whs3cty93fzrqkpt",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"tuya-generic-ir-remote-control-with-temperature-and-humidity-display.jpg"
+	],
+	"profiles": [
+		"bk7231t-common-user-config-ty-1.1.80-sdk-1.0.6-40.00"
+	],
+	"schemas": {
+		"000003fa6f": [
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"min": -200,
+					"max": 800,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 101
+			},
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 100,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 102
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 3072
+				},
+				"id": 201,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"id": 202,
+				"type": "raw"
+			}
+		]
+	}
+}
