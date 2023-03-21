@@ -1,0 +1,17 @@
+{
+	"name": "1.3.0 - BK7231N",
+	"sub_name": "kltwfb_single_winctrl_rf_lns00",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "kltwfb_single_winctrl_rf_lns00",
+		"version": "1.3.0",
+		"sdk": "2.3.3-40.00"
+	},
+	"data": {
+		"address_finish": "0x1BD1B",
+		"address_ssid": "0xBA835",
+		"address_ssid_padding": 4
+	}
+}
