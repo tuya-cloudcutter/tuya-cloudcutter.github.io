@@ -1,0 +1,75 @@
+{
+	"manufacturer": "Mirabella Genio",
+	"name": "I003632 Plug",
+	"key": "keyjup78v54myhan",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		326
+	],
+	"image_urls": [
+		"mirabella-genio-i003632-plug.jpg"
+	],
+	"profiles": [
+		"oem-bk7231n-plug-1.1.7-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"000003pefb": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 9
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"off",
+						"on",
+						"memory"
+					],
+					"type": "enum"
+				},
+				"id": 38
+			}
+		]
+	},
+	"device_configuration": {
+		"bt_type": 0,
+		"ch_cddpid1": 9,
+		"ch_dpid1": 1,
+		"ch_num": 1,
+		"crc": 101,
+		"jv": "1.0.0",
+		"led1_lv": 1,
+		"led1_pin": 8,
+		"module": "CB2S",
+		"net_trig": 2,
+		"netled1_lv": 1,
+		"netled1_pin": 26,
+		"netled_reuse": 0,
+		"netn_led": 0,
+		"nety_led": 1,
+		"reset_t": 3,
+		"rl1_lv": 1,
+		"rl1_pin": 6,
+		"total_bt_lv": 0,
+		"total_bt_pin": 7,
+		"total_stat": 2
+	}
+}
