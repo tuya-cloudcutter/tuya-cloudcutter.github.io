@@ -1,0 +1,17 @@
+{
+	"name": "1.0.2 - BK7231N",
+	"sub_name": "LGB88",
+	"type": "CLASSIC",
+	"icon": null,
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "LGB88",
+		"version": "1.0.2",
+		"sdk": "2.3.1-40.00"
+	},
+	"data": {
+		"address_finish": "0x1B39B",
+		"address_ssid": "0xC4229",
+		"address_ssid_padding": 4
+	}
+}
