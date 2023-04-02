@@ -4,7 +4,9 @@
 	"key": "keysmwrswfvatywc",
 	"ap_ssid": "Globe Suite",
 	"github_issues": [],
-	"image_urls": [],
+	"image_urls": [
+		"globe-electric-50347-smart-plug.jpg"
+	],
 	"profiles": [
 		"oem-bk7231s-dltj-1plug-globle-1.0.0-sdk-2.0.0-30.06"
 	],
