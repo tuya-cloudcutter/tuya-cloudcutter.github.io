@@ -1,0 +1,17 @@
+{
+	"name": "1.0.0 - BK7231T",
+	"sub_name": "oem_bk7231s_dltj_1plug_globle",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "oem_bk7231s_dltj_1plug_globle",
+		"version": "1.0.0",
+		"sdk": "2.0.0-30.06",
+		"key": "keysmwrswfvatywc"
+	},
+	"data": {
+		"address_finish": "0x9AE13",
+		"address_datagram": "0x901EF"
+	}
+}
