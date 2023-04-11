@@ -1,11 +1,11 @@
 {
 	"manufacturer": "Tuya Generic",
-	"name": "IR-RF Universal Remote Controller",
+	"name": "IR-RF Universal Remote Controller v2.0.0",
 	"key": "keym4vvjhx4sd9kk",
 	"ap_ssid": "SmartLife",
 	"github_issues": [],
 	"image_urls": [
-		"tuya-generic-ir-rf-universal-remote-controller.jpg"
+		"tuya-generic-ir-rf-universal-remote-controller-v2.0.0.jpg"
 	],
 	"profiles": [
 		"oem-bk7231n-smart-ir-rf-pro-ty-2.0.0-sdk-2.3.1-40.00"
