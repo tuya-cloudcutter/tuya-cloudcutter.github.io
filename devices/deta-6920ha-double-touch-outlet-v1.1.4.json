@@ -1,14 +1,14 @@
 {
 	"manufacturer": "DETA",
-	"name": "6920HA Double Touch Outlet",
+	"name": "6920HA Double Touch Outlet v1.1.4",
 	"key": "keyn7am9wet5muug",
 	"ap_ssid": "GRID",
 	"github_issues": [],
 	"image_urls": [
-		"deta-6920ha-double-touch-outlet.jpg"
+		"deta-6920ha-double-touch-outlet-v1.1.4.jpg"
 	],
 	"profiles": [
-		"oem-bk7231s-dltj-2switch-alerc-1.0.6-sdk-2.0.0-30.06"
+		"oem-bk7231s-dltj-2switch-alerc-1.1.4-sdk-1.0.8-40.00"
 	],
 	"schemas": {
 		"000001md02": [
