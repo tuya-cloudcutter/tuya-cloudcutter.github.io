@@ -1,0 +1,17 @@
+{
+	"name": "1.0.2 - BK7231T",
+	"sub_name": "oem_bk7231s_strip_key_ir_mk",
+	"type": "CLASSIC",
+	"icon": "string-lights",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "oem_bk7231s_strip_key_ir_mk",
+		"version": "1.0.2",
+		"sdk": "2.0.0-30.06",
+		"key": "keykh8ag43q7ndsr"
+	},
+	"data": {
+		"address_finish": "0x9E3FF",
+		"address_datagram": "0x9181F"
+	}
+}
