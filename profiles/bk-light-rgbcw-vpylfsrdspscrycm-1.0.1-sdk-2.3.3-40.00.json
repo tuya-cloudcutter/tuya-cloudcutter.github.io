@@ -1,0 +1,17 @@
+{
+	"name": "1.0.1 - BK7231N",
+	"sub_name": "bk_light_rgbcw_vpylfsrdspscrycm",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "bk_light_rgbcw_vpylfsrdspscrycm",
+		"version": "1.0.1",
+		"sdk": "2.3.3-40.00"
+	},
+	"data": {
+		"address_finish": "0x1B4A3",
+		"address_ssid": "0xD18C3",
+		"address_ssid_padding": 4
+	}
+}
