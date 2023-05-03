@@ -1,0 +1,18 @@
+{
+	"name": "1.0.15 - BK7231N",
+	"sub_name": "oem_bk7231n_slide_strip_ty",
+	"type": "CLASSIC",
+	"icon": "string-lights",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "oem_bk7231n_slide_strip_ty",
+		"version": "1.0.15",
+		"sdk": "2.3.1-40.00",
+		"key": "keyj3w8cmutjmwk5"
+	},
+	"data": {
+		"address_finish": "0x1BA6B",
+		"address_ssid": "0xC17D5",
+		"address_ssid_padding": 4
+	}
+}
