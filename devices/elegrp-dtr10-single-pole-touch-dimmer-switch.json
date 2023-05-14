@@ -1,13 +1,13 @@
 {
 	"manufacturer": "ELEGRP",
-	"name": "DPR10 Touch Dimmer Switch",
+	"name": "DTR10 Single Pole Touch Dimmer Switch",
 	"key": "bealnjtopbhmi5nn",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		377
 	],
 	"image_urls": [
-		"elegrp-dpr10-touch-dimmer-switch.jpg"
+		"elegrp-dtr10-single-pole-touch-dimmer-switch.jpg"
 	],
 	"profiles": [
 		"bk7231n-common-user-config-ty-2.0.2-sdk-2.3.1-40.00"
