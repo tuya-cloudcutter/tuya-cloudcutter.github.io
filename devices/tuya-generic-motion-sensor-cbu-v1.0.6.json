@@ -1,0 +1,65 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "Motion Sensor CBU v1.0.6",
+	"key": "key3a8nx4tpkcugh",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		391
+	],
+	"image_urls": [
+		"tuya-generic-motion-sensor-cbu-v1.0.6.jpg"
+	],
+	"profiles": [
+		"oem-bk7231n-pir-tuya-1.0.6-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"000004pn4y": [
+			{
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"range": [
+						"pir",
+						"none"
+					],
+					"type": "enum"
+				},
+				"id": 1
+			},
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 100,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 4
+			}
+		]
+	},
+	"device_configuration": {
+		"basic_pin_lv": 1,
+		"basic_pin_pin": 16,
+		"basic_st": 1,
+		"bt_lv": 0,
+		"bt_pin": 20,
+		"crc": 125,
+		"jv": "1.0.0",
+		"max_V": 3000,
+		"min_V": 2200,
+		"module": "CBU",
+		"net_t": 180,
+		"rstcnt": 3,
+		"samp_pin": 23,
+		"samp_sw_lv": 1,
+		"samp_sw_pin": 17,
+		"samp_type": 1,
+		"status_led_lv": 1,
+		"status_led_pin": 26,
+		"tamper_st": 0
+	}
+}
