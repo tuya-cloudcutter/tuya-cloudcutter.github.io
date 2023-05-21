@@ -1,11 +1,11 @@
 {
 	"manufacturer": "Merkury Innovations",
-	"name": "MI-BW210-999WW",
+	"name": "MI-BW210-999WW RGBCT Bulb v2.9.6",
 	"key": "keytg5kq8gvkv9dh",
 	"ap_ssid": "Merkury",
 	"github_issues": [],
 	"image_urls": [
-		"merkury-innovations-mi-bw210-999www.jpg"
+		"merkury-innovations-mi-bw210-999ww-rgbct-bulb-v2.9.6.jpg"
 	],
 	"profiles": [
 		"oem-bk7231s-light-ty-2.9.6-sdk-1.0.2-40.00"
