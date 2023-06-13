@@ -1,11 +1,11 @@
 {
 	"manufacturer": "Arlec",
-	"name": "PC191HA Smart Plug",
+	"name": "PC191HA Smart Plug BK7231T v1.3.5",
 	"key": "keym9qkuywghyrvs",
 	"ap_ssid": "GRID",
 	"github_issues": [],
 	"image_urls": [
-		"arlec-pc191ha-smart-plug.jpg"
+		"arlec-pc191ha-smart-plug-bk7231t-v1.3.5.jpg"
 	],
 	"profiles": [
 		"oem-bk7231s-dltj-1.3.5-sdk-1.0.2-40.00"
