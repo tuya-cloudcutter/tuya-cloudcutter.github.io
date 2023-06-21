@@ -1,0 +1,57 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "AW201 Contact Sensor",
+	"key": "keyhhtuxrsp7ueap",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"tuya-generic-aw201-contact-sensor.jpg"
+	],
+	"profiles": [
+		"oem-bk7231n-gate-magnet-1.0.10-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"000003gl6t": [
+			{
+				"mode": "ro",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 100,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 2,
+				"type": "obj"
+			}
+		]
+	},
+	"device_configuration": {
+		"basic_pin_lv": 0,
+		"basic_pin_pin": 16,
+		"basic_st": 1,
+		"bt_lv": 0,
+		"bt_pin": 20,
+		"crc": 17,
+		"jv": "1.0.4",
+		"max_V": 3000,
+		"min_V": 2200,
+		"module": "CBU",
+		"net_t": 180,
+		"rstcnt": 3,
+		"samp_pin": 23,
+		"samp_sw_lv": 1,
+		"samp_sw_pin": 17,
+		"samp_type": 1,
+		"status_led_lv": 1,
+		"status_led_pin": 26
+	}
+}
