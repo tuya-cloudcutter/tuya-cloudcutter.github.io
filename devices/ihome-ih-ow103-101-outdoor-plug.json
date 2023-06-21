@@ -1,11 +1,11 @@
 {
 	"manufacturer": "iHome",
-	"name": "IH-OW103-101",
+	"name": "IH-OW103-101 Outdoor Plug",
 	"key": "keya4gvchmtapm8n",
 	"ap_ssid": "iHome",
 	"github_issues": [],
 	"image_urls": [
-		"ihome-ih-ow103-101.jpg"
+		"ihome-ih-ow103-101-outdoor-plug.jpg"
 	],
 	"profiles": [
 		"oem-bk7231s-rnd-switch-1.1.8-sdk-1.0.2-40.00"
