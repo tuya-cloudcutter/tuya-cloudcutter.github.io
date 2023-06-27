@@ -1,14 +1,14 @@
 {
 	"manufacturer": "UltraPro",
-	"name": "WFD4001 Light Switch",
+	"name": "WFD4001 Light Switch v1.1.14",
 	"key": "keyjeqdj4rtvq98n",
 	"ap_ssid": "UltraPro",
 	"github_issues": [],
 	"image_urls": [
-		"ultrapro-wfd4001-switch.jpg"
+		"ultrapro-wfd4001-light-switch-v1.1.14.jpg"
 	],
 	"profiles": [
-		"oem-bk7231s-switch1-zero-kjd-1.1.6-sdk-1.0.2-40.00"
+		"oem-bk7231s-switch1-zero-kjd-1.1.14-sdk-1.0.2-40.00"
 	],
 	"schemas": {
 		"0000030p1h": [
@@ -118,6 +118,65 @@
 					"type": "enum"
 				},
 				"id": 106,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"standard",
+						"smart_bulb",
+						"tamperproof"
+					],
+					"type": "enum"
+				},
+				"id": 107,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"off",
+						"on"
+					],
+					"type": "enum"
+				},
+				"id": 108,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"scene"
+					],
+					"type": "enum"
+				},
+				"id": 109,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"scene"
+					],
+					"type": "enum"
+				},
+				"id": 110,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"off",
+						"on"
+					],
+					"type": "enum"
+				},
+				"id": 111,
 				"type": "obj"
 			}
 		]
