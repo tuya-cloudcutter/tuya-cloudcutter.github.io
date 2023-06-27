@@ -1,0 +1,115 @@
+{
+	"manufacturer": "Cree",
+	"name": "CMACC-CMSC-UNV-WH 5 Button Scene Controller",
+	"key": "keyncscfv9ujjnge",
+	"ap_ssid": "SL-CreeLighting",
+	"github_issues": [
+		422
+	],
+	"image_urls": [
+		"cree-cmacc-cmsc-unv-wh-5-button-scene-controller.jpg"
+	],
+	"profiles": [
+		"oem-bk7231n-scene-switch-1.0.1-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"000003imrz": [
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"scene"
+					],
+					"type": "enum"
+				},
+				"id": 1
+			},
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"scene"
+					],
+					"type": "enum"
+				},
+				"id": 2
+			},
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"scene"
+					],
+					"type": "enum"
+				},
+				"id": 3
+			},
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"scene"
+					],
+					"type": "enum"
+				},
+				"id": 4
+			},
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"scene"
+					],
+					"type": "enum"
+				},
+				"id": 5
+			}
+		]
+	},
+	"device_configuration": {
+		"bt1_lv": 0,
+		"bt1_pin": 20,
+		"bt2_lv": 0,
+		"bt2_pin": 22,
+		"bt3_lv": 0,
+		"bt3_pin": 28,
+		"bt4_lv": 0,
+		"bt4_pin": 14,
+		"bt5_lv": 0,
+		"bt5_pin": 15,
+		"ch_dpid1": 1,
+		"ch_dpid2": 2,
+		"ch_dpid3": 3,
+		"ch_dpid4": 4,
+		"ch_dpid5": 5,
+		"ch_num": 5,
+		"crc": 101,
+		"flick_time": 2,
+		"jv": 1,
+		"led1_lv": 0,
+		"led1_pin": 6,
+		"led2_lv": 0,
+		"led2_pin": 7,
+		"led3_lv": 0,
+		"led3_pin": 8,
+		"led4_lv": 0,
+		"led4_pin": 9,
+		"led5_lv": 0,
+		"led5_pin": 24,
+		"net_led_y": 0,
+		"net_trig": 0,
+		"rsthold": 5,
+		"wfst_lv": 0,
+		"wfst_pin": 23
+	}
+}
