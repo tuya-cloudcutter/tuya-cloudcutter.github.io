@@ -1,11 +1,11 @@
 {
 	"manufacturer": "MOES",
-	"name": "WS-B-US Smart Switch",
+	"name": "WS-B-US Smart Switch v1.1.0",
 	"key": "key5ckdnys3pqgec",
 	"ap_ssid": "SmartLife",
 	"github_issues": [],
 	"image_urls": [
-		"moes-ws-b-us-smart-switch.jpg"
+		"moes-ws-b-us-smart-switch-v1.1.0.jpg"
 	],
 	"profiles": [
 		"oem-bk7231n-dctrl-switch-1.1.0-sdk-2.3.1-40.00"
