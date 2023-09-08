@@ -3,7 +3,9 @@
 	"name": "TMWF02 Wifi Fan Module",
 	"key": "kxtcfbazhsvjqcfz",
 	"ap_ssid": "SmartLife",
-	"github_issues": [],
+	"github_issues": [
+		470
+	],
 	"image_urls": [
 		"atarm-tmwf02-wifi-fan-module.jpg"
 	],

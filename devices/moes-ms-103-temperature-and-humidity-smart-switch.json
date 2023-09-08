@@ -3,7 +3,9 @@
 	"name": "MS-103 Temperature and Humidity Smart Switch",
 	"key": "keyxnxg34hf5xw9e",
 	"ap_ssid": "SmartLife",
-	"github_issues": [],
+	"github_issues": [
+		457
+	],
 	"image_urls": [
 		"moes-ms-103-temperature-and-humidity-smart-switch.jpg"
 	],

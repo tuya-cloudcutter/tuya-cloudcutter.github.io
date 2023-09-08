@@ -3,7 +3,9 @@
 	"name": "TY63A DIN Rail Energy Meter",
 	"key": "wcihaluccfsoayqa",
 	"ap_ssid": "SmartLife",
-	"github_issues": [],
+	"github_issues": [
+		469
+	],
 	"image_urls": [
 		"tuya-generic-ty63a-din-rail-energy-meter.jpg"
 	],

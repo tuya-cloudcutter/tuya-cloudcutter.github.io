@@ -3,7 +3,9 @@
 	"name": "AHR-083 Smart Surge Protector Power Strip",
 	"key": "keya4gvchmtapm8n",
 	"ap_ssid": "SmartLife",
-	"github_issues": [],
+	"github_issues": [
+		468
+	],
 	"image_urls": [
 		"powsav-ahr-083-smart-surge-protector-power-strip.jpg"
 	],

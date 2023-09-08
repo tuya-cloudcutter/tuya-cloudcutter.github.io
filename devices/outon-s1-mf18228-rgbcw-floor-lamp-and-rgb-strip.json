@@ -3,7 +3,9 @@
 	"name": "S1 MF18228 RGBCW Floor Lamp and RGB Strip",
 	"key": "xaq7njftocha1f6z",
 	"ap_ssid": "SmartLife",
-	"github_issues": [],
+	"github_issues": [
+		466
+	],
 	"image_urls": [
 		"outon-s1-mf18228-rgbcw-floor-lamp-and-rgb-strip.jpg"
 	],

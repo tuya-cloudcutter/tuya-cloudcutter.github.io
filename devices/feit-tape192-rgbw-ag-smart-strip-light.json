@@ -3,7 +3,9 @@
 	"name": "TAPE192-RGBW-AG Smart Strip Light",
 	"key": "keyfpf3sw35uqxpv",
 	"ap_ssid": "SmartLife",
-	"github_issues": [],
+	"github_issues": [
+		458
+	],
 	"image_urls": [
 		"feit-tape192-rgbw-ag-smart-strip-light.jpg"
 	],
