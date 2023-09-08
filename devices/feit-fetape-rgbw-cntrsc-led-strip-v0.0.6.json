@@ -1,0 +1,168 @@
+{
+	"manufacturer": "Feit",
+	"name": "FETAPE-RGBW-CNTRSC LED Strip v0.0.6",
+	"key": "keyej3qtkvphajcg",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		472
+	],
+	"image_urls": [
+		"feit-fetape-rgbw-cntrsc-led-strip-v0.0.6.jpg"
+	],
+	"profiles": [
+		"oem-bk7231n-strip-433-boyuan-0.0.6-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"000003jdss": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 20
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"white",
+						"colour",
+						"scene",
+						"music"
+					],
+					"type": "enum"
+				},
+				"id": 21
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 22
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 24
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 25
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 26
+			},
+			{
+				"type": "obj",
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 27
+			},
+			{
+				"type": "obj",
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 28
+			}
+		]
+	},
+	"device_configuration": {
+		"Jsonver": "1.0.2",
+		"aging": 0,
+		"b_lv": 1,
+		"b_pin": 7,
+		"brightmax": 100,
+		"brightmin": 10,
+		"brightstep": 10,
+		"c_lv": 1,
+		"c_pin": 6,
+		"category": "0505",
+		"cgdirection": 0,
+		"cgmode": 1,
+		"cmod": "rgbc",
+		"colormax": 100,
+		"colormin": 10,
+		"crc": 44,
+		"cwmaxp": 100,
+		"cwtype": 0,
+		"defbright": 50,
+		"defcolor": "c",
+		"deftemp": 50,
+		"dmod": 0,
+		"g_lv": 1,
+		"g_pin": 8,
+		"gmkb": 60,
+		"gmkg": 60,
+		"gmkr": 80,
+		"gmwb": 75,
+		"gmwg": 70,
+		"gmwr": 100,
+		"irfunc": 0,
+		"ismusic": 0,
+		"k1dfunc": 0,
+		"k4dfunc": 0,
+		"k4ldir": 0,
+		"k4lfunc": 0,
+		"k4pin_lv": 0,
+		"k4pin_pin": 17,
+		"k4sdir": 0,
+		"k4sfunc": 0,
+		"key_lv": 0,
+		"key_pin": 26,
+		"keyfunc": 1,
+		"knum": 1,
+		"ktime": 3,
+		"lfunc": 1,
+		"module": "CBU",
+		"notdisturb": 0,
+		"onoffmode": 0,
+		"pairt": 180,
+		"periodtime": 5,
+		"pmemory": 1,
+		"pwmhz": 1000,
+		"r_lv": 1,
+		"r_pin": 9,
+		"remdmode": 0,
+		"rstbr": 50,
+		"rstcor": "c",
+		"rsttemp": 50,
+		"sfunc": 3,
+		"title20": 0,
+		"w_lv": 1,
+		"w_pin": 24,
+		"wfcfg": "spcl_auto",
+		"wfct": 3
+	}
+}
