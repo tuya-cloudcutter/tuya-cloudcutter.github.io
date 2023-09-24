@@ -212,7 +212,5 @@
 		"sel_pin_pin": 24,
 		"vi_pin": 8,
 		"vol_def": 0
-	},
-	"slug": "moes-ms-101-16a-switch",
-	"image_url": "https://tuya-cloudcutter.github.io/images/thumbs/moes-ms-101-16a-switch.jpg"
+	}
 }
