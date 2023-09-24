@@ -1,0 +1,44 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "898WT Water Leak Sensor",
+	"key": "tzvpcwnpewmidq11",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		486
+	],
+	"image_urls": [
+		"tuya-generic-898wt-water-leak-sensor.jpg"
+	],
+	"profiles": [
+		"898wt-cbu-7231nl-1.0.2-sdk-2.3.3-40.00"
+	],
+	"schemas": {
+		"000004ytou": [
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"range": [
+						"alarm",
+						"normal"
+					],
+					"type": "enum"
+				},
+				"id": 1
+			},
+			{
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 100,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 4
+			}
+		]
+	}
+}
