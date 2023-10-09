@@ -1,0 +1,16 @@
+{
+	"name": "1.0.3 - BK7231T",
+	"sub_name": "SK30",
+	"type": "CLASSIC",
+	"icon": null,
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "SK30",
+		"version": "1.0.3",
+		"sdk": "2.0.0-30.06"
+	},
+	"data": {
+		"address_finish": "0x94DFF",
+		"address_datagram": "0x87E5F"
+	}
+}

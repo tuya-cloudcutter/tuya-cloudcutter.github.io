@@ -1,0 +1,64 @@
+{
+	"manufacturer": "TreatLife",
+	"name": "SK30 Outdoor Plug",
+	"key": "khk4iab2vmxf17gh",
+	"ap_ssid": "TreatLife-SL",
+	"github_issues": [],
+	"image_urls": [
+		"treatlife-sk30-outdoor-plug.jpg"
+	],
+	"profiles": [
+		"sk30-1.0.3-sdk-2.0.0-30.06"
+	],
+	"schemas": {
+		"0000034z5y": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 2
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"none",
+						"relay",
+						"pos"
+					],
+					"type": "enum"
+				},
+				"id": 39,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 42,
+				"type": "obj"
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 43
+			}
+		]
+	}
+}
