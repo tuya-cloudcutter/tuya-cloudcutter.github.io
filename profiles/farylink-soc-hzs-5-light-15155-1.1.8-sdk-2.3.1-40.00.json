@@ -1,0 +1,17 @@
+{
+	"name": "1.1.8 - BK7231N",
+	"sub_name": "farylink_soc_hzs_5_light_15155",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "farylink_soc_hzs_5_light_15155",
+		"version": "1.1.8",
+		"sdk": "2.3.1-40.00"
+	},
+	"data": {
+		"address_finish": "0x1BA77",
+		"address_ssid": "0xC88C1",
+		"address_ssid_padding": 4
+	}
+}
