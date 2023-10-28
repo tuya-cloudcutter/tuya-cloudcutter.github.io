@@ -1,29 +1,28 @@
 {
 	"manufacturer": "TreatLife",
-	"name": "SL10 A19 RGBCT Bulb 1.0.1",
-	"key": "keypcvqhw97kqy4h",
+	"name": "SL10 A19 RGBCT Bulb BK7231T v1.0.8",
+	"key": "keyhxhxkrkkxcvt7",
 	"ap_ssid": "TreatLife-SL",
 	"github_issues": [
-		88
+		13
 	],
 	"image_urls": [
-		"treatlife-sl10-v2.jpg"
+		"treatlife-sl10-a19-rgbct-bulb-bk7231t-v1.0.8.jpg"
 	],
 	"profiles": [
-		"oem-bk7231s-light-mix4to5-db-rmd-1.0.1-sdk-2.0.0-30.06"
+		"oem-bk7231s-ty-ffc-db-ldv-1.0.8-sdk-2.0.0-30.06"
 	],
 	"schemas": {
-		"00000278j1": [
+		"0000027d7o": [
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"type": "bool"
 				},
-				"id": 20
+				"id": 20,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"range": [
@@ -34,10 +33,10 @@
 					],
 					"type": "enum"
 				},
-				"id": 21
+				"id": 21,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"min": 10,
@@ -46,10 +45,10 @@
 					"step": 1,
 					"type": "value"
 				},
-				"id": 22
+				"id": 22,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"min": 0,
@@ -58,28 +57,28 @@
 					"step": 1,
 					"type": "value"
 				},
-				"id": 23
+				"id": 23,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 24
+				"id": 24,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 25
+				"id": 25,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"min": 0,
@@ -88,75 +87,100 @@
 					"step": 1,
 					"type": "value"
 				},
-				"id": 26
+				"id": 26,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "wr",
 				"property": {
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 27
+				"id": 27,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "wr",
 				"property": {
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 28
+				"id": 28,
+				"type": "obj"
 			},
 			{
 				"mode": "rw",
+				"property": {
+					"type": "raw",
+					"maxlen": 128
+				},
 				"id": 30,
 				"type": "raw"
 			},
 			{
 				"mode": "rw",
+				"property": {
+					"type": "raw",
+					"maxlen": "255"
+				},
 				"id": 31,
 				"type": "raw"
 			},
 			{
 				"mode": "rw",
+				"property": {
+					"type": "raw",
+					"maxlen": "255"
+				},
 				"id": 32,
 				"type": "raw"
 			}
 		]
 	},
 	"device_configuration": {
-		"Jsonver": "1.1.0",
-		"b_lv": 1,
-		"b_pin": 9,
+		"Jsonver": "1.1.9",
 		"brightmax": 100,
 		"brightmin": 5,
-		"c_lv": 1,
-		"c_pin": 24,
-		"cmod": "rgbc",
+		"cagt": 20,
+		"campere": 10,
+		"category": "0505",
+		"cmod": "rgbcw",
 		"colormax": 100,
 		"colormin": 10,
+		"crc": 108,
 		"cwmaxp": 100,
 		"cwtype": 0,
 		"defbright": 100,
 		"defcolor": "c",
-		"deftemp": 0,
-		"dmod": 0,
-		"g_lv": 1,
-		"g_pin": 8,
-		"mix4to5": 1,
-		"module": "WB3S",
+		"deftemp": 100,
+		"dmod": 2,
+		"gmkb": 60,
+		"gmkg": 60,
+		"gmkr": 80,
+		"gmwb": 75,
+		"gmwg": 70,
+		"gmwr": 100,
+		"iicb": 0,
+		"iicc": 4,
+		"iicg": 1,
+		"iicr": 2,
+		"iicscl": 7,
+		"iicsda": 8,
+		"iicw": 3,
+		"module": "WB8P",
 		"onoffmode": 1,
 		"pmemory": 1,
-		"pwmhz": 2000,
-		"r_lv": 1,
-		"r_pin": 7,
+		"prodagain": 0,
+		"remdmode": 0,
+		"rgbt": 10,
 		"rstbr": 50,
 		"rstcor": "c",
-		"rstmode": 0,
 		"rstnum": 3,
-		"rsttemp": 0,
+		"rsttemp": 100,
 		"title20": 1,
-		"wfcfg": "spcl"
+		"wampere": 60,
+		"wfcfg": "spcl",
+		"wfct": 3,
+		"wt": 20
 	}
 }

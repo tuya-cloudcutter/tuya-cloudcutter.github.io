@@ -1,0 +1,283 @@
+{
+	"manufacturer": "TreatLife",
+	"name": "SL10 A19 RGBCT Bulb BK7231N v1.3.21",
+	"key": "key8u54q9dtru5jw",
+	"ap_ssid": "TreatLife-SL",
+	"github_issues": [
+		511
+	],
+	"image_urls": [
+		"treatlife-sl10-a19-rgbct-bulb-bk7231n-v1.3.21.jpg"
+	],
+	"profiles": [
+		"oem-bk7231n-light-ty-1.3.21-sdk-2.3.3-40.00"
+	],
+	"schemas": {
+		"000004f4gf": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 20
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"white",
+						"colour",
+						"scene",
+						"music"
+					],
+					"type": "enum"
+				},
+				"id": 21
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 22
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 23
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 24
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 25
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 26
+			},
+			{
+				"type": "obj",
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 27
+			},
+			{
+				"type": "obj",
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 28
+			},
+			{
+				"mode": "rw",
+				"id": 31,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 32,
+				"type": "raw"
+			}
+		]
+	},
+	"device_configuration": {
+        "Jsonver": "1.0.0",
+        "b_lv": 1,
+        "b_pin": 9,
+        "brightmax": 100,
+        "brightmin": 5,
+        "c_lv": 1,
+        "c_pin": 24,
+        "cagt": 5,
+        "category": "0505",
+        "cmod": "rgbcw",
+        "colormax": 100,
+        "colormin": 10,
+        "crc": 51,
+        "cwtype": 0,
+        "defbright": 100,
+        "defcolor": "c",
+        "deftemp": 0,
+        "dmod": 0,
+        "g_lv": 1,
+        "g_pin": 8,
+        "gmkb": 60,
+        "gmkg": 60,
+        "gmkr": 80,
+        "gmwb": 75,
+        "gmwg": 70,
+        "gmwr": 100,
+        "mixway": 3,
+        "module": "CB8P",
+        "notdisturb": 0,
+        "onoffmode": 1,
+        "pmemory": 1,
+        "prodagain": 1,
+        "pwmhz": 2000,
+        "r_lv": 1,
+        "r_pin": 7,
+        "remdmode": 0,
+        "rgbt": 5,
+        "rstbr": 50,
+        "rstcor": "c",
+        "rstnum": 3,
+        "rsttemp": 0,
+        "tempmix": [
+            [
+                "T18",
+                "000",
+                "000",
+                "000",
+                "3e8"
+            ],
+            [
+                "T22",
+                "000",
+                "0ca",
+                "029",
+                377
+            ],
+            [
+                "T27",
+                "000",
+                151,
+                "045",
+                "32a"
+            ],
+            [
+                "T30",
+                "000",
+                "1b1",
+                "05c",
+                "2f1"
+            ],
+            [
+                "T35",
+                "000",
+                236,
+                "07e",
+                "2a7"
+            ],
+            [
+                "T40",
+                "000",
+                "2b3",
+                "0a3",
+                268
+            ],
+            [
+                "T45",
+                "000",
+                310,
+                "0c2",
+                231
+            ],
+            [
+                "T50",
+                "000",
+                352,
+                "0dc",
+                201
+            ],
+            [
+                "T57",
+                "000",
+                385,
+                "0f2",
+                "1d6"
+            ],
+            [
+                "T60",
+                "000",
+                "39d",
+                100,
+                "1b0"
+            ],
+            [
+                "T65",
+                "000",
+                "39e",
+                106,
+                "18c"
+            ],
+            [
+                "T70",
+                "000",
+                "3a4",
+                "10d",
+                "16e"
+            ],
+            [
+                "T75",
+                "000",
+                "3b2",
+                115,
+                "15f"
+            ],
+            [
+                "T80",
+                "000",
+                "3c3",
+                "11e",
+                154
+            ],
+            [
+                "T90",
+                "000",
+                "3d6",
+                127,
+                "14a"
+            ],
+            [
+                "T100",
+                "000",
+                "3e8",
+                130,
+                "13f"
+            ]
+        ],
+        "title20": 1,
+        "wfcfg": "spcl",
+        "wfct": 3
+    }
+}
