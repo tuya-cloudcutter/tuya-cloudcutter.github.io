@@ -1,0 +1,73 @@
+{
+	"manufacturer": "Mirabella Genio",
+	"name": "I003867 USB Desk Lamp With Wireless Charger",
+	"key": "f4jkzf9qsw5zi0pi",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		517
+	],
+	"image_urls": [
+		"mirabella-genio-i003867-usb-desk-lamp-with-wireless-charger.jpg"
+	],
+	"profiles": [
+		"bk7231t-common-user-config-ty-1.1.71-sdk-1.0.2-40.00"
+	],
+	"schemas": {
+		"0000037yhf": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"Breathe",
+						"nature",
+						"read",
+						"night"
+					],
+					"type": "enum"
+				},
+				"id": 2
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 25,
+					"max": 255,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 3
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 255,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 4
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 101,
+				"type": "obj"
+			}
+		]
+	}
+}
