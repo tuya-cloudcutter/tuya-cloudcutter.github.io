@@ -1,13 +1,13 @@
 {
 	"manufacturer": "Xenon",
-	"name": "SM-PW801-US Wall Outlet",
+	"name": "SM-PW801-U2 Wall Outlet",
 	"key": "keya4gvchmtapm8n",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		536
 	],
 	"image_urls": [
-		"xenon-sm-pw801-us-wall-outlet.jpg"
+		"xenon-sm-pw801-u2-wall-outlet.jpg"
 	],
 	"profiles": [
 		"oem-bk7231s-rnd-switch-1.0.6-sdk-2.0.0-30.05"
