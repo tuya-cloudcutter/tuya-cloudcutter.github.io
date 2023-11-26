@@ -1,0 +1,18 @@
+{
+	"name": "1.0.8 - BK7231N",
+	"sub_name": "oem_bk7231n_light3_string_jt",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "oem_bk7231n_light3_string_jt",
+		"version": "1.0.8",
+		"sdk": "2.3.1-40.00",
+		"key": "keyfkrfu7f9k55j7"
+	},
+	"data": {
+		"address_finish": "0x1B5AB",
+		"address_ssid": "0xC51D9",
+		"address_ssid_padding": 4
+	}
+}
