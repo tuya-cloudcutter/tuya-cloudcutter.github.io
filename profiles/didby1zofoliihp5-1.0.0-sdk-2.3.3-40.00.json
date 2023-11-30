@@ -1,0 +1,17 @@
+{
+	"name": "1.0.0 - BK7231N",
+	"sub_name": "didby1zofoliihp5",
+	"type": "CLASSIC",
+	"icon": null,
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "didby1zofoliihp5",
+		"version": "1.0.0",
+		"sdk": "2.3.3-40.00"
+	},
+	"data": {
+		"address_finish": "0x1B59B",
+		"address_ssid": "0xC1205",
+		"address_ssid_padding": 4
+	}
+}
