@@ -1,14 +1,14 @@
 {
 	"manufacturer": "LSC",
-	"name": "3004154 970743 LED Mood Light v1.1.5",
+	"name": "3004154 970743 LED Mood Light BK7231N v2.0.0",
 	"key": "keynremrcjf97twe",
 	"ap_ssid": "SmartLife",
 	"github_issues": [],
 	"image_urls": [
-		"lsc-3004154-970743-led-mood-light-v1.1.5.jpg"
+		"lsc-3004154-970743-led-mood-light-bk7231n-v2.0.0.jpg"
 	],
 	"profiles": [
-		"oem-bk7231n-strip-ty-1.1.5-sdk-2.3.1-40.00"
+		"oem-bk7231n-strip-ty-2.0.0-sdk-2.3.1-40.00"
 	],
 	"schemas": {
 		"0000038gpt": [
@@ -115,18 +115,19 @@
 	},
 	"device_configuration": {
 		"Jsonver": "1.0.0",
-		"aging": 0,
+		"aging": 1,
 		"b_lv": 1,
 		"b_pin": 26,
 		"brightmax": 100,
 		"brightmin": 10,
 		"c_lv": 1,
 		"c_pin": 7,
+		"cagt": 10,
 		"category": "0505",
 		"cmod": "rgbcw",
 		"colormax": 100,
 		"colormin": 10,
-		"crc": 76,
+		"crc": 89,
 		"cwmaxp": 100,
 		"cwtype": 0,
 		"defbright": 100,
@@ -153,10 +154,12 @@
 		"notdisturb": 0,
 		"onoffmode": 0,
 		"pmemory": 1,
+		"prodagain": 0,
 		"pwmhz": 20000,
 		"r_lv": 1,
 		"r_pin": 8,
 		"remdmode": 0,
+		"rgbt": 10,
 		"rstbr": 50,
 		"rstcor": "c",
 		"rstmode": 2,
@@ -167,6 +170,7 @@
 		"w_lv": 1,
 		"w_pin": 6,
 		"wfcfg": "spcl_auto",
-		"wfct": 3
+		"wfct": 3,
+		"wt": 10
 	}
 }
