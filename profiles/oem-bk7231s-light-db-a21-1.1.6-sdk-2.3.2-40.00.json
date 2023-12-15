@@ -1,0 +1,18 @@
+{
+	"name": "1.1.6 - BK7231T",
+	"sub_name": "oem_bk7231s_light_db_a21",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "oem_bk7231s_light_db_a21",
+		"version": "1.1.6",
+		"sdk": "2.3.2-40.00",
+		"key": "key7hjqeuq3w3dwj"
+	},
+	"data": {
+		"address_finish": "0xC6F59",
+		"address_ssid": "0xCC61F",
+		"address_ssid_padding": 8
+	}
+}
