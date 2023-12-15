@@ -1,11 +1,11 @@
 {
 	"manufacturer": "Cree",
-	"name": "CMA21-100W-AL-9ACK 100W RGBCT Bulb",
+	"name": "CMA21-100W-AL-9ACK 100W RGBCT Bulb CB8P BK7231N v1.0.0",
 	"key": "keymv33cu4fxgekh",
 	"ap_ssid": "SL-CreeLighting",
 	"github_issues": [],
 	"image_urls": [
-		"cree-cma21-100w-al-9ack-100w-rgbct-bulb.jpg"
+		"cree-cma21-100w-al-9ack-100w-rgbct-bulb-cb8p-bk7231n-v1.0.0.jpg"
 	],
 	"profiles": [
 		"oem-bk7231n-light5-db-a21-1.0.0-sdk-2.3.1-40.00"
