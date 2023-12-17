@@ -1,0 +1,18 @@
+{
+	"name": "1.0.4 - BK7231N",
+	"sub_name": "tiandu_bk7231n_light2_strip",
+	"type": "CLASSIC",
+	"icon": "string-lights",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "tiandu_bk7231n_light2_strip",
+		"version": "1.0.4",
+		"sdk": "2.3.1-40.00",
+		"key": "keyfvscsx9gmxsmh"
+	},
+	"data": {
+		"address_finish": "0x1BA3B",
+		"address_ssid": "0xD704D",
+		"address_ssid_padding": 4
+	}
+}
