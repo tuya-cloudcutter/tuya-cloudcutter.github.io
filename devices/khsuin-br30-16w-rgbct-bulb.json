@@ -1,0 +1,148 @@
+{
+	"manufacturer": "KHSUIN",
+	"name": "BR30 16W RGBCT Bulb",
+	"key": "fslmzu1jritagk4z",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		574
+	],
+	"image_urls": [
+		"khsuin-br30-16w-rgbct-bulb.jpg"
+	],
+	"profiles": [
+		"bk-light-lm96xe1-16w-1.0.0-sdk-1.0.2-40.00"
+	],
+	"schemas": {
+		"000002unpt": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 20
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"white",
+						"colour",
+						"scene",
+						"music"
+					],
+					"type": "enum"
+				},
+				"id": 21
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 22
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 23
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 24
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 25
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 26
+			},
+			{
+				"type": "obj",
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 27
+			},
+			{
+				"type": "obj",
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 28
+			}
+		]
+	},
+	"device_configuration": {
+		"Jsonver": "1.1.0",
+		"b_lv": 1,
+		"b_pin": 26,
+		"brightmax": 100,
+		"brightmin": 10,
+		"c_lv": 1,
+		"c_pin": 8,
+		"cmod": "rgbcw",
+		"colormax": 100,
+		"colormin": 10,
+		"cwmaxp": 100,
+		"cwtype": 0,
+		"defbright": 100,
+		"defcolor": "c",
+		"deftemp": 50,
+		"dmod": 0,
+		"g_lv": 1,
+		"g_pin": 24,
+		"module": "WB3S",
+		"onoffmode": 0,
+		"pmemory": 1,
+		"pwmhz": 1000,
+		"r_lv": 1,
+		"r_pin": 9,
+		"rstbr": 100,
+		"rstcor": "c",
+		"rstmode": 0,
+		"rstnum": 3,
+		"rsttemp": 50,
+		"title20": 0,
+		"w_lv": 1,
+		"w_pin": 6,
+		"wfcfg": "spcl"
+	}
+}
