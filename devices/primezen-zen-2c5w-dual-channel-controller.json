@@ -1,0 +1,99 @@
+{
+	"manufacturer": "Primezen",
+	"name": "ZEN-2C5W Dual Channel Controller",
+	"key": "xyri1csvtls9tosz",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		578
+	],
+	"image_urls": [
+		"primezen-zen-2c5w-dual-channel-controller.jpg"
+	],
+	"profiles": [
+		"bk7231n-common-user-config-ty-2.0.2-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"000003hmlq": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 2
+			},
+			{
+				"type": "obj",
+				"mode": "wr",
+				"property": {
+					"range": [
+						"SP1",
+						"Sp2"
+					],
+					"type": "enum"
+				},
+				"id": 102
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"type": "bool"
+				},
+				"id": 103,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"type": "bool"
+				},
+				"id": 104,
+				"type": "obj"
+			},
+			{
+				"mode": "wr",
+				"property": {
+					"range": [
+						"SC1",
+						"SC2"
+					],
+					"type": "enum"
+				},
+				"id": 109,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"type": "bool"
+				},
+				"id": 110,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"type": "bool"
+				},
+				"id": 111,
+				"type": "obj"
+			},
+			{
+				"mode": "wr",
+				"property": {
+					"type": "bool"
+				},
+				"id": 116,
+				"type": "obj"
+			}
+		]
+	}
+}
