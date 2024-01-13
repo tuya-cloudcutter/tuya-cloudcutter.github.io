@@ -1,0 +1,226 @@
+{
+	"manufacturer": "Cloudy Bay",
+	"name": "LJD006SMWH 6in Recessed Light CB3L v1.2.6",
+	"key": "keyyepxwk9my9esq",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"cloudy-bay-ljd006smwh-6in-recessed-light-cb3l-v1.2.6.jpg"
+	],
+	"profiles": [
+		"oem-bk7231n-ceiling-light-ty-1.2.6-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"0000030ojf": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 20
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"white",
+						"colour",
+						"scene",
+						"music"
+					],
+					"type": "enum"
+				},
+				"id": 21
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 22
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 23
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 24
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 25
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 26
+			},
+			{
+				"type": "obj",
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 27
+			},
+			{
+				"type": "obj",
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 28
+			},
+			{
+				"type": "obj",
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 29
+			},
+			{
+				"mode": "rw",
+				"id": 30,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 31,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 32,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 33,
+				"type": "raw"
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 34
+			},
+			{
+				"mode": "rw",
+				"id": 35,
+				"type": "raw"
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 53
+			},
+			{
+				"mode": "rw",
+				"id": 209,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 210,
+				"type": "raw"
+			}
+		]
+	},
+	"device_configuration": {
+		"Jsonver": "1.0.3",
+		"b_lv": 1,
+		"b_pin": 26,
+		"brightmax": 100,
+		"brightmin": 5,
+		"c_lv": 1,
+		"c_pin": 7,
+		"cagt": 20,
+		"category": "0505",
+		"cmod": "rgbcw",
+		"colormax": 100,
+		"colormaxp": 100,
+		"colormin": 10,
+		"colorpfun": 1,
+		"crc": 115,
+		"cwmaxp": 100,
+		"cwtype": 0,
+		"defbright": 100,
+		"defcolor": "c",
+		"deftemp": 70,
+		"dmod": 0,
+		"g_lv": 1,
+		"g_pin": 24,
+		"gmkb": 60,
+		"gmkg": 60,
+		"gmkr": 80,
+		"gmwb": 75,
+		"gmwg": 70,
+		"gmwr": 100,
+		"irfunc": 0,
+		"module": "CB3L",
+		"mutex": 1,
+		"nightled": 0,
+		"notdisturb": 0,
+		"onoffmode": 0,
+		"onofftime": 800,
+		"pmemory": 1,
+		"prodagain": 0,
+		"pwmhz": 1000,
+		"r_lv": 1,
+		"r_pin": 8,
+		"remdmode": 0,
+		"rgbt": 10,
+		"rstbr": 100,
+		"rstcor": "c",
+		"rstnum": 3,
+		"rsttemp": 70,
+		"title20": 1,
+		"w_lv": 1,
+		"w_pin": 6,
+		"wfcfg": "spcl",
+		"wfct": 10,
+		"wt": 20
+	}
+}
