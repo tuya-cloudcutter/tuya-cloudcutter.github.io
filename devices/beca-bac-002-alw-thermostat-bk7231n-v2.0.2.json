@@ -1,0 +1,111 @@
+{
+	"manufacturer": "Beca",
+	"name": "BAC-002-ALW Thermostat BK7231N v2.0.2",
+	"key": "N8bUqOZ8HBQjU0K0",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		596
+	],
+	"image_urls": [
+		"beca-bac-002-alw-thermostat-bk7231n-v2.0.2.jpg"
+	],
+	"profiles": [
+		"bk7231n-common-user-config-ty-2.0.2-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"0000000icv": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 70,
+					"scale": 1,
+					"step": 5,
+					"type": "value"
+				},
+				"id": 2,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 100,
+					"scale": 1,
+					"step": 5,
+					"type": "value"
+				},
+				"id": 3,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"0",
+						"1"
+					],
+					"type": "enum"
+				},
+				"id": 4,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 5,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 6,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"0",
+						"1",
+						"2"
+					],
+					"type": "enum"
+				},
+				"id": 102,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"0",
+						"1",
+						"2",
+						"3"
+					],
+					"type": "enum"
+				},
+				"id": 103,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"id": 104,
+				"type": "raw"
+			}
+		]
+	}
+}
