@@ -1,10 +1,12 @@
 {
 	"manufacturer": "LSC",
-	"name": "3004919 970710 Smart LED RGB Tunable White GU10 380Lumen",
+	"name": "3004919 GU10 RGBCT Bulb v2.9.16",
 	"key": "keytg5kq8gvkv9dh",
 	"ap_ssid": "SmartLife",
 	"github_issues": [],
-	"image_urls": [],
+	"image_urls": [
+		"lsc-3004919-gu10-rgbct-bulb-v2.9.16.jpg"
+	],
 	"profiles": [
 		"oem-bk7231s-light-ty-2.9.16-sdk-1.0.8-40.00"
 	],
