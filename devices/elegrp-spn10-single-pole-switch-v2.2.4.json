@@ -1,13 +1,13 @@
 {
 	"manufacturer": "ELEGRP",
-	"name": "SPN10 Single Pole Switch",
+	"name": "SPN10 Single Pole Switch v2.2.4",
 	"key": "ngimwhcckkasc2ky",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		389
 	],
 	"image_urls": [
-		"elegrp-spn10-single-pole-switch.jpg"
+		"elegrp-spn10-single-pole-switch-v2.2.4.jpg"
 	],
 	"profiles": [
 		"ele-1switch-2.2.4-sdk-2.3.1-40.00"
