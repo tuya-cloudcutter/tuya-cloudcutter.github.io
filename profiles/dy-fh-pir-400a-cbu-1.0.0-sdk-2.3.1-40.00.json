@@ -1,0 +1,17 @@
+{
+	"name": "1.0.0 - BK7231N",
+	"sub_name": "dy_fh_pir_400a_cbu",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "dy_fh_pir_400a_cbu",
+		"version": "1.0.0",
+		"sdk": "2.3.1-40.00"
+	},
+	"data": {
+		"address_finish": "0x1B52F",
+		"address_ssid": "0xC537D",
+		"address_ssid_padding": 4
+	}
+}
