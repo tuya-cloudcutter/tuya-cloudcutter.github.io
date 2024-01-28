@@ -1,0 +1,109 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "8 Button Touch Switch",
+	"key": "np8h8vfhuyceewnq",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		608
+	],
+	"image_urls": [
+		"tuya-generic-8-button-touch-switch.jpg"
+	],
+	"profiles": [
+		"bk7231n-common-user-config-ty-2.1.6-sdk-2.3.3-40.00"
+	],
+	"schemas": {
+		"e2s724": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 2
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 3
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 4
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 5
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 6
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"off",
+						"on",
+						"memory"
+					],
+					"type": "enum"
+				},
+				"id": 14
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"none",
+						"relay",
+						"pos"
+					],
+					"type": "enum"
+				},
+				"id": 15
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 101
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 102,
+				"type": "obj"
+			}
+		]
+	}
+}
