@@ -1,0 +1,18 @@
+{
+	"name": "2.0.0 - BK7231N",
+	"sub_name": "oem_bk7231n_atmosphere_light_ty",
+	"type": "CLASSIC",
+	"icon": "lightbulb-outline",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "oem_bk7231n_atmosphere_light_ty",
+		"version": "2.0.0",
+		"sdk": "2.3.1-40.00",
+		"key": "keydhn7587yertgt"
+	},
+	"data": {
+		"address_finish": "0x1B5AB",
+		"address_ssid": "0xC6939",
+		"address_ssid_padding": 4
+	}
+}
