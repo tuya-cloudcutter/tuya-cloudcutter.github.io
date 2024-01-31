@@ -1,0 +1,40 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "PCIE Remote Switch",
+	"key": "na90jncjlvw5t0ba",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		612
+	],
+	"image_urls": [
+		"tuya-generic-pcie-remote-switch.jpg"
+	],
+	"profiles": [
+		"bk7231n-common-user-config-ty-2.0.2-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"000003cctr": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"Reset",
+						"forceReset",
+						"0"
+					],
+					"type": "enum"
+				},
+				"id": 101
+			}
+		]
+	}
+}
