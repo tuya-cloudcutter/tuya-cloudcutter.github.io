@@ -1,0 +1,188 @@
+{
+	"manufacturer": "BN-LINK",
+	"name": "BNC-60-U113T Heavy Duty Smart Plug with Energy Monitoring v1.0.3",
+	"key": "keym9qkuywghyrvs",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		616
+	],
+	"image_urls": [
+		"bn-link-bnc-60-u113t-heavy-duty-smart-plug-with-energy-monitoring-v1.0.3.jpg"
+	],
+	"profiles": [
+		"oem-bk7231s-dltj-1.0.3-sdk-2.0.0-30.06"
+	],
+	"schemas": {
+		"0000018mwr": [
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 9,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 50000,
+					"scale": 3,
+					"step": 100,
+					"type": "value"
+				},
+				"id": 17,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 30000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 18,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 50000,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 19,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 5000,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 20,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 5,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 21,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 1000000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 22,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 1000000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 23,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 1000000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 24,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 1000000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 25,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"type": "bitmap",
+					"maxlen": 6
+				},
+				"id": 26,
+				"type": "obj"
+			}
+		]
+	},
+	"device_configuration": {
+		"bt1_lv": 0,
+		"bt1_pin": 10,
+		"bt1_type": 0,
+		"ch1_stat": 2,
+		"ch_cddpid1": 9,
+		"ch_dpid1": 1,
+		"ch_num": 1,
+		"chip_type": 0,
+		"crc": 113,
+		"ele_pin": 7,
+		"jv": "1.0.9",
+		"led1_lv": 0,
+		"led1_pin": 6,
+		"lose_vol": 0,
+		"module": "WB2S",
+		"net_trig": 0,
+		"netled1_lv": 0,
+		"netled1_pin": 11,
+		"netn_led": 0,
+		"nety_led": 1,
+		"over_cur": 17000,
+		"over_vol": 0,
+		"reset_t": 5,
+		"resistor": 2,
+		"rl1_lv": 1,
+		"rl1_pin": 26,
+		"sel_pin_lv": 1,
+		"sel_pin_pin": 24,
+		"vi_pin": 8,
+		"vol_def": 1
+	}
+}
