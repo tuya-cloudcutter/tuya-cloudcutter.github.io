@@ -1,13 +1,13 @@
 {
 	"manufacturer": "Merkury Innovations",
-	"name": "MI-OW101-300W Outdoor Smart Plug",
+	"name": "MI-OW101-300W Outdoor Smart Plug v1.0.7",
 	"key": "keya4gvchmtapm8n",
 	"ap_ssid": "Merkury",
 	"github_issues": [
 		252
 	],
 	"image_urls": [
-		"merkury-innovations-mi-ow101-300w-outdoor-smart-plug.jpg"
+		"merkury-innovations-mi-ow101-300w-outdoor-smart-plug-v1.0.7.jpg"
 	],
 	"profiles": [
 		"oem-bk7231s-rnd-switch-1.0.7-sdk-2.0.0-30.06"
