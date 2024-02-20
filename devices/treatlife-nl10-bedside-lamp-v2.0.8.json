@@ -1,16 +1,14 @@
 {
 	"manufacturer": "Treatlife",
-	"name": "NL10 Bedside Lamp",
+	"name": "NL10 Bedside Lamp v2.0.8",
 	"key": "dxkmsiimcumdkoxb",
 	"ap_ssid": "TreatLife-SL",
-	"github_issues": [
-		35
-	],
+	"github_issues": [],
 	"image_urls": [
-		"treatlife-nl10.jpg"
+		"treatlife-nl10-bedside-lamp-v2.0.8.jpg"
 	],
 	"profiles": [
-		"wb3s-rmd-night-light-2.0.6-sdk-2.0.0-30.06"
+		"wb3s-rmd-night-light-2.0.8-sdk-2.0.0-30.06"
 	],
 	"schemas": {
 		"000002jjjr": [

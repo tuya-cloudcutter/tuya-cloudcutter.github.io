@@ -1,0 +1,18 @@
+{
+	"name": "1.0.9 - BK7231N",
+	"sub_name": "oem_bk7231n_1onoff_433_nuohua",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "oem_bk7231n_1onoff_433_nuohua",
+		"version": "1.0.9",
+		"sdk": "2.3.1-40.00",
+		"key": "keypfrxxw4t94y73"
+	},
+	"data": {
+		"address_finish": "0x1B5AF",
+		"address_ssid": "0xC6745",
+		"address_ssid_padding": 4
+	}
+}
