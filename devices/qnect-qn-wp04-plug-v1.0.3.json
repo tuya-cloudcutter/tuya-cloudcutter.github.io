@@ -1,0 +1,48 @@
+{
+	"manufacturer": "Qnect",
+	"name": "QN-WP04 Plug v1.0.3",
+	"key": "keyvdr8nekjnuun9",
+	"ap_ssid": "SL-qnect",
+	"github_issues": [
+		628
+	],
+	"image_urls": [
+		"qnect-qn-wp04-plug-v1.0.3.jpg"
+	],
+	"profiles": [
+		"oem-bk7231s-1-plug-rnd-ffc-eltra-1.0.3-sdk-2.0.0-30.05"
+	],
+	"schemas": {
+		"000001cb0a": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 9,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 42,
+				"type": "obj"
+			}
+		]
+	}
+}
