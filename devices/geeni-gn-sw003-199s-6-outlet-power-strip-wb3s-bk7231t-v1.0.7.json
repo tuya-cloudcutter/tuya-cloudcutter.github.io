@@ -1,13 +1,13 @@
 {
 	"manufacturer": "Geeni",
-	"name": "GN SW003 199S 6-Outlet Power Strip",
+	"name": "GN SW003 199S 6-Outlet Power Strip WB3S BK7231T v1.0.7",
 	"key": "keya4gvchmtapm8n",
 	"ap_ssid": "Geeni",
 	"github_issues": [
 		334
 	],
 	"image_urls": [
-		"geeni-gn-sw003-199s-6-outlet-power-strip.jpg"
+		"geeni-gn-sw003-199s-6-outlet-power-strip-wb3s-bk7231t-v1.0.7.jpg"
 	],
 	"profiles": [
 		"oem-bk7231s-rnd-switch-1.0.7-sdk-2.0.0-30.06"
