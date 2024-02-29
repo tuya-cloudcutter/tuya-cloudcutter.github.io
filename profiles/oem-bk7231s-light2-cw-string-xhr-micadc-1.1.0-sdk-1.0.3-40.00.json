@@ -1,0 +1,17 @@
+{
+	"name": "1.1.0 - BK7231T",
+	"sub_name": "oem_bk7231s_light2_cw_string_xhr_micadc",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "oem_bk7231s_light2_cw_string_xhr_micadc",
+		"version": "1.1.0",
+		"sdk": "1.0.3-40.00",
+		"key": "keycqgvqq7a8qtg5"
+	},
+	"data": {
+		"address_finish": "0xA43E5",
+		"address_datagram": "0x976B5"
+	}
+}
