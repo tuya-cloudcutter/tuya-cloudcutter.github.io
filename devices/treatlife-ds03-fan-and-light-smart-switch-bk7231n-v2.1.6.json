@@ -1,8 +1,8 @@
 {
 	"manufacturer": "Treatlife",
 	"name": "DS03 Fan and Light Smart Switch BK7231N v2.1.6",
-	"key": "qnttkusiue1jjj15",
-	"ap_ssid": "SmartLife",
+	"key": "ea88zei7auxu48s6",
+	"ap_ssid": "TreatLife-SL",
 	"github_issues": [],
 	"image_urls": [
 		"treatlife-ds03-fan-and-light-smart-switch-bk7231n-v2.1.6.jpg"
@@ -11,7 +11,7 @@
 		"bk7231n-common-user-config-ty-2.1.6-sdk-2.3.3-40.00"
 	],
 	"schemas": {
-		"000002gp51": [
+		"000003ibqy": [
 			{
 				"type": "obj",
 				"mode": "rw",
@@ -38,21 +38,21 @@
 				"type": "obj",
 				"mode": "rw",
 				"property": {
-					"type": "bool"
-				},
-				"id": 9
-			},
-			{
-				"type": "obj",
-				"mode": "rw",
-				"property": {
 					"min": 10,
 					"max": 1000,
 					"scale": 0,
 					"step": 1,
 					"type": "value"
 				},
-				"id": 10
+				"id": 6
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 101
 			},
 			{
 				"mode": "rw",
@@ -63,7 +63,7 @@
 					"step": 1,
 					"type": "value"
 				},
-				"id": 101,
+				"id": 102,
 				"type": "obj"
 			},
 			{
