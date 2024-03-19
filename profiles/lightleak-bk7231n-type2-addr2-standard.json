@@ -1,5 +1,5 @@
 {
-	"name": "Lightleak - BK7231N - Type 2 (Standard) / Addr 1",
+	"name": "Lightleak - BK7231N - Type 2 (Standard) / Addr 2",
 	"type": "LIGHTLEAK",
 	"icon": "cloud-download-outline",
 	"data": {
@@ -29,30 +29,30 @@
 			{
 				"name": "ddev_open",
 				"intf_offset": 4,
-				"address": "0x147D1",
+				"address": "0x14579",
 				"branch_offset": "0x08"
 			},
 			{
 				"name": "ddev_close",
 				"intf_offset": 8,
-				"address": "0x148D9",
+				"address": "0x14681",
 				"branch_offset": "0x1C"
 			},
 			{
 				"name": "ddev_read",
 				"intf_offset": 12,
-				"address": "0x14969"
+				"address": "0x14711"
 			},
 			{
 				"name": "ddev_write",
 				"intf_offset": 16,
-				"address": "0x149A1",
+				"address": "0x14749",
 				"branch_offset": "0x12"
 			},
 			{
 				"name": "ddev_control",
 				"intf_offset": 20,
-				"address": "0x149D9",
+				"address": "0x14781",
 				"branch_offset": "0x18"
 			},
 			{
