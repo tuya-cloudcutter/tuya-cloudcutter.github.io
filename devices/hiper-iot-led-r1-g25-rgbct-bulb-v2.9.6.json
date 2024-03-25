@@ -1,0 +1,179 @@
+{
+	"manufacturer": "HIPER",
+	"name": "IoT LED R1 G25 RGBCT Bulb v2.9.6",
+	"key": "keytg5kq8gvkv9dh",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		640
+	],
+	"image_urls": [
+		"hiper-iot-led-r1-g25-rgbct-bulb-v2.9.6.jpg"
+	],
+	"profiles": [
+		"oem-bk7231s-light-ty-2.9.6-sdk-1.0.2-40.00"
+	],
+	"schemas": {
+		"0000034p1o": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 20
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"white",
+						"colour",
+						"scene",
+						"music"
+					],
+					"type": "enum"
+				},
+				"id": 21
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 22
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 23
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 24
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 25
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 26
+			},
+			{
+				"type": "obj",
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 27
+			},
+			{
+				"type": "obj",
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 28
+			},
+			{
+				"type": "obj",
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 29
+			},
+			{
+				"mode": "rw",
+				"id": 30,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 31,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 32,
+				"type": "raw"
+			}
+		]
+	},
+	"device_configuration": {
+		"Jsonver": "1.1.6",
+		"b_lv": 1,
+		"b_pin": 24,
+		"brightmax": 100,
+		"brightmin": 10,
+		"c_lv": 1,
+		"c_pin": 8,
+		"cagt": 10,
+		"category": "0505",
+		"cmod": "rgbcw",
+		"colormax": 100,
+		"colormin": 10,
+		"crc": 57,
+		"cwmaxp": 100,
+		"cwtype": 0,
+		"defbright": 100,
+		"defcolor": "c",
+		"deftemp": 100,
+		"dmod": 0,
+		"g_lv": 1,
+		"g_pin": 6,
+		"module": "WB2L",
+		"onoffmode": 0,
+		"pmemory": 1,
+		"prodagain": 0,
+		"pwmhz": 600,
+		"r_lv": 1,
+		"r_pin": 26,
+		"remdmode": 0,
+		"rgbt": 10,
+		"rstbr": 50,
+		"rstcor": "c",
+		"rstnum": 3,
+		"rsttemp": 100,
+		"title20": 0,
+		"w_lv": 1,
+		"w_pin": 7,
+		"wfcfg": "spcl_auto",
+		"wfct": 3,
+		"wt": 10
+	}
+}
