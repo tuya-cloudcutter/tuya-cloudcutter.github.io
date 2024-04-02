@@ -1,0 +1,18 @@
+{
+	"name": "1.3.5 - BK7231N",
+	"sub_name": "oem_bk7231n_dltj_plug_yx",
+	"type": "CLASSIC",
+	"icon": "power-plug",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "oem_bk7231n_dltj_plug_yx",
+		"version": "1.3.5",
+		"sdk": "2.3.1-40.00",
+		"key": "keyajce5pjq39k53"
+	},
+	"data": {
+		"address_finish": "0x1B5AF",
+		"address_ssid": "0xC95A9",
+		"address_ssid_padding": 4
+	}
+}
