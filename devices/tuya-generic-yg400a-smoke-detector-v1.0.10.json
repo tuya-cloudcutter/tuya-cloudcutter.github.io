@@ -1,0 +1,54 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "YG400A Smoke Detector v1.0.10",
+	"key": "vsmzasbmbp1wtadv",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		649
+	],
+	"image_urls": [
+		"tuya-generic-yg400a-smoke-detector-v1.0.10.jpg"
+	],
+	"profiles": [
+		"bk7231n-lowpower-common-ty-1.0.10-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"0000039aa9": [
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"range": [
+						"alarm",
+						"normal"
+					],
+					"type": "enum"
+				},
+				"id": 1
+			},
+			{
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"type": "bool"
+				},
+				"id": 4
+			},
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"range": [
+						"low",
+						"middle",
+						"high"
+					],
+					"type": "enum"
+				},
+				"id": 14
+			}
+		]
+	}
+}
