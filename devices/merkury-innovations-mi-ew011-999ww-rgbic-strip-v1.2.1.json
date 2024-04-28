@@ -1,13 +1,13 @@
 {
 	"manufacturer": "Merkury Innovations",
-	"name": "MI-EW001-999WW RGBIC Strip v1.2.1",
+	"name": "MI-EW011-999WW RGBIC Strip v1.2.1",
 	"key": "keyuncppmj9epdpg",
 	"ap_ssid": "Merkury",
 	"github_issues": [
 		414
 	],
 	"image_urls": [
-		"merkury-innovations-mi-ew001-999ww-rgbic-strip-v1.2.1.jpg"
+		"merkury-innovations-mi-ew011-999ww-rgbic-strip-v1.2.1.jpg"
 	],
 	"profiles": [
 		"jb-dream-rgb-strip-onekey-1.2.1-sdk-1.0.2-40.00"
