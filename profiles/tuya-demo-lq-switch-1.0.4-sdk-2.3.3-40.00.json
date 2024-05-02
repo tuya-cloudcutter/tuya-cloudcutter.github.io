@@ -1,0 +1,17 @@
+{
+	"name": "1.0.4 - BK7231N",
+	"sub_name": "tuya_demo_lq_switch",
+	"type": "CLASSIC",
+	"icon": "toggle-switch-outline",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "tuya_demo_lq_switch",
+		"version": "1.0.4",
+		"sdk": "2.3.3-40.00"
+	},
+	"data": {
+		"address_finish": "0x1B2D3",
+		"address_ssid": "0xBD84F",
+		"address_ssid_padding": 4
+	}
+}
