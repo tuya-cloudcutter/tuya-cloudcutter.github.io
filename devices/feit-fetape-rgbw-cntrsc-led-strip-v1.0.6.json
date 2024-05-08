@@ -1,10 +1,12 @@
 {
-	"manufacturer": "Feit Electric",
-	"name": "FETAPE/RGBW/CNTRSC FW1.0.6",
+	"manufacturer": "Feit",
+	"name": "FETAPE-RGBW-CNTRSC LED Strip v1.0.6",
 	"key": "s4z3nskgoy958zut",
 	"ap_ssid": "SmartLife",
 	"github_issues": [],
-	"image_urls": "feit-tape16-rgbw-rp-led-strip.jpg",
+	"image_urls": [
+		"feit-tape16-rgbw-rp-led-strip.jpg"
+	],
 	"profiles": [
 		"potek-lst-fw-1.0.6-sdk-2.3.1-40.00"
 	],
