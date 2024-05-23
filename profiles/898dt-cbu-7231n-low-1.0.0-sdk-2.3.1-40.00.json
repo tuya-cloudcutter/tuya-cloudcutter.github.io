@@ -1,0 +1,17 @@
+{
+	"name": "1.0.0 - BK7231N",
+	"sub_name": "898DT_CBU_7231N_low",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "898DT_CBU_7231N_low",
+		"version": "1.0.0",
+		"sdk": "2.3.1-40.00"
+	},
+	"data": {
+		"address_finish": "0x1B53B",
+		"address_ssid": "0xC5409",
+		"address_ssid_padding": 4
+	}
+}
