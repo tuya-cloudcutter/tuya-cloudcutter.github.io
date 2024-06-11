@@ -1,0 +1,41 @@
+{
+	"manufacturer": "ONENUO",
+	"name": "19JWT-B Door Window Sensor v1.0.2",
+	"key": "pgtau22buow5ap0f",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		679
+	],
+	"image_urls": [
+		"onenuo-19jwt-b-door-window-sensor-v1.0.2.jpg"
+	],
+	"profiles": [
+		"19dwt-cbu-7231nl-1-1.0.2-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"f4ei2o": [
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 100,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 2
+			}
+		]
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "1.0.2 - BK7231N",
+	"sub_name": "19DWT_CBU_7231NL_1",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "19DWT_CBU_7231NL_1",
+		"version": "1.0.2",
+		"sdk": "2.3.1-40.00"
+	},
+	"data": {
+		"address_finish": "0x1B53B",
+		"address_ssid": "0xC4BDD",
+		"address_ssid_padding": 4
+	}
+}
