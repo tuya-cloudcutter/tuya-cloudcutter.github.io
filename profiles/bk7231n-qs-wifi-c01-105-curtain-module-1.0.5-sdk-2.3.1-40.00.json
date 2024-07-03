@@ -1,0 +1,17 @@
+{
+	"name": "1.0.5 - BK7231N",
+	"sub_name": "bk7231n_qs_wifi_c01_105_curtain_module",
+	"type": "CLASSIC",
+	"icon": null,
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "bk7231n_qs_wifi_c01_105_curtain_module",
+		"version": "1.0.5",
+		"sdk": "2.3.1-40.00"
+	},
+	"data": {
+		"address_finish": "0x1B39B",
+		"address_ssid": "0xC3BFD",
+		"address_ssid_padding": 4
+	}
+}
