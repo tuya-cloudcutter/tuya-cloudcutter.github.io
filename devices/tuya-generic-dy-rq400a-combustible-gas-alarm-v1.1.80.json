@@ -1,0 +1,158 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "DY-RQ400A Combustible Gas Alarm v1.1.80",
+	"key": "13nrj1aeeaqh54cz",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"tuya-generic-dy-rq400a-combustible-gas-alarm-v1.1.80.jpg"
+	],
+	"profiles": [
+		"bk7231t-common-user-config-ty-1.1.80-sdk-1.0.6-40.00"
+	],
+	"schemas": {
+		"0000031qj9": [
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"range": [
+						"checking",
+						"check_success",
+						"check_failure",
+						"others"
+					],
+					"type": "enum"
+				},
+				"id": 1
+			},
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"range": [
+						"alarm",
+						"normal"
+					],
+					"type": "enum"
+				},
+				"id": 2
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 1,
+					"max": 180,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 3,
+				"type": "obj"
+			},
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 1000,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 5
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"1",
+						"2",
+						"3",
+						"4",
+						"5"
+					],
+					"type": "enum"
+				},
+				"id": 8,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 9,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"type": "bool"
+				},
+				"id": 10,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 12,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 14,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"id": 101,
+				"type": "raw"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 255,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 102,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 255,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 103,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 255,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 104,
+				"type": "obj"
+			}
+		]
+	}
+}
