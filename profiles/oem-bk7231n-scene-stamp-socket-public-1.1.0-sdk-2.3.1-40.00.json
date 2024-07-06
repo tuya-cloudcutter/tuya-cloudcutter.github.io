@@ -1,0 +1,18 @@
+{
+	"name": "1.1.0 - BK7231N",
+	"sub_name": "oem_bk7231n_scene_stamp_socket_public",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "oem_bk7231n_scene_stamp_socket_public",
+		"version": "1.1.0",
+		"sdk": "2.3.1-40.00",
+		"key": "key3u574vgc573xw"
+	},
+	"data": {
+		"address_finish": "0x1B5AF",
+		"address_ssid": "0xD13E9",
+		"address_ssid_padding": 4
+	}
+}
