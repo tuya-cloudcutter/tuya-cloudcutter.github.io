@@ -1,0 +1,217 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "WT-SPI SPI RGBW LED Controller v2.1.6",
+	"key": "iqtgt9o0zudvako2",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"tuya-generic-wt-spi-spi-rgbw-led-controller-v2.1.6.jpg"
+	],
+	"profiles": [
+		"bk7231n-common-user-config-ty-2.1.6-sdk-2.3.3-40.00"
+	],
+	"schemas": {
+		"f341jk": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 20
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"white",
+						"colour",
+						"scene",
+						"music"
+					],
+					"type": "enum"
+				},
+				"id": 21
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 22,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 23,
+				"type": "obj"
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 24
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 26
+			},
+			{
+				"type": "obj",
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 27
+			},
+			{
+				"type": "obj",
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 28
+			},
+			{
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"min": 1,
+					"max": 10000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 46
+			},
+			{
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"min": 1,
+					"max": 1024,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 47
+			},
+			{
+				"type": "raw",
+				"mode": "rw",
+				"id": 51
+			},
+			{
+				"type": "raw",
+				"mode": "rw",
+				"id": 52
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 1,
+					"max": 1000,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 53
+			},
+			{
+				"type": "raw",
+				"mode": "rw",
+				"id": 61
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"TM1803",
+						"TM1809",
+						"TM1829",
+						"TLS3001",
+						"GW6205",
+						"MBI6120",
+						"TM1814B",
+						"SK6812",
+						"UCS8904B",
+						"LPD6803",
+						"LPD8806",
+						"WS2801",
+						"P9813",
+						"SK9822",
+						"MBI6020",
+						"TM1914A",
+						"GS8206",
+						"UCS2904",
+						"SM16804",
+						"SM16825",
+						"SM16714",
+						"UCS5603",
+						"UCS2603",
+						"SM16714D",
+						"UCS7604",
+						"UCS7804"
+					],
+					"type": "enum"
+				},
+				"id": 101,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"RGB",
+						"RBG",
+						"GRB",
+						"GBR",
+						"BRG",
+						"BGR",
+						"RGBW",
+						"RBGW",
+						"GRBW",
+						"GBRW",
+						"BRGW",
+						"BGRW",
+						"WRGB",
+						"WRBG",
+						"WGRB",
+						"WGBR",
+						"WBRG",
+						"WBGR"
+					],
+					"type": "enum"
+				},
+				"id": 102,
+				"type": "obj"
+			}
+		]
+	}
+}
