@@ -1,0 +1,202 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "TuyaMCU Temperature and Humidity Sensor v2.1.8",
+	"key": "ks1pvdia7ogdxb8m",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [],
+	"profiles": [
+		"bk7231n-lowpower-common-ty-2.1.5-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"000003kgeu": [
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"min": -200,
+					"max": 600,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 1
+			},
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 100,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 2
+			},
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"range": [
+						"low",
+						"middle",
+						"high"
+					],
+					"type": "enum"
+				},
+				"id": 3
+			},
+			{
+				"trigger": "direct",
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 100,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 4
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"c",
+						"f"
+					],
+					"type": "enum"
+				},
+				"id": 9
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": -200,
+					"max": 600,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 10
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": -200,
+					"max": 600,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 11
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 100,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 12
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 100,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 13
+			},
+			{
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"range": [
+						"loweralarm",
+						"upperalarm",
+						"cancel"
+					],
+					"type": "enum"
+				},
+				"id": 14
+			},
+			{
+				"type": "obj",
+				"mode": "ro",
+				"property": {
+					"range": [
+						"loweralarm",
+						"upperalarm",
+						"cancel"
+					],
+					"type": "enum"
+				},
+				"id": 15
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 1,
+					"max": 120,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 17
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 1,
+					"max": 120,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 18
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 3,
+					"max": 20,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 19
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 3,
+					"max": 20,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 20
+			}
+		]
+	}
+}
