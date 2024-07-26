@@ -1,11 +1,11 @@
 {
 	"manufacturer": "Cree",
-	"name": "CMA19-60W-AL-9ACK 60W RGBCT Bulb WB8P v1.0.9",
+	"name": "CMA19-60W-AL-9ACK 1221 60W RGBCT Bulb WB8P v1.0.9",
 	"key": "key3qwddp35ffhu9",
 	"ap_ssid": "SL-CreeLighting",
 	"github_issues": [],
 	"image_urls": [
-		"cree-cma19-60w-al-9ack-60w-rgbct-bulb-wb8p-v1.0.9.jpg"
+		"cree-cma19-60w-al-9ack-1221-60w-rgbct-bulb-wb8p-v1.0.9.jpg"
 	],
 	"profiles": [
 		"oem-bk7231s-light-db-a19-1.0.9-sdk-1.0.3-40.00"
