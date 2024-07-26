@@ -1,27 +1,26 @@
 {
 	"manufacturer": "Cree",
-	"name": "CMA19-60W-AL-9ACK 60W RGBCT Bulb",
-	"key": "keyjhenvaj8h5asu",
+	"name": "CMA19-60W-AL-9ACK 60W RGBCT Bulb WB8P v1.0.9",
+	"key": "key3qwddp35ffhu9",
 	"ap_ssid": "SL-CreeLighting",
 	"github_issues": [],
 	"image_urls": [
-		"cree-cma19-60w-al-9ack-60w-rgbct-bulb.jpg"
+		"cree-cma19-60w-al-9ack-60w-rgbct-bulb-wb8p-v1.0.9.jpg"
 	],
 	"profiles": [
-		"oem-bk7231n-light5-db-a19-1.0.0-sdk-2.3.1-40.00"
+		"oem-bk7231s-light-db-a19-1.0.9-sdk-1.0.3-40.00"
 	],
 	"schemas": {
-		"0000039nxs": [
+		"000001nabu": [
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"type": "bool"
 				},
-				"id": 20
+				"id": 20,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"range": [
@@ -32,10 +31,10 @@
 					],
 					"type": "enum"
 				},
-				"id": 21
+				"id": 21,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"min": 10,
@@ -44,10 +43,10 @@
 					"step": 1,
 					"type": "value"
 				},
-				"id": 22
+				"id": 22,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"min": 0,
@@ -56,28 +55,28 @@
 					"step": 1,
 					"type": "value"
 				},
-				"id": 23
+				"id": 23,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 24
+				"id": 24,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 25
+				"id": 25,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"min": 0,
@@ -86,25 +85,26 @@
 					"step": 1,
 					"type": "value"
 				},
-				"id": 26
+				"id": 26,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "wr",
 				"property": {
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 27
+				"id": 27,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "wr",
 				"property": {
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 28
+				"id": 28,
+				"type": "obj"
 			},
 			{
 				"mode": "rw",
@@ -123,21 +123,11 @@
 			},
 			{
 				"mode": "rw",
-				"id": 33,
-				"type": "raw"
-			},
-			{
-				"type": "obj",
-				"mode": "rw",
 				"property": {
 					"type": "bool"
 				},
-				"id": 41
-			},
-			{
-				"mode": "rw",
-				"id": 209,
-				"type": "raw"
+				"id": 41,
+				"type": "obj"
 			},
 			{
 				"mode": "rw",
@@ -147,54 +137,41 @@
 		]
 	},
 	"device_configuration": {
-		"Jsonver": "1.0.0",
+		"Jsonver": "1.1.0",
+		"b_lv": 1,
+		"b_pin": 26,
 		"brightmax": 100,
 		"brightmin": 5,
-		"cagt": 4,
-		"category": "0505",
+		"c_lv": 1,
+		"c_pin": 7,
 		"cmod": "rgbcw",
 		"colormax": 100,
 		"colormin": 10,
-		"colorpfun": 0,
-		"crc": 49,
 		"cwmaxp": 100,
-		"cwtype": 0,
-		"dccur": 53,
+		"cwtype": 1,
 		"defbright": 100,
 		"defcolor": "c",
 		"deftemp": 100,
-		"dmod": 6,
-		"drgbcur": 15,
-		"dwcur": 50,
-		"gmkb": 60,
-		"gmkg": 60,
-		"gmkr": 80,
-		"gmwb": 75,
-		"gmwg": 70,
-		"gmwr": 100,
-		"iicb": 0,
-		"iicc": 4,
-		"iicg": 1,
-		"iicr": 2,
-		"iicscl": 7,
-		"iicsda": 8,
-		"iicw": 3,
-		"mixway": 0,
-		"module": "CB8P",
-		"notdisturb": 0,
+		"dmod": 0,
+		"g_lv": 1,
+		"g_pin": 9,
+		"module": "WB8P",
 		"onoffmode": 1,
-		"pairt": 18,
+		"pairt": 600,
 		"pmemory": 1,
-		"prodagain": 1,
+		"pwmhz": 2000,
+		"r_lv": 1,
+		"r_pin": 24,
 		"remdmode": 1,
-		"rgbt": 2,
 		"rstbr": 50,
 		"rstcor": "c",
-		"rstnum": 5,
+		"rstmode": 0,
+		"rstnum": 4,
 		"rsttemp": 100,
 		"title20": 1,
+		"w_lv": 1,
+		"w_pin": 8,
 		"wfcfg": "spcl_auto",
-		"wfct": 10,
-		"wt": 4
+		"wfct": 10
 	}
 }
