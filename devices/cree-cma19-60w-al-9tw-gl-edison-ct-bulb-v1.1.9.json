@@ -1,7 +1,7 @@
 {
 	"manufacturer": "Cree",
 	"name": "CMA19-60W-AL-9TW-GL Edison CT Bulb v1.1.9",
-	"key": "key3qwddp35ffhu9",
+	"key": "key9wgsdqjdnsqsk",
 	"ap_ssid": "SL-CreeLighting",
 	"github_issues": [],
 	"image_urls": [
@@ -11,17 +11,16 @@
 		"oem-bk7231s-light-db-cree-1.1.9-sdk-2.3.2-40.00"
 	],
 	"schemas": {
-		"00000375vh": [
+		"000002ojen": [
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"type": "bool"
 				},
-				"id": 20
+				"id": 20,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"range": [
@@ -32,10 +31,10 @@
 					],
 					"type": "enum"
 				},
-				"id": 21
+				"id": 21,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"min": 10,
@@ -44,10 +43,10 @@
 					"step": 1,
 					"type": "value"
 				},
-				"id": 22
+				"id": 22,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"min": 0,
@@ -56,19 +55,19 @@
 					"step": 1,
 					"type": "value"
 				},
-				"id": 23
+				"id": 23,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 25
+				"id": 25,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"min": 0,
@@ -77,16 +76,17 @@
 					"step": 1,
 					"type": "value"
 				},
-				"id": 26
+				"id": 26,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "wr",
 				"property": {
 					"type": "string",
 					"maxlen": 255
 				},
-				"id": 28
+				"id": 28,
+				"type": "obj"
 			},
 			{
 				"mode": "rw",
@@ -102,7 +102,57 @@
 				"mode": "rw",
 				"id": 32,
 				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 41,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"id": 210,
+				"type": "raw"
 			}
 		]
+	},
+	"device_configuration": {
+		"Jsonver": "1.1.8",
+		"brightmax": 100,
+		"brightmin": 5,
+		"c_lv": 1,
+		"c_pin": 26,
+		"cagt": 20,
+		"category": "0502",
+		"cmod": "cw",
+		"colormax": 100,
+		"colormin": 10,
+		"crc": 47,
+		"cwmaxp": 100,
+		"cwtype": 0,
+		"defbright": 100,
+		"defcolor": "c",
+		"deftemp": 100,
+		"dmod": 0,
+		"module": "WBLC5",
+		"onoffmode": 1,
+		"pairt": 600,
+		"pmemory": 1,
+		"prodagain": 0,
+		"pwmhz": 600,
+		"remdmode": 1,
+		"rgbt": 0,
+		"rstbr": 50,
+		"rstcor": "c",
+		"rstnum": 4,
+		"rsttemp": 100,
+		"title20": 1,
+		"w_lv": 1,
+		"w_pin": 24,
+		"wfcfg": "spcl_auto",
+		"wfct": 10,
+		"wt": 20
 	}
 }
