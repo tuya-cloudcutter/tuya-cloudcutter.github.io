@@ -1,0 +1,154 @@
+{
+	"manufacturer": "ZMonoff",
+	"name": "ZMB7LE-80W 63A Breaker Leakage Switch v2.1.6",
+	"key": "wcihaluccfsoayqa",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"zmonoff-zmb7le-80w-63a-breaker-leakage-switch-v2.1.6.jpg"
+	],
+	"profiles": [
+		"bk7231n-common-user-config-ty-2.1.6-sdk-2.3.3-40.00"
+	],
+	"schemas": {
+		"000004pxun": [
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 99999999,
+					"scale": 2,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 1,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"id": 6,
+				"type": "raw"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"type": "bitmap",
+					"maxlen": 17
+				},
+				"id": 9,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 11,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 12,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 99999999,
+					"scale": 2,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 13,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 999999,
+					"scale": 2,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 14,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 15,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 16,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"id": 17,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 18,
+				"type": "raw"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 19,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 34,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 1,
+					"max": 30,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 104,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 1,
+					"max": 500,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 105,
+				"type": "obj"
+			}
+		]
+	}
+}
