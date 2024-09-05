@@ -1,0 +1,17 @@
+{
+	"name": "1.2.7 - BK7231N",
+	"sub_name": "AS90",
+	"type": "CLASSIC",
+	"icon": null,
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "AS90",
+		"version": "1.2.7",
+		"sdk": "2.3.3-40.00"
+	},
+	"data": {
+		"address_finish": "0x1B32F",
+		"address_ssid": "0xC0303",
+		"address_ssid_padding": 4
+	}
+}
