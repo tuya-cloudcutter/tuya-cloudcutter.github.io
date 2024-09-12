@@ -1,0 +1,216 @@
+{
+	"manufacturer": "SECURIC",
+	"name": "SEC-HV-501W WiFi electric extender with USB",
+	"key": "keyjup78v54myhan",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [],
+	"profiles": [
+		"oem-bk7231n-plug-1.1.5-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"000003gkk4": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 2
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 3
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 4
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 5
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 9
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 10
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 11
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 12
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 13
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"off",
+						"on",
+						"memory"
+					],
+					"type": "enum"
+				},
+				"id": 38
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"relay",
+						"pos",
+						"none"
+					],
+					"type": "enum"
+				},
+				"id": 40
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 41
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 42
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 43
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 44
+			}
+		]
+	},
+	"device_configuration": {
+		"bt_type": 0,
+		"ch_cddpid1": 9,
+		"ch_cddpid2": 10,
+		"ch_cddpid3": 11,
+		"ch_cddpid4": 12,
+		"ch_cddpid5": 13,
+		"ch_dpid1": 1,
+		"ch_dpid2": 2,
+		"ch_dpid3": 3,
+		"ch_dpid4": 4,
+		"ch_dpid5": 5,
+		"ch_num": 5,
+		"crc": 25,
+		"ffc_select": 0,
+		"jv": "1.1.5",
+		"module": "CB3S",
+		"net_trig": 2,
+		"netled1_lv": 0,
+		"netled1_pin": 21,
+		"netled_reuse": 0,
+		"netn_led": 1,
+		"nety_led": 0,
+		"reset_t": 6,
+		"rl1_lv": 0,
+		"rl1_pin": 8,
+		"rl2_lv": 0,
+		"rl2_pin": 6,
+		"rl3_lv": 0,
+		"rl3_pin": 24,
+		"rl4_lv": 0,
+		"rl4_pin": 26,
+		"rl5_lv": 1,
+		"rl5_pin": 14,
+		"total_bt_lv": 0,
+		"total_bt_pin": 7,
+		"total_led_lv": 0,
+		"total_led_pin": 10,
+		"total_stat": 2
+	}
+}
