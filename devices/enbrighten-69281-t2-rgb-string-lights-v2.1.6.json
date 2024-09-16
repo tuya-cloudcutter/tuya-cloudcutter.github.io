@@ -1,0 +1,146 @@
+{
+	"manufacturer": "Enbrighten",
+	"name": "69281-T2 RGB String Lights v2.1.6",
+	"key": "key99cxdjku575h7",
+	"ap_ssid": "enbrighten",
+	"github_issues": [],
+	"image_urls": [
+		"enbrighten-69281-t2-rgb-string-lights-v2.1.6.jpg"
+	],
+	"profiles": [
+		"oem-bk7231n-async-colorful-string-ty-2.1.6-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"000004i9rt": [
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 20,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"white",
+						"colour",
+						"scene",
+						"music"
+					],
+					"type": "enum"
+				},
+				"id": 21,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 24,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 26,
+				"type": "obj"
+			},
+			{
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 27,
+				"type": "obj"
+			},
+			{
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 28,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"id": 56,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 1,
+					"max": 5000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 58,
+				"type": "obj"
+			}
+		]
+	},
+	"device_configuration": {
+		"CS": 15,
+		"Jsonver": "1.0.0",
+		"MISO": 17,
+		"SCL": 14,
+		"aging": 0,
+		"brightrate": 20,
+		"brightstep": 20,
+		"category": 1101,
+		"cmod": "rgb",
+		"colormax": 50,
+		"colormaxp": 100,
+		"colormin": 10,
+		"colororder": 0,
+		"colorpfun": 1,
+		"crc": 102,
+		"defbright": 80,
+		"defcolor": "r",
+		"dmod": 0,
+		"gmkb": 65,
+		"gmkg": 65,
+		"gmkr": 65,
+		"gmwb": 40,
+		"gmwg": 40,
+		"gmwr": 40,
+		"irfunc": 0,
+		"k1lfunc": 1,
+		"k1sfunc": 5,
+		"key1_lv": 0,
+		"key1_pin": 20,
+		"keyfunc": 1,
+		"knum": 1,
+		"lednum": 60,
+		"lptime": 3,
+		"miso": 17,
+		"module": "CBU",
+		"mosi": 16,
+		"netlptime": 5,
+		"onoffmode": 1,
+		"pmemory": 1,
+		"remdmode": 0,
+		"rstbr": 80,
+		"rstcor": "b",
+		"rstmode": 1,
+		"rstnum": 10,
+		"speedstep": 20,
+		"strsep": 10,
+		"title20": 0,
+		"wfcfg": "spcl_auto",
+		"wfct": 3
+	}
+}
