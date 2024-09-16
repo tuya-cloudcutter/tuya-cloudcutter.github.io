@@ -1,0 +1,59 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "IH-MC01 Window Sensor v1.0.10",
+	"key": "keyhhtuxrsp7ueap",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		708
+	],
+	"image_urls": [
+		"tuya-generic-ih-mc01-window-sensor-v1.0.10.jpg"
+	],
+	"profiles": [
+		"oem-bk7231n-gate-magnet-1.0.10-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"000004n30p": [
+			{
+				"mode": "ro",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 100,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 2,
+				"type": "obj"
+			}
+		]
+	},
+	"device_configuration": {
+		"basic_pin_lv": 1,
+		"basic_pin_pin": 8,
+		"basic_st": 1,
+		"bt_lv": 0,
+		"bt_pin": 7,
+		"crc": 106,
+		"jv": "1.0.4",
+		"max_V": 3000,
+		"min_V": 2200,
+		"module": "CB3S",
+		"net_t": 300,
+		"rstcnt": 3,
+		"samp_pin": 23,
+		"samp_sw_lv": 1,
+		"samp_sw_pin": 14,
+		"samp_type": 1,
+		"status_led_lv": 0,
+		"status_led_pin": 26
+	}
+}
