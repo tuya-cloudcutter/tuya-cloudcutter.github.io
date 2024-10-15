@@ -1,0 +1,17 @@
+{
+	"name": "1.0.10 - BK7231N",
+	"sub_name": "pc471",
+	"type": "CLASSIC",
+	"icon": null,
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "pc471",
+		"version": "1.0.10",
+		"sdk": "2.3.3-40.00"
+	},
+	"data": {
+		"address_finish": "0x1B39F",
+		"address_ssid": "0xBF857",
+		"address_ssid_padding": 4
+	}
+}
