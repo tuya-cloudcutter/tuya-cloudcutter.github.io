@@ -1,0 +1,18 @@
+{
+	"name": "1.3.7 - BK7231T",
+	"sub_name": "bk7231t_common_user_config_ty",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "bk7231t_common_user_config_ty",
+		"version": "1.3.7",
+		"sdk": "2.3.2-40.00",
+		"key": "key34ak4q5rmrkef"
+	},
+	"data": {
+		"address_finish": "0x96869",
+		"address_ssid": "0xC9587",
+		"address_ssid_padding": 8
+	}
+}
