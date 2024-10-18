@@ -7,7 +7,7 @@
 		36
 	],
 	"image_urls": [
-		"martinjerry-us-fc-01.jpg"
+		"martinjerry-us-fc-01-fan-controller.jpg"
 	],
 	"profiles": [
 		"bk7231t-common-user-config-ty-1.1.71-sdk-1.0.2-40.00"
@@ -15,15 +15,14 @@
 	"schemas": {
 		"0000034422": [
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"type": "bool"
 				},
-				"id": 1
+				"id": 1,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"range": [
@@ -34,10 +33,10 @@
 					],
 					"type": "enum"
 				},
-				"id": 3
+				"id": 3,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"range": [
@@ -45,10 +44,10 @@
 					],
 					"type": "enum"
 				},
-				"id": 10
+				"id": 10,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"range": [
@@ -58,8 +57,10 @@
 					],
 					"type": "enum"
 				},
-				"id": 11
+				"id": 11,
+				"type": "obj"
 			}
 		]
-	}
+	},
+	"tuyamcu_baud": "9600"
 }

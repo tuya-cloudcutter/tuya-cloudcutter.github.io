@@ -131,5 +131,6 @@
 				"type": "raw"
 			}
 		]
-	}
+	},
+	"tuyamcu_baud": "9600"
 }

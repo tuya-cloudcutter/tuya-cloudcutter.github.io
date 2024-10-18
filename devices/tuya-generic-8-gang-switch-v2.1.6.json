@@ -1,19 +1,19 @@
 {
-	"manufacturer": "Primezen",
-	"name": "ZEN-2C5W Dual Channel Controller",
-	"key": "xyri1csvtls9tosz",
+	"manufacturer": "Tuya Generic",
+	"name": "8 Gang Switch v2.1.6",
+	"key": "7l3ixlcjvbvxytuv",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
-		578
+		621
 	],
 	"image_urls": [
-		"primezen-zen-2c5w-dual-channel-controller.jpg"
+		"tuya-generic-8-gang-switch-v2.1.6.jpg"
 	],
 	"profiles": [
-		"bk7231n-common-user-config-ty-2.0.2-sdk-2.3.1-40.00"
+		"bk7231n-common-user-config-ty-2.1.6-sdk-2.3.3-40.00"
 	],
 	"schemas": {
-		"000003hmlq": [
+		"000004qxr3": [
 			{
 				"type": "obj",
 				"mode": "rw",
@@ -32,66 +32,63 @@
 			},
 			{
 				"type": "obj",
-				"mode": "wr",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 3
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 4
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 5
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 6
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
 				"property": {
 					"range": [
-						"SP1",
-						"Sp2"
+						"none",
+						"relay",
+						"pos"
 					],
 					"type": "enum"
 				},
-				"id": 102
+				"id": 15
 			},
 			{
-				"mode": "ro",
+				"type": "obj",
+				"mode": "rw",
 				"property": {
 					"type": "bool"
 				},
-				"id": 103,
-				"type": "obj"
+				"id": 101
 			},
 			{
-				"mode": "ro",
+				"mode": "rw",
 				"property": {
 					"type": "bool"
 				},
-				"id": 104,
-				"type": "obj"
-			},
-			{
-				"mode": "wr",
-				"property": {
-					"range": [
-						"SC1",
-						"SC2"
-					],
-					"type": "enum"
-				},
-				"id": 109,
-				"type": "obj"
-			},
-			{
-				"mode": "ro",
-				"property": {
-					"type": "bool"
-				},
-				"id": 110,
-				"type": "obj"
-			},
-			{
-				"mode": "ro",
-				"property": {
-					"type": "bool"
-				},
-				"id": 111,
-				"type": "obj"
-			},
-			{
-				"mode": "wr",
-				"property": {
-					"type": "bool"
-				},
-				"id": 116,
+				"id": 102,
 				"type": "obj"
 			}
 		]

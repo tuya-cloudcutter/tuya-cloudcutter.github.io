@@ -172,5 +172,6 @@
 				"type": "obj"
 			}
 		]
-	}
+	},
+	"tuyamcu_baud": "9600"
 }

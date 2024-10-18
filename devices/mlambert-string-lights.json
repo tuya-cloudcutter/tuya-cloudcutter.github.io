@@ -7,7 +7,7 @@
 		28
 	],
 	"image_urls": [
-		"mlambert-49ft-outdoor-rgb.jpg"
+		"mlambert-string-lights.jpg"
 	],
 	"profiles": [
 		"bk7231t-common-user-config-ty-1.1.71-sdk-1.0.2-40.00"
@@ -86,5 +86,6 @@
 				"type": "obj"
 			}
 		]
-	}
+	},
+	"tuyamcu_baud": "9600"
 }
