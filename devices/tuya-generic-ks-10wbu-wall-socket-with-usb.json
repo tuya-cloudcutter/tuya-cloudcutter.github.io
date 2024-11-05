@@ -1,0 +1,15 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "Wall Socket with USB",
+	"key": "keya4gvchmtapm8n",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"tuya-generic-ks-10wbu-wall-socket-with-usb.jpg"
+	],
+	"profiles": [
+		"oem-bk7231s-rnd-switch-1.0.7-sdk-2.0.0-30.06.json"
+	],
+	"schemas": {},
+	"device_configuration": {}
+}
