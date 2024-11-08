@@ -1,0 +1,170 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "SK20 Star Projector v2.0.2",
+	"key": "keyv4k8kftu4pmwx",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		731
+	],
+	"image_urls": [
+		"tuya-generic-sk20-star-projector-v2.0.2.jpg"
+	],
+	"profiles": [
+		"oem-bk7231n-light-projector-ty-2.0.2-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"fmoiyo": [
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 20,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 24,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 26,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"manual",
+						"scene",
+						"music"
+					],
+					"type": "enum"
+				},
+				"id": 51,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 52,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 53,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 54,
+				"type": "obj"
+			},
+			{
+				"mode": "wr",
+				"id": 57,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 58,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 60,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 1,
+					"max": 100,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 62,
+				"type": "obj"
+			}
+		]
+	},
+	"device_configuration": {
+		"Jsonver": "1.0.0",
+		"b_lv": 1,
+		"b_pin": 8,
+		"bt_type": 0,
+		"category": "0503",
+		"cmod": "rgb",
+		"colormax": 100,
+		"colormin": 10,
+		"colorpfun": 0,
+		"crc": 51,
+		"defbright": 100,
+		"defcolor": "b",
+		"dmod": 0,
+		"fanmod": 1,
+		"g_lv": 1,
+		"g_pin": 7,
+		"ismusic": 0,
+		"key_lv": 0,
+		"key_pin": 14,
+		"keyfunc": 1,
+		"keyfunc1": 3,
+		"knum": 1,
+		"l_lv": 1,
+		"l_pin": 24,
+		"laserbrig": 100,
+		"lasermax": 100,
+		"lasermin": 10,
+		"laseronoff": 1,
+		"m_lv": 1,
+		"m_pin": 26,
+		"module": "CBU",
+		"motoronoff": 1,
+		"motorspd": 50,
+		"pmemory": 1,
+		"prodagain": 1,
+		"prodspmax": 0,
+		"prodspmin": 0,
+		"pwmhz": 1000,
+		"r_lv": 1,
+		"r_pin": 6,
+		"remdmode": 0,
+		"rgbt": 1,
+		"rstbr": 50,
+		"rstcor": "b",
+		"rstnum": 10,
+		"spmaxduty": 100,
+		"spminduty": 1,
+		"wfcfg": "spcl",
+		"wfct": 3
+	}
+}
