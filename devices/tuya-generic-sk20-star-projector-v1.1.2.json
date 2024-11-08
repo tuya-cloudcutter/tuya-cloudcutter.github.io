@@ -1,11 +1,11 @@
 {
 	"manufacturer": "Tuya Generic",
-	"name": "SK20 Smart Star Projector",
+	"name": "SK20 Star Projector v1.1.2",
 	"key": "keypaujpukpnpy8s",
 	"ap_ssid": "SmartLife",
 	"github_issues": [],
 	"image_urls": [
-		"tuya-generic-sk20-smart-star-projector.jpg"
+		"tuya-generic-sk20-star-projector-v1.1.2.jpg"
 	],
 	"profiles": [
 		"oem-bk7231t-light3-laser-nanxin-1.1.2-sdk-1.0.2-40.00"
@@ -105,5 +105,42 @@
 				"type": "obj"
 			}
 		]
+	},
+	"device_configuration": {
+		"Jsonver": "1.1.0",
+		"b_lv": 0,
+		"b_pin": 26,
+		"brightmax": 100,
+		"brightmin": 10,
+		"c_lv": 0,
+		"c_pin": 8,
+		"cmod": "rgbcw",
+		"colormax": 100,
+		"colormin": 10,
+		"ctrl_lv": 0,
+		"ctrl_pin": 7,
+		"cwmaxp": 100,
+		"cwtype": 0,
+		"defbright": 80,
+		"defcolor": "b",
+		"deftemp": 100,
+		"dmod": 0,
+		"g_lv": 0,
+		"g_pin": 24,
+		"module": "WB3S",
+		"onoffmode": 1,
+		"pmemory": 1,
+		"pwmhz": 1000,
+		"r_lv": 0,
+		"r_pin": 9,
+		"rstbr": 80,
+		"rstcor": "b",
+		"rstmode": 0,
+		"rstnum": 3,
+		"rsttemp": 100,
+		"title20": 0,
+		"w_lv": 1,
+		"w_pin": 6,
+		"wfcfg": "spcl"
 	}
 }
