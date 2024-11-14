@@ -1,11 +1,11 @@
 {
 	"manufacturer": "TOMZN",
-	"name": "TOMPD-63LW DIN Switch with Energy Monitoring",
+	"name": "TOMPD-63LW DIN Switch with Energy Monitoring v1.1.80",
 	"key": "rrmpzckqm5pfd642",
 	"ap_ssid": "SmartLife",
 	"github_issues": [],
 	"image_urls": [
-		"tomzn-tompd-63lw-din-switch-with-energy-monitoring.jpg"
+		"tomzn-tompd-63lw-din-switch-with-energy-monitoring-v1.1.80.jpg"
 	],
 	"profiles": [
 		"bk7231t-common-user-config-ty-1.1.80-sdk-1.0.6-40.00"
