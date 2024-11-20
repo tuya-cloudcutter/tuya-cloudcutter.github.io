@@ -1,11 +1,11 @@
 {
 	"manufacturer": "Tuya Generic",
-	"name": "SNT957W-TDE Temperature and Humidity with Probe v1.0.0",
+	"name": "SNT957W-TDE Temperature Sensor with Probe v1.0.0",
 	"key": "fqs8czlq3m0seqyp",
 	"ap_ssid": "SmartLife",
 	"github_issues": [],
 	"image_urls": [
-		"tuya-generic-snt957w-tde-temperature-and-humidity-with-probe-v1.0.0.jpg"
+		"tuya-generic-snt957w-tde-temperature-sensor-with-probe-v1.0.0.jpg"
 	],
 	"profiles": [
 		"snt957w-tde-cbu-1.0.0-sdk-2.3.1-40.00"
