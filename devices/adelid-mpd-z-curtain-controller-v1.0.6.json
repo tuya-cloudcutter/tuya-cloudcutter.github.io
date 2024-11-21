@@ -1,0 +1,115 @@
+{
+	"manufacturer": "Adelid",
+	"name": "MPD-Z Curtain Controller v1.0.6",
+	"key": "n76zrtgqmox8ipqz",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"adelid-mpd-z-curtain-controller-v1.0.6.jpg"
+	],
+	"profiles": [
+		"oem-bk7231n-curtain-onoff-1.0.6-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"00000455tv": [
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"open",
+						"stop",
+						"close",
+						"continue"
+					],
+					"type": "enum"
+				},
+				"id": 1,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 100,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 2,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"start",
+						"end"
+					],
+					"type": "enum"
+				},
+				"id": 3,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"forward",
+						"back"
+					],
+					"type": "enum"
+				},
+				"id": 8,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 2,
+					"max": 120,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 10,
+				"type": "obj"
+			}
+		]
+	},
+	"device_configuration": {
+		"bt_reuse": 1,
+		"ch_num": 1,
+		"clean_t": 5,
+		"crc": 91,
+		"delay_t": 500,
+		"dev_ctrl1": 1,
+		"jv": 101,
+		"module": "CB2S",
+		"net_trig": 2,
+		"net_type": 0,
+		"netled1_lv": 0,
+		"netled1_pin": 10,
+		"netn_led": 0,
+		"nety_led": 1,
+		"on_off_cnt": 10,
+		"onoff1": 8,
+		"onoff3": 7,
+		"onoff_clear_t": 10,
+		"onoff_n": 3,
+		"onoff_rst_m": 1,
+		"onoff_rst_type": 1,
+		"onoff_type": 0,
+		"percent_ctrl1": 2,
+		"reset_t": 5,
+		"reverse_ctrl1": 8,
+		"rl1_lv": 1,
+		"rl1_pin": 24,
+		"rl3_lv": 1,
+		"rl3_pin": 26,
+		"total_bt_lv": 0,
+		"total_bt_pin": 11,
+		"travel_calibra1": 3,
+		"travel_t": 10,
+		"travel_t1": 10
+	}
+}

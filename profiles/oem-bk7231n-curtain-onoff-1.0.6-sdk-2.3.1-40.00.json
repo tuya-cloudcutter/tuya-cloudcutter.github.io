@@ -1,0 +1,18 @@
+{
+	"name": "1.0.6 - BK7231N",
+	"sub_name": "oem_bk7231n_curtain_onoff",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "oem_bk7231n_curtain_onoff",
+		"version": "1.0.6",
+		"sdk": "2.3.1-40.00",
+		"key": "keyx45mwgh7479m8"
+	},
+	"data": {
+		"address_finish": "0x1B5AF",
+		"address_ssid": "0xC490D",
+		"address_ssid_padding": 4
+	}
+}
