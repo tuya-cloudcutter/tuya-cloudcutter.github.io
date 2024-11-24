@@ -1,13 +1,13 @@
 {
 	"manufacturer": "Tuya Generic",
-	"name": "SWP86-01OG Energy Monitoring Plug",
+	"name": "SWP86-01OG Energy Monitoring Plug v1.0.10",
 	"key": "x1rrhj1eyntqnxtx",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		393
 	],
 	"image_urls": [
-		"tuya-generic-swp86-01og-energy-monitoring-plug.jpg"
+		"tuya-generic-swp86-01og-energy-monitoring-plug-v1.0.10.jpg"
 	],
 	"profiles": [
 		"ua-app-1.0.10-sdk-2.3.3-40.00"
