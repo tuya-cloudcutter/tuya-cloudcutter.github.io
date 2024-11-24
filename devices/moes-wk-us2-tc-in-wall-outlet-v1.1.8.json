@@ -1,13 +1,13 @@
 {
 	"manufacturer": "MOES",
-	"name": "WK-US2-TC In-Wall Outlet",
+	"name": "WK-US2-TC In-Wall Outlet v1.1.8",
 	"key": "keyjup78v54myhan",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		352
 	],
 	"image_urls": [
-		"moes-wk-us2-tc-in-wall-outlet.jpg"
+		"moes-wk-us2-tc-in-wall-outlet-v1.1.8.jpg"
 	],
 	"profiles": [
 		"oem-bk7231n-plug-1.1.8-sdk-2.3.1-40.00"
