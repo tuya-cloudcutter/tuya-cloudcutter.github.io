@@ -1,0 +1,44 @@
+{
+	"manufacturer": "Avatto",
+	"name": "S16 Pro IR RF Hub v2.0.0",
+	"key": "key54vrth5askhsj",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"avatto-s16-pro-ir-rf-hub-v2.0.0.jpg"
+	],
+	"profiles": [
+		"oem-bk7231n-irbox-mol-ty-2.0.0-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"000004wl6m": [
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 3072
+				},
+				"id": 201,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"id": 202,
+				"type": "raw"
+			}
+		]
+	},
+	"device_configuration": {
+		"crc": 28,
+		"infre": 7,
+		"infrr": 8,
+		"netnc": 0,
+		"netyc": 1,
+		"owm": 1,
+		"reset_lv": 0,
+		"reset_pin": 26,
+		"rsthold": 5,
+		"wfst_lv": 0,
+		"wfst_pin": 24
+	}
+}
