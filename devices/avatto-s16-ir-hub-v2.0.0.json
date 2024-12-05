@@ -1,11 +1,11 @@
 {
 	"manufacturer": "Avatto",
-	"name": "S16 Pro IR RF Hub v2.0.0",
+	"name": "S16 IR Hub v2.0.0",
 	"key": "key54vrth5askhsj",
 	"ap_ssid": "SmartLife",
 	"github_issues": [],
 	"image_urls": [
-		"avatto-s16-pro-ir-rf-hub-v2.0.0.jpg"
+		"avatto-s16-ir-hub-v2.0.0.jpg"
 	],
 	"profiles": [
 		"oem-bk7231n-irbox-mol-ty-2.0.0-sdk-2.3.1-40.00"
