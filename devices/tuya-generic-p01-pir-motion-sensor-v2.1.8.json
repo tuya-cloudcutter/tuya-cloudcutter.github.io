@@ -1,0 +1,44 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "P01 PIR Motion Sensor v2.1.8",
+	"key": "rjzon9kyxpoeksj3",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"tuya-generic-p01-pir-motion-sensor-v2.1.8.jpg"
+	],
+	"profiles": [
+		"bk7231n-lowpower-common-ty-2.1.8-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"esi4xk": [
+			{
+				"mode": "ro",
+				"property": {
+					"range": [
+						"pir",
+						"none"
+					],
+					"type": "enum"
+				},
+				"id": 1,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"range": [
+						"low",
+						"middle",
+						"high"
+					],
+					"type": "enum"
+				},
+				"id": 3,
+				"trigger": "direct",
+				"type": "obj"
+			}
+		]
+	},
+	"tuyamcu_baud": "9600"
+}
