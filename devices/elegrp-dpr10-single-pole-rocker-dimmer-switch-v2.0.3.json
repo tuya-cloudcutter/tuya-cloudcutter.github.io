@@ -1,26 +1,26 @@
 {
 	"manufacturer": "ELEGRP",
-	"name": "DPR10 Single Pole Rocker Dimmer Switch",
+	"name": "DPR10 Single Pole Rocker Dimmer Switch v2.0.3",
 	"key": "4u2wttjjgdz7ghli",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		408
 	],
 	"image_urls": [
-		"elegrp-dpr10-single-pole-rocker-dimmer-switch.jpg"
+		"elegrp-dpr10-single-pole-rocker-dimmer-switch-v2.0.3.jpg"
 	],
 	"profiles": [
-		"bk7231n-common-user-config-ty-2.0.2-sdk-2.3.1-40.00"
+		"bk7231n-common-user-config-ty-2.0.3-sdk-2.3.1-40.00"
 	],
 	"schemas": {
 		"000001v0xv": [
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"type": "bool"
 				},
-				"id": 1
+				"id": 1,
+				"type": "obj"
 			},
 			{
 				"mode": "rw",
@@ -47,7 +47,6 @@
 				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"range": [
@@ -58,10 +57,10 @@
 					],
 					"type": "enum"
 				},
-				"id": 4
+				"id": 4,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"min": 550,
@@ -70,10 +69,10 @@
 					"step": 1,
 					"type": "value"
 				},
-				"id": 5
+				"id": 5,
+				"type": "obj"
 			},
 			{
-				"type": "obj",
 				"mode": "rw",
 				"property": {
 					"min": 0,
@@ -82,7 +81,8 @@
 					"step": 1,
 					"type": "value"
 				},
-				"id": 6
+				"id": 6,
+				"type": "obj"
 			},
 			{
 				"mode": "rw",
