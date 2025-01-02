@@ -1,0 +1,17 @@
+{
+	"name": "1.0.9 - BK7231T",
+	"sub_name": "bk7231s_common_iot_config_ty",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "bk7231s_common_iot_config_ty",
+		"version": "1.0.9",
+		"sdk": "2.0.0-30.06",
+		"key": "keyvgeknmyujaf4m"
+	},
+	"data": {
+		"address_finish": "0x9D6C7",
+		"address_datagram": "0x8ED33"
+	}
+}
