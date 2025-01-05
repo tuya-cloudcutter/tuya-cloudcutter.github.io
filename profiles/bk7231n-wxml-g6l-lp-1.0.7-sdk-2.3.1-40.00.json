@@ -1,0 +1,17 @@
+{
+	"name": "1.0.7 - BK7231N",
+	"sub_name": "bk7231N_wxml_G6L_lp",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "bk7231N_wxml_G6L_lp",
+		"version": "1.0.7",
+		"sdk": "2.3.1-40.00"
+	},
+	"data": {
+		"address_finish": "0x1B40B",
+		"address_ssid": "0xC7971",
+		"address_ssid_padding": 4
+	}
+}
