@@ -1,0 +1,18 @@
+{
+	"name": "1.0.12 - BK7231N",
+	"sub_name": "oem_bk7231n_voice_light_alarm",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "oem_bk7231n_voice_light_alarm",
+		"version": "1.0.12",
+		"sdk": "2.3.1-40.00",
+		"key": "key8vv49fknghdey"
+	},
+	"data": {
+		"address_finish": "0x1B5AB",
+		"address_ssid": "0xB4185",
+		"address_ssid_padding": 4
+	}
+}
