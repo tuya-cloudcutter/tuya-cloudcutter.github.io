@@ -94,5 +94,39 @@
 				"type": "obj"
 			}
 		]
+	},
+	"device_configuration": {
+		"jsonver": "1.0.8",
+		"module": "CB3S",
+		"category": 2,
+		"chnum": 1,
+		"remote": 0,
+		"pmem": 0,
+		"pmemt": 5,
+		"advtimer": 0,
+		"wfcfg": 2,
+		"wft": 5,
+		"wfct": 3,
+		"wfnfy": 0,
+		"wfnfyt": 0,
+		"rstnum": 0,
+		"rsttime": 0,
+		"defled": 0,
+		"wfled": 1,
+		"defrly": 1,
+		"wfrly": 0,
+		"reuse": 1,
+		"ledpin": 26,
+		"ledlv": 0,
+		"bzhz": null,
+		"bzpin": null,
+		"btpin": 23,
+		"btlv": 0,
+		"rlypin": 6,
+		"rlylv": 1,
+		"rlypin2": 7,
+		"rlylv2": 1,
+		"ledtestpin": 3,
+		"ledtestlv": 0
 	}
 }
