@@ -1,0 +1,156 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "SWPPD86-01OG Wall Socket with USB v1.0.14",
+	"key": "x1rrhj1eyntqnxtx",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"tuya-generic-swppd86-01og-wall-socket-with-usb-v1.0.14.jpg"
+	],
+	"profiles": [
+		"ua-app-1.0.14-sdk-2.3.3-40.00"
+	],
+	"schemas": {
+		"000004k53u": [
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 9,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 50000,
+					"scale": 3,
+					"step": 100,
+					"type": "value"
+				},
+				"id": 17,
+				"trigger": "direct",
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 80000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 18,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 200000,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 19,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 5000,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 20,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"type": "bitmap",
+					"maxlen": 6
+				},
+				"id": 26,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"off",
+						"on",
+						"memory"
+					],
+					"type": "enum"
+				},
+				"id": 38,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"relay",
+						"pos",
+						"none"
+					],
+					"type": "enum"
+				},
+				"id": 39,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 40,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 41,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 42,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 43,
+				"type": "obj"
+			}
+		]
+	}
+}
