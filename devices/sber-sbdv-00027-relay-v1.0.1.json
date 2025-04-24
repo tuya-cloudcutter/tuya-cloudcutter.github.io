@@ -1,0 +1,79 @@
+{
+	"manufacturer": "Sber",
+	"name": "SBDV-00027 Relay v1.0.1",
+	"key": "q4ugbrjfqw0ndlrf",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		801
+	],
+	"image_urls": [
+		"sber-sbdv-00027-relay-v1.0.1.jpg"
+	],
+	"profiles": [
+		"sber-relay-1.0.1-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"000003emhj": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 9,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"0",
+						"1",
+						"2"
+					],
+					"type": "enum"
+				},
+				"id": 38,
+				"type": "obj"
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 41
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 42
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 43,
+				"type": "obj"
+			}
+		]
+	}
+}
