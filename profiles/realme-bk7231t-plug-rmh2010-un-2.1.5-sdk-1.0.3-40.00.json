@@ -1,0 +1,17 @@
+{
+	"name": "2.1.5 - BK7231T",
+	"sub_name": "realme_BK7231T_plug_rmh2010_un",
+	"type": "CLASSIC",
+	"icon": null,
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "realme_BK7231T_plug_rmh2010_un",
+		"version": "2.1.5",
+		"sdk": "1.0.3-40.00",
+		"key": "keyyjuj4ktqsad59"
+	},
+	"data": {
+		"address_finish": "0x82A05",
+		"address_datagram": "0x78A67"
+	}
+}
