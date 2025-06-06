@@ -1,10 +1,10 @@
 {
 	"manufacturer": "Tuya Generic",
-	"name": "LSPA7 Plug",
+	"name": "LSPA7 Plug BL0937 v1.1.8",
 	"key": "keyjup78v54myhan",
-	"ap_ssid": "SmartLife",
+	"ap_ssid": "A",
 	"github_issues": [
-		139
+		808
 	],
 	"image_urls": [],
 	"profiles": [
@@ -192,17 +192,18 @@
 	},
 	"device_configuration": {
 		"bt1_lv": 0,
-		"bt1_pin": 6,
+		"bt1_pin": 10,
 		"bt1_type": 0,
 		"ch1_stat": 2,
 		"ch_cddpid1": 9,
 		"ch_dpid1": 1,
 		"ch_num": 1,
-		"chip_type": 3,
-		"crc": 29,
+		"chip_type": 0,
+		"crc": 39,
 		"ele_fun_en": 1,
+		"ele_pin": 7,
 		"ffc_select": 0,
-		"jv": "1.0.3",
+		"jv": "1.0.5",
 		"lose_vol": 70,
 		"module": "CB2S",
 		"net_trig": 2,
@@ -214,9 +215,13 @@
 		"over_cur": 16000,
 		"over_vol": 300,
 		"reset_t": 5,
+		"resistor": 1,
 		"rl1_lv": 1,
 		"rl1_pin": 26,
 		"rl1_type": 0,
+		"sel_pin_lv": 1,
+		"sel_pin_pin": 24,
+		"vi_pin": 6,
 		"vol_def": 0
 	}
 }
