@@ -1,0 +1,17 @@
+{
+	"name": "1.0.13 - BK7231N",
+	"sub_name": "dy_sm_400a_cbu",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "dy_sm_400a_cbu",
+		"version": "1.0.13",
+		"sdk": "2.3.1-40.00"
+	},
+	"data": {
+		"address_finish": "0x1B58B",
+		"address_ssid": "0xC8741",
+		"address_ssid_padding": 4
+	}
+}
