@@ -1,0 +1,207 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "2-Gang Touch Switch v1.1.2",
+	"key": "keytsscf9drjktq9",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [],
+	"profiles": [
+		"oem-bk7231s-dltj-switch-mkd-1.1.2-sdk-1.0.2-40.00"
+	],
+	"schemas": {
+		"000002iiwv": [
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 2,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 9,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 10,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 50000,
+					"scale": 3,
+					"step": 100,
+					"type": "value"
+				},
+				"id": 17,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 80000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 18,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 200000,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 19,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 5000,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 20,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 5,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 21,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 1000000000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 22,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 1000000000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 23,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 1000000000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 24,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 1000000000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 25,
+				"type": "obj"
+			}
+		]
+	},
+	"device_configuration": {
+		"bt1_lv": 0,
+		"bt1_pin": 14,
+		"bt2_lv": 0,
+		"bt2_pin": 11,
+		"bt_type": 1,
+		"ch_cddpid1": 9,
+		"ch_cddpid2": 10,
+		"ch_dpid1": 1,
+		"ch_dpid2": 2,
+		"ch_num": 2,
+		"chip_type": 0,
+		"crc": 50,
+		"ele_pin": 9,
+		"jv": "1.0.2",
+		"led1_lv": 1,
+		"led1_pin": 1,
+		"led2_lv": 1,
+		"led2_pin": 26,
+		"lose_vol": 100,
+		"module": "WB3S",
+		"net_trig": 0,
+		"netled1_lv": 2,
+		"netled1_pin": 31,
+		"netn_led": 0,
+		"nety_led": 1,
+		"over_cur": 16000,
+		"over_vol": 250,
+		"reset_t": 5,
+		"resistor": 1,
+		"rl1_lv": 1,
+		"rl1_pin": 7,
+		"rl2_lv": 1,
+		"rl2_pin": 6,
+		"rl_on1_lv": 1,
+		"rl_on1_pin": 7,
+		"rl_on2_lv": 1,
+		"rl_on2_pin": 6,
+		"sel_pin_lv": 1,
+		"sel_pin_pin": 24,
+		"total_stat": 2,
+		"vi_pin": 8,
+		"vol_def": 0
+	}
+}
