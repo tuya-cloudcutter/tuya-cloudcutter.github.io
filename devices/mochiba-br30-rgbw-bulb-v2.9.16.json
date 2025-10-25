@@ -1,0 +1,264 @@
+{
+	"manufacturer": "Mochiba",
+	"name": "BR30 RGBW Bulb v2.9.16",
+	"key": "keytg5kq8gvkv9dh",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"mochiba-br30-rgbw-bulb-v2.9.16.jpg"
+	],
+	"profiles": [
+		"oem-bk7231s-light-ty-2.9.16-sdk-1.0.8-40.00"
+	],
+	"schemas": {
+		"000003fykp": [
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 20,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"white",
+						"colour",
+						"scene",
+						"music"
+					],
+					"type": "enum"
+				},
+				"id": 21,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 22,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 23,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 24,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 25,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 26,
+				"type": "obj"
+			},
+			{
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 27,
+				"type": "obj"
+			},
+			{
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 28,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 29,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"id": 31,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 32,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 33,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 34,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"id": 209,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 210,
+				"type": "raw"
+			}
+		]
+	},
+	"device_configuration": {
+		"Jsonver": "1.1.8",
+		"b_lv": 1,
+		"b_pin": 7,
+		"brightmax": 100,
+		"brightmin": 10,
+		"c_lv": 1,
+		"c_pin": 8,
+		"cagt": 10,
+		"category": "0505",
+		"cmod": "rgbcw",
+		"colormax": 100,
+		"colormin": 10,
+		"crc": 33,
+		"cwtype": 0,
+		"defbright": 100,
+		"defcolor": "c",
+		"deftemp": 0,
+		"dmod": 0,
+		"g_lv": 1,
+		"g_pin": 26,
+		"gmkb": 60,
+		"gmkg": 60,
+		"gmkr": 80,
+		"gmwb": 75,
+		"gmwg": 70,
+		"gmwr": 100,
+		"mixway": 3,
+		"module": "WB2L",
+		"notdisturb": 0,
+		"onoffmode": 0,
+		"pmemory": 1,
+		"prodagain": 0,
+		"pwmhz": 600,
+		"r_lv": 1,
+		"r_pin": 6,
+		"remdmode": 0,
+		"rgbt": 10,
+		"rstbr": 50,
+		"rstcor": "c",
+		"rstnum": 3,
+		"rsttemp": 0,
+		"tempmix": [
+			[
+				"T27",
+				"000",
+				"000",
+				"000",
+				"3e8"
+			],
+			[
+				"T30",
+				"0a8",
+				"15d",
+				"01d",
+				"2a9"
+			],
+			[
+				"T35",
+				"050",
+				"1b5",
+				"04b",
+				202
+			],
+			[
+				"T40",
+				"040",
+				"1e7",
+				"05a",
+				"1c8"
+			],
+			[
+				"T45",
+				"012",
+				"20f",
+				"06c",
+				"19e"
+			],
+			[
+				"T50",
+				"000",
+				232,
+				"089",
+				188
+			],
+			[
+				"T57",
+				"000",
+				"25b",
+				"09c",
+				172
+			],
+			[
+				"T60",
+				"000",
+				286,
+				"0b3",
+				159
+			],
+			[
+				"T65",
+				"000",
+				"2c8",
+				"0c1",
+				"13d"
+			]
+		],
+		"title20": 1,
+		"wfcfg": "spcl_auto",
+		"wfct": 3
+	}
+}
