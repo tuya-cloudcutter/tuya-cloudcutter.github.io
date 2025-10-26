@@ -1,0 +1,16 @@
+{
+	"name": "1.0.0 - BK7231T",
+	"sub_name": "HYS_03_018_bk7231t_isuwhk8urrx7ivaa",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "HYS_03_018_bk7231t_isuwhk8urrx7ivaa",
+		"version": "1.0.0",
+		"sdk": "1.0.2-40.00"
+	},
+	"data": {
+		"address_finish": "0xA1FB5",
+		"address_datagram": "0x9523D"
+	}
+}
