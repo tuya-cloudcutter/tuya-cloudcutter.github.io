@@ -1,0 +1,16 @@
+{
+	"name": "1.0.1 - RTL8720CF",
+	"sub_name": "cuco_light_wb4_d_rtl_common",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "RTL8720CF",
+		"name": "cuco_light_wb4_d_rtl_common",
+		"version": "1.0.1",
+		"sdk": "1.0.13-40.00"
+	},
+	"data": {
+		"address_finish": "0x9B079D65",
+		"address_token": "0x9B043FB5"
+	}
+}
