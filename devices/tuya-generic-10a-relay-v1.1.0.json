@@ -94,5 +94,33 @@
 				"type": "obj"
 			}
 		]
+	},
+	"device_configuration": {
+		"bt1_lv": 0,
+		"bt1_pin": 17,
+		"bt_type": 0,
+		"ch_cddpid1": 9,
+		"ch_dpid1": 1,
+		"ch_flag1": 1,
+		"ch_num": 1,
+		"crc": 66,
+		"cyc_dpid": 42,
+		"inch_dp": 44,
+		"init_conf": 38,
+		"jv": "1.0.7",
+		"led_dp": 40,
+		"lock_dp": 41,
+		"module": "WBR2",
+		"mxcl_led_m": 0,
+		"net_trig": 2,
+		"netled_lv": 0,
+		"netled_pin": 18,
+		"rand_dpid": 43,
+		"reset_t": 5,
+		"reuse_led_m": 1,
+		"rl1_lv": 1,
+		"rl1_pin": 12,
+		"rl_type": 0,
+		"total_stat": 2
 	}
 }
