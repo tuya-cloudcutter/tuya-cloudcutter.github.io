@@ -1,11 +1,11 @@
 {
 	"manufacturer": "Tuya Generic",
-	"name": "T150 Prensence and Brightness Sensor v2.5.2",
+	"name": "T150 Presence and Brightness Sensor v2.5.2",
 	"key": "k2h8vkj98fhvnpiv",
 	"ap_ssid": "SmartLife",
 	"github_issues": [],
 	"image_urls": [
-		"tuya-generic-t150-prensence-and-brightness-sensor-v2.5.2.jpg"
+		"tuya-generic-t150-presence-and-brightness-sensor-v2.5.2.jpg"
 	],
 	"profiles": [
 		"rtl8720cf-common-user-config-ty-2.5.2-sdk-2.3.0-40.00"
