@@ -1,0 +1,17 @@
+{
+	"name": "1.0.3 - OTA1 - RTL8710BN",
+	"sub_name": "rtlbn_light_hc_base_htfgah4ycr6yqmay",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "RTL8710BN",
+		"name": "rtlbn_light_hc_base_htfgah4ycr6yqmay",
+		"version": "1.0.3",
+		"sdk": "1.0.7-40.00",
+		"ota": "OTA1"
+	},
+	"data": {
+		"address_finish": "0x803F53F",
+		"address_token": "0x8036B9D"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "1.0.2 - OTA1 - RTL8710BN",
+	"sub_name": "tuya_mdev_test2",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "RTL8710BN",
+		"name": "tuya_mdev_test2",
+		"version": "1.0.2",
+		"sdk": "1.0.7-40.00",
+		"ota": "OTA1"
+	},
+	"data": {
+		"address_finish": "0x803386B",
+		"address_token": "0x802AE15"
+	}
+}
