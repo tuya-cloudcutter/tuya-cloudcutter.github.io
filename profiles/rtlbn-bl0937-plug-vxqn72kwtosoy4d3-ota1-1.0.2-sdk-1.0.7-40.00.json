@@ -1,11 +1,11 @@
 {
 	"name": "1.0.2 - OTA1 - RTL8710BN",
-	"sub_name": "tuya_mdev_test2",
+	"sub_name": "rtlbn_bl0937_plug_vxqn72kwtosoy4d3",
 	"type": "CLASSIC",
-	"icon": "memory",
+	"icon": "power-plug",
 	"firmware": {
 		"chip": "RTL8710BN",
-		"name": "tuya_mdev_test2",
+		"name": "rtlbn_bl0937_plug_vxqn72kwtosoy4d3",
 		"version": "1.0.2",
 		"sdk": "1.0.7-40.00",
 		"ota": "OTA1"
