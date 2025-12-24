@@ -1,0 +1,84 @@
+{
+	"manufacturer": "Mercator",
+	"name": "SSWF01G-WIFI Ikuu AC Fan Controller with Light Switch v1.0.5",
+	"key": "keyqcvgykjt84v9m",
+	"ap_ssid": "IKUU",
+	"github_issues": [],
+	"image_urls": [
+		"mercator-sswf01g-wifi-ikuu-ac-fan-controller-with-light-switch-v1.0.5.jpg"
+	],
+	"profiles": [
+		"oem-bk7231s-fan-control-arlec-1.0.5-sdk-2.0.0-30.06"
+	],
+	"schemas": {
+		"000000xt42": [
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"1",
+						"2",
+						"3"
+					],
+					"type": "enum"
+				},
+				"id": 3,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 9,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 101,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"1",
+						"2",
+						"3",
+						"4",
+						"5"
+					],
+					"type": "enum"
+				},
+				"id": 102,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"1",
+						"2",
+						"3",
+						"4",
+						"5"
+					],
+					"type": "enum"
+				},
+				"id": 103,
+				"type": "obj"
+			}
+		]
+	}
+}
