@@ -1,0 +1,453 @@
+{
+	"manufacturer": "CREATE",
+	"name": "Windcalm dc Fan Light v2.5.2",
+	"ap_ssid": null,
+	"github_issues": [],
+	"image_urls": [],
+	"profiles": [
+		"rtl8720cf-common-user-config-ty-2.5.2-sdk-2.3.0-none"
+	],
+	"schemas": {
+		"0000031xm0": {
+			"activeResponse": {
+				"capability": 1025,
+				"devId": "bf9a95972e2f72ef39ascx",
+				"dstIntervals": [
+					[
+						1774746000,
+						1792890000
+					],
+					[
+						1806195600,
+						1824944400
+					],
+					[
+						1837645200,
+						1856394000
+					],
+					[
+						1869094800,
+						1887843600
+					],
+					[
+						1901149200,
+						1919293200
+					]
+				],
+				"localKey": "C9)Mh&amCsw@QL3!",
+				"resetFactory": false,
+				"schemas": {
+					"0000031xm0": [
+						{
+							"mode": "rw",
+							"property": {
+								"type": "bool"
+							},
+							"id": 20,
+							"type": "obj"
+						},
+						{
+							"mode": "rw",
+							"property": {
+								"range": [
+									"white",
+									"colour",
+									"scene",
+									"music"
+								],
+								"type": "enum"
+							},
+							"id": 21,
+							"type": "obj"
+						},
+						{
+							"mode": "rw",
+							"property": {
+								"min": 10,
+								"max": 1000,
+								"scale": 0,
+								"step": 1,
+								"type": "value"
+							},
+							"id": 22,
+							"type": "obj"
+						},
+						{
+							"mode": "rw",
+							"property": {
+								"min": 0,
+								"max": 1000,
+								"scale": 0,
+								"step": 1,
+								"type": "value"
+							},
+							"id": 23,
+							"type": "obj"
+						},
+						{
+							"mode": "rw",
+							"property": {
+								"type": "string",
+								"maxlen": 255
+							},
+							"id": 24,
+							"type": "obj"
+						},
+						{
+							"mode": "rw",
+							"property": {
+								"type": "string",
+								"maxlen": 255
+							},
+							"id": 25,
+							"type": "obj"
+						},
+						{
+							"mode": "wr",
+							"property": {
+								"type": "string",
+								"maxlen": 255
+							},
+							"id": 28,
+							"type": "obj"
+						},
+						{
+							"mode": "rw",
+							"property": {
+								"min": 10,
+								"max": 1000,
+								"scale": 0,
+								"step": 1,
+								"type": "value"
+							},
+							"id": 58,
+							"type": "obj"
+						},
+						{
+							"mode": "rw",
+							"property": {
+								"range": [
+									"led",
+									"incandescent",
+									"halogen"
+								],
+								"type": "enum"
+							},
+							"id": 59,
+							"type": "obj"
+						},
+						{
+							"mode": "rw",
+							"property": {
+								"type": "bool"
+							},
+							"id": 60,
+							"type": "obj"
+						},
+						{
+							"mode": "rw",
+							"property": {
+								"min": 1,
+								"max": 6,
+								"scale": 0,
+								"step": 1,
+								"type": "value"
+							},
+							"id": 62,
+							"type": "obj"
+						},
+						{
+							"mode": "rw",
+							"property": {
+								"range": [
+									"forward",
+									"reverse"
+								],
+								"type": "enum"
+							},
+							"id": 63,
+							"type": "obj"
+						},
+						{
+							"mode": "rw",
+							"property": {
+								"min": 0,
+								"max": 540,
+								"scale": 0,
+								"step": 1,
+								"type": "value"
+							},
+							"id": 64,
+							"type": "obj"
+						}
+					]
+				},
+				"schemaId": "0000031xm0",
+				"secKey": "o{b4{:K`oisp.bA5",
+				"stdTimeZone": "+01:00",
+				"timeZone": "+01:00"
+			},
+			"modelResponse": {
+				"model": {
+					"modelId": "0000031xm0",
+					"services": [
+						{
+							"actions": [],
+							"code": "",
+							"description": "",
+							"events": [],
+							"name": "\u9ed8\u8ba4\u670d\u52a1",
+							"properties": [
+								{
+									"abilityId": 20,
+									"accessMode": "rw",
+									"code": "switch_led",
+									"description": "",
+									"extensions": {
+										"iconName": "icon-dp_power",
+										"attribute": "643"
+									},
+									"name": "\u706f\u5f00\u5173",
+									"typeSpec": {
+										"type": "bool"
+									}
+								},
+								{
+									"abilityId": 21,
+									"accessMode": "rw",
+									"code": "work_mode",
+									"description": "",
+									"extensions": {
+										"iconName": "icon-dp_mode",
+										"attribute": "640"
+									},
+									"name": "\u706f\u6a21\u5f0f",
+									"typeSpec": {
+										"type": "enum",
+										"range": [
+											"white",
+											"colour",
+											"scene",
+											"music"
+										]
+									}
+								},
+								{
+									"abilityId": 22,
+									"accessMode": "rw",
+									"code": "bright_value",
+									"description": "",
+									"extensions": {
+										"iconName": "icon-liangdu1",
+										"attribute": "642"
+									},
+									"name": "\u4eae\u5ea6\u503c",
+									"typeSpec": {
+										"type": "value",
+										"max": 1000,
+										"min": 10,
+										"scale": 0,
+										"step": 1
+									}
+								},
+								{
+									"abilityId": 23,
+									"accessMode": "rw",
+									"code": "temp_value",
+									"description": "",
+									"extensions": {
+										"iconName": "icon-dp_half",
+										"attribute": "642"
+									},
+									"name": "\u51b7\u6696\u503c",
+									"typeSpec": {
+										"type": "value",
+										"max": 1000,
+										"min": 0,
+										"scale": 0,
+										"step": 1
+									}
+								},
+								{
+									"abilityId": 24,
+									"accessMode": "rw",
+									"code": "colour_data",
+									"description": "\u7528\u4e8e\u8c03\u8282\u5f69\u5149\u989c\u8272\u3001\u4eae\u5ea6\u3001\u9971\u548c\u5ea6",
+									"extensions": {
+										"iconName": "icon-yanse",
+										"attribute": "640"
+									},
+									"name": "\u5f69\u5149",
+									"typeSpec": {
+										"type": "string",
+										"maxlen": 255
+									}
+								},
+								{
+									"abilityId": 25,
+									"accessMode": "rw",
+									"code": "scene_data",
+									"description": "\u7528\u4e8e\u5207\u6362\u3001\u7f16\u8f91\u573a\u666f",
+									"extensions": {
+										"iconName": "icon-shoucang",
+										"attribute": "640"
+									},
+									"name": "\u573a\u666f",
+									"typeSpec": {
+										"type": "string",
+										"maxlen": 255
+									}
+								},
+								{
+									"abilityId": 28,
+									"accessMode": "wr",
+									"code": "control_data",
+									"description": "\u7528\u4e8e\u5b9e\u65f6\u4e0b\u53d1\u6570\u636e\u5b9e\u73b0\u5b9e\u65f6\u9884\u89c8\u6548\u679c",
+									"extensions": {
+										"iconName": "icon-dp_box2",
+										"attribute": "640"
+									},
+									"name": "\u8c03\u8282",
+									"typeSpec": {
+										"type": "string",
+										"maxlen": 255
+									}
+								},
+								{
+									"abilityId": 58,
+									"accessMode": "rw",
+									"code": "brightness_min_1",
+									"description": "",
+									"extensions": {
+										"iconName": "icon-liangdu",
+										"attribute": "128"
+									},
+									"name": "\u6700\u5c0f\u4eae\u5ea6",
+									"typeSpec": {
+										"type": "value",
+										"max": 1000,
+										"min": 10,
+										"scale": 0,
+										"step": 1
+									}
+								},
+								{
+									"abilityId": 59,
+									"accessMode": "rw",
+									"code": "led_type_1",
+									"description": "",
+									"extensions": {
+										"iconName": "icon-dp_light",
+										"attribute": "128"
+									},
+									"name": "\u5149\u6e90\u7c7b\u578b",
+									"typeSpec": {
+										"type": "enum",
+										"range": [
+											"led",
+											"incandescent",
+											"halogen"
+										]
+									}
+								},
+								{
+									"abilityId": 60,
+									"accessMode": "rw",
+									"code": "fan_switch",
+									"description": "",
+									"extensions": {
+										"iconName": "icon-dp_power2",
+										"attribute": "640"
+									},
+									"name": "\u98ce\u6247\u5f00\u5173",
+									"typeSpec": {
+										"type": "bool"
+									}
+								},
+								{
+									"abilityId": 62,
+									"accessMode": "rw",
+									"code": "fan_speed",
+									"description": "",
+									"extensions": {
+										"iconName": "icon-FanSpeed",
+										"attribute": "656"
+									},
+									"name": "\u98ce\u901f",
+									"typeSpec": {
+										"type": "value",
+										"max": 6,
+										"min": 1,
+										"scale": 0,
+										"step": 1,
+										"unit": ""
+									}
+								},
+								{
+									"abilityId": 63,
+									"accessMode": "rw",
+									"code": "fan_direction",
+									"description": "",
+									"extensions": {
+										"iconName": "icon-dp_mode",
+										"attribute": "640"
+									},
+									"name": "\u98ce\u6247\u8f6c\u5411",
+									"typeSpec": {
+										"type": "enum",
+										"range": [
+											"forward",
+											"reverse"
+										]
+									}
+								},
+								{
+									"abilityId": 64,
+									"accessMode": "rw",
+									"code": "fan_countdown_left",
+									"description": "",
+									"extensions": {
+										"iconName": "icon-dp_time3",
+										"attribute": "640"
+									},
+									"name": "\u98ce\u6247\u5012\u8ba1\u65f6",
+									"typeSpec": {
+										"type": "value",
+										"max": 540,
+										"min": 0,
+										"scale": 0,
+										"step": 1,
+										"unit": "min"
+									}
+								}
+							]
+						}
+					]
+				}
+			},
+			"detailsResponse": {
+				"active_time": 1766487153,
+				"asset_id": "263967095",
+				"category": "fsd",
+				"category_name": "Ceiling Fan",
+				"create_time": 1766487153,
+				"gateway_id": "",
+				"icon": "smart/icon/ay1564458733639x1LBu/7e84ea311049e256d357d89d74276448.png",
+				"id": "bf9a95972e2f72ef39ascx",
+				"ip": "2a06:98c0:3600::103",
+				"lat": "",
+				"local_key": "C9)Mh&amCsw@QL3!",
+				"lon": "",
+				"model": "101",
+				"name": "Light+Fan-new product",
+				"online": false,
+				"product_id": "u5ovvhurbvynvspv",
+				"product_name": "Light+Fan-new product",
+				"sub": false,
+				"time_zone": "+01:00",
+				"update_time": 1766487153,
+				"uuid": "05eaa32a886daca3"
+			}
+		}
+	}
+}
