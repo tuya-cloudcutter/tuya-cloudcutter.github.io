@@ -1,0 +1,298 @@
+{
+	"manufacturer": "abie",
+	"name": "g99631 05 rgbw led lamp",
+	"key": "keyg7gsncqtf57gs",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [],
+	"profiles": [
+		"oem-bk7231s-ceiling-light-ty-1.3.11-sdk-1.0.6-40.00"
+	],
+	"schemas": {
+		"000003ji0k": [
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 20,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"white",
+						"colour",
+						"scene",
+						"music"
+					],
+					"type": "enum"
+				},
+				"id": 21,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 22,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 23,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 24,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 25,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 26,
+				"type": "obj"
+			},
+			{
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 27,
+				"type": "obj"
+			},
+			{
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 28,
+				"type": "obj"
+			},
+			{
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 29,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"id": 30,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 31,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 32,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 33,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 35,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 52,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 209,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 210,
+				"type": "raw"
+			}
+		]
+	},
+	"device_configuration": {
+		"0err": 70,
+		"1err": 40,
+		"Jsonver": "1.0.0",
+		"b_lv": 1,
+		"b_pin": 8,
+		"bitseq": 0,
+		"brightmax": 80,
+		"brightmin": 8,
+		"briseg": 20,
+		"buzzer": 0,
+		"c_lv": 1,
+		"c_pin": 6,
+		"cagt": 20,
+		"category": "0505",
+		"cctseg": 20,
+		"cmod": "rgbcw",
+		"colormax": 100,
+		"colormaxp": 100,
+		"colormin": 10,
+		"colorpfun": 1,
+		"count1": 30,
+		"count2": 60,
+		"crc": 109,
+		"ctrl_lv": 1,
+		"ctrl_pin": 14,
+		"customcode": 1313,
+		"cwmaxp": 100,
+		"cwtype": 0,
+		"defbright": 80,
+		"defcolor": "c",
+		"deftemp": 100,
+		"dmod": 0,
+		"g_lv": 1,
+		"g_pin": 9,
+		"gmkb": 60,
+		"gmkg": 60,
+		"gmkr": 80,
+		"gmwb": 75,
+		"gmwg": 70,
+		"gmwr": 100,
+		"hueseg": 20,
+		"ir": 16,
+		"irfunc": 1,
+		"irk10fun": 15,
+		"irk10val": 10,
+		"irk11fun": 1,
+		"irk11val": 11,
+		"irk12fun": 7,
+		"irk12val": 12,
+		"irk13fun": 8,
+		"irk13val": 13,
+		"irk14fun": 10,
+		"irk14val": 14,
+		"irk15fun": 21,
+		"irk15val": 15,
+		"irk16fun": 11,
+		"irk16val": 16,
+		"irk17fun": 9,
+		"irk17val": 17,
+		"irk18fun": 35,
+		"irk18val": 18,
+		"irk19fun": 16,
+		"irk19val": 19,
+		"irk1fun": 2,
+		"irk1val": 1,
+		"irk20fun": 25,
+		"irk20val": 20,
+		"irk21fun": 26,
+		"irk21val": 21,
+		"irk22fun": 24,
+		"irk22val": 22,
+		"irk23fun": 22,
+		"irk23val": 23,
+		"irk24fun": 27,
+		"irk24val": 24,
+		"irk25fun": 23,
+		"irk25val": 25,
+		"irk26fun": 17,
+		"irk26val": 26,
+		"irk27fun": 28,
+		"irk27val": 27,
+		"irk28fun": 18,
+		"irk28val": 28,
+		"irk29fun": 19,
+		"irk29val": 29,
+		"irk2fun": 3,
+		"irk2val": 2,
+		"irk30fun": 29,
+		"irk30val": 30,
+		"irk31fun": 20,
+		"irk31val": 31,
+		"irk3fun": 31,
+		"irk3val": 3,
+		"irk4fun": 32,
+		"irk4val": 4,
+		"irk5fun": 33,
+		"irk5val": 5,
+		"irk6fun": 34,
+		"irk6val": 6,
+		"irk7fun": 12,
+		"irk7val": 7,
+		"irk8fun": 13,
+		"irk8val": 8,
+		"irk9fun": 14,
+		"irk9val": 9,
+		"keynumber": 31,
+		"leaderr": 15,
+		"leisbrig": 40,
+		"leiscct": 50,
+		"module": "wb3l",
+		"mutex": 1,
+		"nightbrig": 5,
+		"nightcct": 50,
+		"nightled": 0,
+		"notdisturb": 1,
+		"onoffmode": 0,
+		"onofftime": 2000,
+		"pairt": 30,
+		"pmemory": 1,
+		"prodagain": 0,
+		"pwmhz": 10000,
+		"r_lv": 1,
+		"r_pin": 24,
+		"remdmode": 1,
+		"rgbt": 10,
+		"rstbr": 40,
+		"rstcor": "c",
+		"rstnum": 5,
+		"rsttemp": 100,
+		"starterr": 70,
+		"w_lv": 1,
+		"w_pin": 26,
+		"wfcfg": "spcl",
+		"wfct": 3,
+		"whiteseg": 20,
+		"workbrig": 80,
+		"workcct": 100,
+		"wt": 20
+	}
+}
