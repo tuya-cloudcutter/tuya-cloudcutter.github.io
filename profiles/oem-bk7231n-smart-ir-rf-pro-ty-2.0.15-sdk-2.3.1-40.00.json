@@ -1,0 +1,18 @@
+{
+	"name": "2.0.15 - BK7231N",
+	"sub_name": "oem_bk7231n_smart_ir_rf_pro_ty",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "oem_bk7231n_smart_ir_rf_pro_ty",
+		"version": "2.0.15",
+		"sdk": "2.3.1-40.00",
+		"key": "keym4vvjhx4sd9kk"
+	},
+	"data": {
+		"address_finish": "0x1B5E7",
+		"address_ssid": "0xCBC3D",
+		"address_ssid_padding": 4
+	}
+}

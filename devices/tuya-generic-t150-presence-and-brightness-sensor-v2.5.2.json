@@ -1,0 +1,139 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "T150 Presence and Brightness Sensor v2.5.2",
+	"key": "k2h8vkj98fhvnpiv",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"tuya-generic-t150-presence-and-brightness-sensor-v2.5.2.jpg"
+	],
+	"profiles": [
+		"rtl8720cf-common-user-config-ty-2.5.2-sdk-2.3.0-40.00"
+	],
+	"schemas": {
+		"0000047ldp": [
+			{
+				"mode": "ro",
+				"property": {
+					"range": [
+						"none",
+						"presence"
+					],
+					"type": "enum"
+				},
+				"id": 1,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 9,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 2,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 1000,
+					"scale": 2,
+					"step": 10,
+					"type": "value"
+				},
+				"id": 3,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 1000,
+					"scale": 2,
+					"step": 10,
+					"type": "value"
+				},
+				"id": 4,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"range": [
+						"checking",
+						"check_success",
+						"check_failure",
+						"others",
+						"comm_fault",
+						"radar_fault"
+					],
+					"type": "enum"
+				},
+				"id": 6,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 1000,
+					"scale": 2,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 9,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 100,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 101,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 50,
+					"max": 15000,
+					"scale": 1,
+					"step": 50,
+					"type": "value"
+				},
+				"id": 102,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 103,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 2000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 104,
+				"type": "obj"
+			}
+		]
+	},
+	"tuyamcu_baud": "115200"
+}

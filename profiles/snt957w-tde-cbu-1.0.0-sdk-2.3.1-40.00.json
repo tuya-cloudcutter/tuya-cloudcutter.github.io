@@ -1,0 +1,17 @@
+{
+	"name": "1.0.0 - BK7231N",
+	"sub_name": "snt957w_tde_cbu",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "snt957w_tde_cbu",
+		"version": "1.0.0",
+		"sdk": "2.3.1-40.00"
+	},
+	"data": {
+		"address_finish": "0x1B39B",
+		"address_ssid": "0xC3CD5",
+		"address_ssid_padding": 4
+	}
+}

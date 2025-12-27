@@ -1,0 +1,18 @@
+{
+	"name": "0.0.3 - RTL8720CF",
+	"sub_name": "pid_rtl8720cf_fish_tank_feeder_longda_1",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "RTL8720CF",
+		"name": "pid_rtl8720cf_fish_tank_feeder_longda_1",
+		"version": "0.0.3",
+		"sdk": "2.3.3-40.00",
+		"key": "keyyndag3f9u5pm7"
+	},
+	"data": {
+		"address_finish": "0x9B0346BB",
+		"address_token": "0x9B05B793",
+		"address_token_padding": 4
+	}
+}

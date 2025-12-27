@@ -1,0 +1,146 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "SK20 Star Projector v1.1.2",
+	"key": "keypaujpukpnpy8s",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"tuya-generic-sk20-star-projector-v1.1.2.jpg"
+	],
+	"profiles": [
+		"oem-bk7231t-light3-laser-nanxin-1.1.2-sdk-1.0.2-40.00"
+	],
+	"schemas": {
+		"000002k30g": [
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 20
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"range": [
+						"white",
+						"colour",
+						"scene",
+						"music"
+					],
+					"type": "enum"
+				},
+				"id": 21
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 22
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 24
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 25
+			},
+			{
+				"type": "obj",
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 26
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 101,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 102,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 103,
+				"type": "obj"
+			}
+		]
+	},
+	"device_configuration": {
+		"Jsonver": "1.1.0",
+		"b_lv": 0,
+		"b_pin": 26,
+		"brightmax": 100,
+		"brightmin": 10,
+		"c_lv": 0,
+		"c_pin": 8,
+		"cmod": "rgbcw",
+		"colormax": 100,
+		"colormin": 10,
+		"ctrl_lv": 0,
+		"ctrl_pin": 7,
+		"cwmaxp": 100,
+		"cwtype": 0,
+		"defbright": 80,
+		"defcolor": "b",
+		"deftemp": 100,
+		"dmod": 0,
+		"g_lv": 0,
+		"g_pin": 24,
+		"module": "WB3S",
+		"onoffmode": 1,
+		"pmemory": 1,
+		"pwmhz": 1000,
+		"r_lv": 0,
+		"r_pin": 9,
+		"rstbr": 80,
+		"rstcor": "b",
+		"rstmode": 0,
+		"rstnum": 3,
+		"rsttemp": 100,
+		"title20": 0,
+		"w_lv": 1,
+		"w_pin": 6,
+		"wfcfg": "spcl"
+	}
+}

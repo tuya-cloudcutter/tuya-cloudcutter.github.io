@@ -1,0 +1,293 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "KWS-302WF 8-in-1 Power Meter v2.1.6",
+	"key": "tadm13agjigbdtxd",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"tuya-generic-kws-302wf-8-in-1-power-meter-v2.1.6.jpg"
+	],
+	"profiles": [
+		"bk7231n-common-user-config-ty-2.1.6-sdk-2.3.3-40.00"
+	],
+	"schemas": {
+		"000004qxz0": [
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 16,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 400000,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 101,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 60000,
+					"scale": 3,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 102,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 1200000,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 103,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 10000000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 104,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 10000000,
+					"scale": 3,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 105,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 100,
+					"scale": 2,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 106,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 1,
+					"max": 60,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 107,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": -20,
+					"max": 150,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 108,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 100,
+					"max": 220,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 109,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 130,
+					"max": 290,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 110,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 100000,
+					"scale": 3,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 111,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 60000,
+					"scale": 0,
+					"step": 30,
+					"type": "value"
+				},
+				"id": 112,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 99999999,
+					"scale": 3,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 113,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 22000,
+					"scale": 3,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 114,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": -20,
+					"max": 150,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 115,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"range": [
+						"0",
+						"1",
+						"2"
+					],
+					"type": "enum"
+				},
+				"id": 116,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"0",
+						"1",
+						"2"
+					],
+					"type": "enum"
+				},
+				"id": 117,
+				"type": "obj"
+			},
+			{
+				"mode": "wr",
+				"property": {
+					"type": "bool"
+				},
+				"id": 118,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 59,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 119,
+				"type": "obj"
+			},
+			{
+				"mode": "wr",
+				"property": {
+					"type": "bool"
+				},
+				"id": 120,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 121,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 122,
+				"trigger": "direct",
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 2147483647,
+					"scale": 3,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 123,
+				"type": "obj"
+			}
+		]
+	},
+	"tuyamcu_baud": "115200"
+}

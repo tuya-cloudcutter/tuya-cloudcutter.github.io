@@ -1,0 +1,34 @@
+{
+	"manufacturer": "EBELONG",
+	"name": "ERC2202-W Dual Channel Controller v2.5.2",
+	"key": "xyri1csvtls9tosz",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"ebelong-erc2202-w-dual-channel-controller-v2.5.2.jpg"
+	],
+	"profiles": [
+		"rtl8720cf-common-user-config-ty-2.5.2-sdk-2.3.0-40.00"
+	],
+	"schemas": {
+		"000003vtoq": [
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 3,
+				"type": "obj"
+			}
+		]
+	},
+	"tuyamcu_baud": "9600"
+}

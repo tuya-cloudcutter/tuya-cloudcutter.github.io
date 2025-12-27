@@ -1,0 +1,299 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "ST-LR4311 RGB Desktop Bar Lamps v1.0.18",
+	"key": "keyj3w8cmutjmwk5",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"tuya-generic-st-lr4311-rgb-desktop-bar-lamps-v1.0.18.jpg"
+	],
+	"profiles": [
+		"oem-bk7231n-slide-strip-ty-1.0.18-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"etlmro": [
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 20,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"white",
+						"colour",
+						"scene",
+						"music"
+					],
+					"type": "enum"
+				},
+				"id": 21,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 24,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 26,
+				"type": "obj"
+			},
+			{
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 27,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 1,
+					"max": 10000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 46,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 1,
+					"max": 1024,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 47,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"id": 51,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 52,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 1,
+					"max": 1000,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 53,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"id": 61,
+				"type": "raw"
+			}
+		]
+	},
+	"device_configuration": {
+		"0err": 70,
+		"1err": 40,
+		"CS": 15,
+		"Jsonver": "1.1.4",
+		"LedNum": 30,
+		"SCL": 14,
+		"adclimit": 1500,
+		"aging": 1,
+		"bitseq": 0,
+		"brifollow": 1,
+		"brightstep": 20,
+		"category": "0503",
+		"cdtime1": 60,
+		"cdtime2": 120,
+		"cmod": "rgb",
+		"colormax": 36,
+		"colormin": 10,
+		"colororder": 2,
+		"colorpfun": 0,
+		"crc": 111,
+		"ctrl_lv": 1,
+		"ctrl_pin": 26,
+		"customcode": "00ef",
+		"defbright": 100,
+		"defcolor": "r",
+		"gmkb": 100,
+		"gmkg": 100,
+		"gmkr": 100,
+		"gmwb": 80,
+		"gmwg": 95,
+		"gmwr": 73,
+		"irfunc": 1,
+		"irfunset": [
+			[
+				14,
+				"00"
+			],
+			[
+				15,
+				"01"
+			],
+			[
+				3,
+				"02"
+			],
+			[
+				2,
+				"03"
+			],
+			[
+				19,
+				"04"
+			],
+			[
+				23,
+				"05"
+			],
+			[
+				27,
+				"06"
+			],
+			[
+				33,
+				"07"
+			],
+			[
+				20,
+				"08"
+			],
+			[
+				22,
+				"09"
+			],
+			[
+				26,
+				"0a"
+			],
+			[
+				95,
+				"0b"
+			],
+			[
+				21,
+				"0c"
+			],
+			[
+				24,
+				"0d"
+			],
+			[
+				29,
+				"0e"
+			],
+			[
+				96,
+				"0f"
+			],
+			[
+				12,
+				10
+			],
+			[
+				85,
+				11
+			],
+			[
+				13,
+				12
+			],
+			[
+				34,
+				13
+			],
+			[
+				87,
+				14
+			],
+			[
+				89,
+				15
+			],
+			[
+				90,
+				16
+			],
+			[
+				91,
+				17
+			]
+		],
+		"irpin": 20,
+		"ismusic": 1,
+		"k1dfunc": 0,
+		"k2dfunc": 0,
+		"k2lfunc": 0,
+		"k2pin_lv": 0,
+		"k2pin_pin": 24,
+		"k2sfunc": 4,
+		"k3dfunc": 0,
+		"k3lfunc": 0,
+		"k3pin_lv": 0,
+		"k3pin_pin": 7,
+		"k3sfunc": 6,
+		"key_lv": 0,
+		"key_pin": 22,
+		"keyfunc": 1,
+		"knum": 3,
+		"ktime": 5,
+		"leaderr": 30,
+		"micpin": 23,
+		"micproc": 500,
+		"miso": 17,
+		"module": "CBU",
+		"mosi": 16,
+		"onoffmode": 0,
+		"pairt": 180,
+		"pmemory": 1,
+		"prodagain": 1,
+		"remdmode": 0,
+		"rgbt": 1,
+		"rgbtoch": 200,
+		"rgbtocs": 200,
+		"rgbtowh": 35,
+		"rgbtows": 700,
+		"rstbr": 50,
+		"rstcor": "r",
+		"rstmode": 2,
+		"rstnum": 3,
+		"sensimax": 50,
+		"sensimin": 1,
+		"sfunc": 1,
+		"slidemod": 1,
+		"starterr": 40,
+		"title20": 0,
+		"totallen": 30,
+		"wfcfg": "spcl",
+		"wfct": 3
+	}
+}

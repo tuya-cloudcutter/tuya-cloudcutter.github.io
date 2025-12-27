@@ -1,0 +1,18 @@
+{
+	"name": "1.0.3 - RTL8720CF",
+	"sub_name": "cuco_wp3_5_rtl",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "RTL8720CF",
+		"name": "cuco_wp3_5_rtl",
+		"version": "1.0.3",
+		"sdk": "2.3.0-40.00"
+	},
+	"data": {
+		"address_finish": "0x9B05C773",
+		"address_passwd": "0x9B03BEEB",
+		"address_passwd_padding": 4,
+		"address_token": "0x9B0578BF"
+	}
+}

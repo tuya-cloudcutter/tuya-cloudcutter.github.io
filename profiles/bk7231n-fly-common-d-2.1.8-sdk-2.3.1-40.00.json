@@ -1,0 +1,18 @@
+{
+	"name": "2.1.8 - BK7231N",
+	"sub_name": "bk7231n_fly_common_d",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "bk7231n_fly_common_d",
+		"version": "2.1.8",
+		"sdk": "2.3.1-40.00",
+		"key": "keycx5ftedppgup7"
+	},
+	"data": {
+		"address_finish": "0x1B52F",
+		"address_ssid": "0xC5031",
+		"address_ssid_padding": 4
+	}
+}

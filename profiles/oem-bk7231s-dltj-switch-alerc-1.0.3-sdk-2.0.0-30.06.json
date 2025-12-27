@@ -1,0 +1,17 @@
+{
+	"name": "1.0.3 - BK7231T",
+	"sub_name": "oem_bk7231s_dltj_switch_alerc",
+	"type": "CLASSIC",
+	"icon": "power-plug",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "oem_bk7231s_dltj_switch_alerc",
+		"version": "1.0.3",
+		"sdk": "2.0.0-30.06",
+		"key": "key7hs5gtwxqdrrg"
+	},
+	"data": {
+		"address_finish": "0x99C47",
+		"address_datagram": "0x8F023"
+	}
+}

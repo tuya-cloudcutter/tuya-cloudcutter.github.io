@@ -1,0 +1,79 @@
+{
+	"manufacturer": "Nedis",
+	"name": "WIFILX50RGB Decorative LED Strip v1.0.0",
+	"key": "isuwhk8urrx7ivaa",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		848
+	],
+	"image_urls": [
+		"nedis-wifilx50rgb-decorative-led-strip-v1.0.0.jpg"
+	],
+	"profiles": [
+		"hys-03-018-bk7231t-isuwhk8urrx7ivaa-1.0.0-sdk-1.0.2-40.00"
+	],
+	"schemas": {
+		"0000034x76": [
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 20,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"colour",
+						"scene",
+						"music"
+					],
+					"type": "enum"
+				},
+				"id": 21,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 24,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 25,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 26,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 101,
+				"type": "obj"
+			}
+		]
+	}
+}

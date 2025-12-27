@@ -1,0 +1,17 @@
+{
+	"name": "1.0.7 - BK7231N",
+	"sub_name": "bk7231n_sc_bare_lamp_7_14_7_0_ll002",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "bk7231n_sc_bare_lamp_7_14_7_0_ll002",
+		"version": "1.0.7",
+		"sdk": "2.3.1-40.00"
+	},
+	"data": {
+		"address_finish": "0x1BC17",
+		"address_ssid": "0xB8751",
+		"address_ssid_padding": 4
+	}
+}

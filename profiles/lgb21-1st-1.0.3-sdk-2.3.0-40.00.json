@@ -1,0 +1,17 @@
+{
+	"name": "1.0.3 - BK7231T",
+	"sub_name": "LGB21_1st",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "BK7231T",
+		"name": "LGB21_1st",
+		"version": "1.0.3",
+		"sdk": "2.3.0-40.00"
+	},
+	"data": {
+		"address_finish": "0x2BEE3",
+		"address_ssid": "0x8C2EB",
+		"address_ssid_padding": 20
+	}
+}

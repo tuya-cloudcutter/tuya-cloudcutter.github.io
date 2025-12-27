@@ -1,0 +1,74 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "LGB21 1 CH Dimmer v1.0.3",
+	"key": "ygndukvondue9lof",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"tuya-generic-lgb21-1-ch-dimmer-v1.0.3.jpg"
+	],
+	"profiles": [
+		"lgb21-1st-1.0.3-sdk-2.3.0-40.00"
+	],
+	"schemas": {
+		"0000030nj2": [
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 2,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 3,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 6,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"off",
+						"on",
+						"memory"
+					],
+					"type": "enum"
+				},
+				"id": 14,
+				"type": "obj"
+			}
+		]
+	}
+}

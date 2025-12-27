@@ -1,0 +1,17 @@
+{
+	"name": "1.1.1 - RTL8720CF",
+	"sub_name": "oem_rtl8720cf_dltj",
+	"type": "CLASSIC",
+	"icon": "power-plug",
+	"firmware": {
+		"chip": "RTL8720CF",
+		"name": "oem_rtl8720cf_dltj",
+		"version": "1.1.1",
+		"sdk": "1.0.14-40.00",
+		"key": "keydws3ewm835jqx"
+	},
+	"data": {
+		"address_finish": "0x9B077FF5",
+		"address_token": "0x9B0425E9"
+	}
+}

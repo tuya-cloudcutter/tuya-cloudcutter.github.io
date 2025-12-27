@@ -1,0 +1,18 @@
+{
+	"name": "1.0.1 - BK7231N",
+	"sub_name": "QC0383_P5_QMCBU_STRIP3_RGB",
+	"type": "CLASSIC",
+	"icon": null,
+	"firmware": {
+		"chip": "BK7231N",
+		"name": "QC0383_P5_QMCBU_STRIP3_RGB",
+		"version": "1.0.1",
+		"sdk": "2.3.3-40.00",
+		"key": "htvilqbp8xfctgke"
+	},
+	"data": {
+		"address_finish": "0x1B48B",
+		"address_ssid": "0xBEA59",
+		"address_ssid_padding": 4
+	}
+}

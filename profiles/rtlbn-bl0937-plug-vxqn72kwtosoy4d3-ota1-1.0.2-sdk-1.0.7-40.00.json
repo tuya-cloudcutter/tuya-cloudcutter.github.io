@@ -1,0 +1,17 @@
+{
+	"name": "1.0.2 - OTA1 - RTL8710BN",
+	"sub_name": "rtlbn_bl0937_plug_vxqn72kwtosoy4d3",
+	"type": "CLASSIC",
+	"icon": "power-plug",
+	"firmware": {
+		"chip": "RTL8710BN",
+		"name": "rtlbn_bl0937_plug_vxqn72kwtosoy4d3",
+		"version": "1.0.2",
+		"sdk": "1.0.7-40.00",
+		"ota": "OTA1"
+	},
+	"data": {
+		"address_finish": "0x803386B",
+		"address_token": "0x802AE15"
+	}
+}

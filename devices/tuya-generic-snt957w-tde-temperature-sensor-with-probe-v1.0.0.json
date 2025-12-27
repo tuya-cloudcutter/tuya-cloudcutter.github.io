@@ -1,0 +1,90 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "SNT957W-TDE Temperature Sensor with Probe v1.0.0",
+	"key": "fqs8czlq3m0seqyp",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"tuya-generic-snt957w-tde-temperature-sensor-with-probe-v1.0.0.jpg"
+	],
+	"profiles": [
+		"snt957w-tde-cbu-1.0.0-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"000004dkhb": [
+			{
+				"mode": "ro",
+				"property": {
+					"min": -400,
+					"max": 1200,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 1,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"c",
+						"f"
+					],
+					"type": "enum"
+				},
+				"id": 9,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": -400,
+					"max": 1200,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 10,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": -400,
+					"max": 1200,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 11,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"range": [
+						"loweralarm",
+						"upperalarm",
+						"cancel"
+					],
+					"type": "enum"
+				},
+				"id": 14,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": -100,
+					"max": 100,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 23,
+				"type": "obj"
+			}
+		]
+	}
+}

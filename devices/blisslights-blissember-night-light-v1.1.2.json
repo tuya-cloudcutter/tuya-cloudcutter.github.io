@@ -1,0 +1,186 @@
+{
+	"manufacturer": "BlissLights",
+	"name": "BlissEmber Night Light v1.1.2",
+	"key": "keypkcmvhp7kexqj",
+	"ap_ssid": "A",
+	"github_issues": [],
+	"image_urls": [
+		"blisslights-blissember-night-light-v1.1.2.jpg"
+	],
+	"profiles": [
+		"oem-rtl8720cf-light-ty-1.1.2-sdk-1.0.11-40.00"
+	],
+	"schemas": {
+		"0000003ncr": [
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"sleep",
+						"normal",
+						"nature"
+					],
+					"type": "enum"
+				},
+				"id": 2,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"1",
+						"2",
+						"3",
+						"4",
+						"5",
+						"6",
+						"7",
+						"8",
+						"9",
+						"10"
+					],
+					"type": "enum"
+				},
+				"id": 3,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"0",
+						"1",
+						"2",
+						"3",
+						"4",
+						"5",
+						"6",
+						"7",
+						"8"
+					],
+					"type": "enum"
+				},
+				"id": 6,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 480,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 7,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 9,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 10,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 101,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 102,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"forward",
+						"reverse"
+					],
+					"type": "enum"
+				},
+				"id": 103,
+				"type": "obj"
+			}
+		]
+	},
+	"device_configuration": {
+		"Jsonver": "1.2.0",
+		"b_lv": 1,
+		"b_pin": 2,
+		"brightmax": 100,
+		"brightmin": 10,
+		"c_lv": 1,
+		"c_pin": 19,
+		"cagt": 30,
+		"category": "0504",
+		"cmod": "rgbc",
+		"colormax": 100,
+		"colormin": 10,
+		"crc": 10,
+		"cwmaxp": 100,
+		"cwtype": 0,
+		"defbright": 100,
+		"defcolor": "c",
+		"deftemp": 100,
+		"dmod": 0,
+		"g_lv": 1,
+		"g_pin": 3,
+		"gmkb": 60,
+		"gmkg": 60,
+		"gmkr": 80,
+		"gmwb": 75,
+		"gmwg": 70,
+		"gmwr": 100,
+		"module": "WBR3",
+		"onoffmode": 0,
+		"pmemory": 1,
+		"prodagain": 1,
+		"pwmhz": 1000,
+		"r_lv": 1,
+		"r_pin": 18,
+		"remdmode": 0,
+		"rgbt": 10,
+		"rstbr": 50,
+		"rstcor": "c",
+		"rstnum": 5,
+		"rsttemp": 100,
+		"title20": 0,
+		"wfcfg": "prod",
+		"wt": 0
+	}
+}

@@ -1,0 +1,55 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "Door Window Sensor v1.0.3",
+	"key": "ljwxe1cyevzjt8m2",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		792
+	],
+	"image_urls": [],
+	"profiles": [
+		"dy-vd-400a-cbu-1.0.3-sdk-2.3.1-40.00"
+	],
+	"schemas": {
+		"e1kc5844": [
+			{
+				"mode": "ro",
+				"property": {
+					"range": [
+						"normal",
+						"vibration",
+						"drop"
+					],
+					"type": "enum"
+				},
+				"id": 1,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 100,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 4,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"low",
+						"middle",
+						"high"
+					],
+					"type": "enum"
+				},
+				"id": 101,
+				"type": "obj"
+			}
+		]
+	}
+}

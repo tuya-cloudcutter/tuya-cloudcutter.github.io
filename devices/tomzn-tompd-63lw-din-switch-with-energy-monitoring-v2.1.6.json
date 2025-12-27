@@ -1,0 +1,212 @@
+{
+	"manufacturer": "TOMZN",
+	"name": "TOMPD-63LW DIN Switch with Energy Monitoring v2.1.6",
+	"key": "u0cxoxtfelys3ufx",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"tomzn-tompd-63lw-din-switch-with-energy-monitoring-v2.1.6.jpg"
+	],
+	"profiles": [
+		"bk7231n-common-user-config-ty-2.1.6-sdk-2.3.3-40.00"
+	],
+	"schemas": {
+		"ew5d8k": [
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 99999999,
+					"scale": 2,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 1,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"id": 6,
+				"type": "raw"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"type": "bitmap",
+					"maxlen": 17
+				},
+				"id": 9,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 11,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 12,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 999999,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 13,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 99999,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 14,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 15,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 16,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"id": 17,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 18,
+				"type": "raw"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 19,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 21,
+				"type": "obj"
+			},
+			{
+				"mode": "wr",
+				"property": {
+					"type": "bool"
+				},
+				"id": 101,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 1000,
+					"scale": 3,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 104,
+				"trigger": "direct",
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 1000,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 105,
+				"trigger": "direct",
+				"type": "obj"
+			},
+			{
+				"mode": "wr",
+				"property": {
+					"type": "bool"
+				},
+				"id": 106,
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 4000,
+					"scale": 1,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 116,
+				"trigger": "direct",
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 1000000,
+					"scale": 3,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 117,
+				"trigger": "direct",
+				"type": "obj"
+			},
+			{
+				"mode": "ro",
+				"property": {
+					"min": 0,
+					"max": 1000000,
+					"scale": 3,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 118,
+				"trigger": "direct",
+				"type": "obj"
+			}
+		]
+	},
+	"tuyamcu_baud": "9600"
+}

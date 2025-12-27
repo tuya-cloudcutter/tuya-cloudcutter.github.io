@@ -1,0 +1,18 @@
+{
+	"name": "1.0.7 - OTA1 - RTL8710BN",
+	"sub_name": "XYX_PRODUCT_KEY_DATA_KEY",
+	"type": "CLASSIC",
+	"icon": "memory",
+	"firmware": {
+		"chip": "RTL8710BN",
+		"name": "XYX_PRODUCT_KEY_DATA_KEY",
+		"version": "1.0.7",
+		"sdk": "1.0.7-40.00",
+		"key": "keymenctfd4sd3yq",
+		"ota": "OTA1"
+	},
+	"data": {
+		"address_finish": "0x8038443",
+		"address_token": "0x802FA9D"
+	}
+}
