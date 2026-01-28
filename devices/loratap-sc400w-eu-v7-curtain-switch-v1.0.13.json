@@ -1,0 +1,118 @@
+{
+	"manufacturer": "LoraTap",
+	"name": "SC400W-EU V7 Curtain Switch v1.0.13",
+	"key": "keye9qrqgnwpjcqg",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [],
+	"profiles": [
+		"oem-curtain1-qc-1.0.13-sdk-2.3.3-40.00"
+	],
+	"schemas": {
+		"000004vfaz": [
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"open",
+						"stop",
+						"close",
+						"continue"
+					],
+					"type": "enum"
+				},
+				"id": 1,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 100,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 2,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"start",
+						"end"
+					],
+					"type": "enum"
+				},
+				"id": 3,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"start",
+						"end"
+					],
+					"type": "enum"
+				},
+				"id": 6,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 7,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"forward",
+						"back"
+					],
+					"type": "enum"
+				},
+				"id": 8,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 120,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 10,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 120,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 11,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 101,
+				"type": "obj"
+			}
+		]
+	}
+}
