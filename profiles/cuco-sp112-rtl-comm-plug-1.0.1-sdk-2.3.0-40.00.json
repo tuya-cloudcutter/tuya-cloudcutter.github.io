@@ -1,0 +1,18 @@
+{
+	"name": "1.0.1 - RTL8720CF",
+	"sub_name": "cuco_sp112_rtl_comm_plug",
+	"type": "CLASSIC",
+	"icon": "power-plug",
+	"firmware": {
+		"chip": "RTL8720CF",
+		"name": "cuco_sp112_rtl_comm_plug",
+		"version": "1.0.1",
+		"sdk": "2.3.0-40.00"
+	},
+	"data": {
+		"address_finish": "0x9B05F0FB",
+		"address_passwd": "0x9B03E823",
+		"address_passwd_padding": 4,
+		"address_token": "0x9B05A247"
+	}
+}
