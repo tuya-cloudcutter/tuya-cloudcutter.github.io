@@ -1,0 +1,225 @@
+{
+	"manufacturer": "LSC",
+	"name": "3206306 Ceiling Light v1.0.6",
+	"ap_ssid": "SmartLife",
+	"github_issues": [],
+	"image_urls": [
+		"lsc-3206306-ceiling-light-v1.0.6.jpg"
+	],
+	"profiles": [
+		"oem-bk7231n-colorful-ceiling-light-ty-1.0.6-sdk-2.3.3-40.00"
+	],
+	"schemas": {
+		"fi8p6k": [
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 20,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"white",
+						"colour",
+						"scene",
+						"music"
+					],
+					"type": "enum"
+				},
+				"id": 21,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 22,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 23,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 24,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 25,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 26,
+				"type": "obj"
+			},
+			{
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 27,
+				"type": "obj"
+			},
+			{
+				"mode": "wr",
+				"property": {
+					"type": "string",
+					"maxlen": 255
+				},
+				"id": 28,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 34,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"id": 52,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 54,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"white",
+						"colour",
+						"scene",
+						"music"
+					],
+					"type": "enum"
+				},
+				"id": 55,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"id": 56,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 57,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"id": 61,
+				"type": "raw"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 63,
+				"type": "obj"
+			}
+		]
+	},
+	"device_configuration": {
+		"CS": 15,
+		"Jsonver": "1.0.4",
+		"LedNum": 12,
+		"MISO": 17,
+		"MOSI": 16,
+		"SCL": 14,
+		"aging": 1,
+		"brightmax": 100,
+		"brightmin": 10,
+		"c_lv": 1,
+		"c_pin": 26,
+		"cagt": 10,
+		"category": "0505",
+		"cmod": "rgbcw",
+		"colormax": 100,
+		"colormaxp": 100,
+		"colormin": 10,
+		"colororder": 0,
+		"colorpfun": 1,
+		"crc": 111,
+		"cwmaxp": 100,
+		"cwtype": 0,
+		"defbright": 100,
+		"defcolor": "c",
+		"deftemp": 30,
+		"gmkb": 60,
+		"gmkg": 60,
+		"gmkr": 80,
+		"gmwb": 75,
+		"gmwg": 70,
+		"gmwr": 100,
+		"ismusic": 0,
+		"miso": 17,
+		"module": "CBU",
+		"mosi": 16,
+		"notdisturb": 1,
+		"onoffmode": 0,
+		"pairt": 180,
+		"pmemory": 1,
+		"prodagain": 0,
+		"pwmhz": 4000,
+		"remdmode": 0,
+		"rgbt": 10,
+		"rstbr": 50,
+		"rstcor": "c",
+		"rstnum": 3,
+		"rsttemp": 30,
+		"segdim": 0,
+		"slidemod": 2,
+		"title20": 1,
+		"w_lv": 1,
+		"w_pin": 24,
+		"wfcfg": "spcl_auto",
+		"wfct": 3,
+		"wt": 10
+	}
+}
