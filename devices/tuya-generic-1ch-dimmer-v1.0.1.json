@@ -1,0 +1,101 @@
+{
+	"manufacturer": "Tuya Generic",
+	"name": "1CH Dimmer v1.0.1",
+	"key": "5zsarybcltypoeaa",
+	"ap_ssid": "SmartLife",
+	"github_issues": [
+		894
+	],
+	"image_urls": [
+		"tuya-generic-1ch-dimmer-v1.0.1.jpg"
+	],
+	"profiles": [
+		"zhwfb-single-dimmer-1.0.1-sdk-2.3.3-40.00"
+	],
+	"schemas": {
+		"000004abbo": [
+			{
+				"mode": "rw",
+				"property": {
+					"type": "bool"
+				},
+				"id": 1,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 2,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 3,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"kickback",
+						"seesaw_toggle",
+						"seesaw_sync"
+					],
+					"type": "enum"
+				},
+				"id": 4,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 10,
+					"max": 1000,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 5,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"min": 0,
+					"max": 86400,
+					"scale": 0,
+					"step": 1,
+					"type": "value"
+				},
+				"id": 6,
+				"type": "obj"
+			},
+			{
+				"mode": "rw",
+				"property": {
+					"range": [
+						"off",
+						"on",
+						"memory"
+					],
+					"type": "enum"
+				},
+				"id": 14,
+				"type": "obj"
+			}
+		]
+	}
+}
