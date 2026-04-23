@@ -1,16 +1,16 @@
 {
 	"manufacturer": "Tuya Generic",
-	"name": "Zmai-90 Digital Energy Metering Switch",
+	"name": "Zmai-90 Digital Energy Metering Switch v2.3.3",
 	"key": "nqbs1onwskmmmaac",
 	"ap_ssid": "SmartLife",
 	"github_issues": [
 		364
 	],
 	"image_urls": [
-		"tuya-generic-zmai-90-digital-energy-metering-switch.jpg"
+		"tuya-generic-zmai-90-digital-energy-metering-switch-v2.3.3.jpg"
 	],
 	"profiles": [
-		"zhimei-wifi-smart-meter-main-2.3.5-sdk-2.3.1-40.00"
+		"zhimei-wifi-smart-meter-main-2.3.3-sdk-2.3.1-40.00"
 	],
 	"schemas": {
 		"000003jhz7": [
